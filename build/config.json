@@ -1,0 +1,12 @@
+{
+  "_comment": "File paths the build reads. Power Automate drops the Excel files into build/sources/ (or the Action downloads share links to the same place). Update names here if your files are named differently.",
+  "sources_dir": "build/sources",
+  "promotions_xlsx": "Promotions.xlsx",
+  "gaming_xlsx": "Social Media Organic Plan.xlsx",
+  "sbk_xlsx": "SBK Plan.xlsx",
+  "brandwatch_csvs": ["Brandwatch_Part1.csv", "Brandwatch_Part2.csv"],
+  "output": "data.js",
+  "week_label": "13–19 Jul 2026",
+  "week_commencing": "2026-07-13",
+  "week_theme": "World Cup Final week · The Open · All-Ireland Hurling Final"
+}
