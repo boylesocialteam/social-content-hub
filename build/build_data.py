@@ -282,16 +282,34 @@ def tc(s):
     return s.title() if s.isupper() else s
 
 
-_EMO = r"[\U0001F000-\U0001FAFF☀-➿⬀-⯿]"
+_EMO = r"[\U0001F000-\U0001FAFF☀-➿⬀-⯿←-⇿]"
+_EMOJI_UNIT = re.compile(rf"{_EMO}️?(?:‍{_EMO}️?)*⃣?")
 
 
 def collapse_emoji(t):
     """Collapse doubled emoji flourishes (🤩🤩 / ✨ ✨) to a single, and ensure a
-    leading emoji is followed by a space. Keeps mid-post emoji (gaming rulebook)."""
+    leading emoji is followed by a space. Keeps mid-post emoji (e.g. Instagram)."""
     t = (t or "").strip()
     t = re.sub(rf"({_EMO})(️?)(?:\s*\1\2?)+", r"\1\2", t)      # 🤩🤩 -> 🤩
     t = re.sub(rf"^({_EMO}️?)(?=\w)", r"\1 ", t)               # 🤩New -> 🤩 New
     return t
+
+
+def to_tw(meta):
+    """Twitter caption: keep only the FIRST emoji, strip all others (Twitter = 1 emoji max)."""
+    t = collapse_emoji(meta)
+    n = [0]
+
+    def repl(m):
+        n[0] += 1
+        return m.group(0) if n[0] == 1 else ""
+
+    t = _EMOJI_UNIT.sub(repl, t)
+    t = re.sub(r"[ \t]{2,}", " ", t)          # tidy gaps left by removed emoji
+    t = re.sub(r"[ \t]+([!?.,])", r"\1", t)
+    t = re.sub(r"[ \t]+\n", "\n", t)
+    t = re.sub(rf"^({_EMO}️?)(?=\w)", r"\1 ", t.strip())   # ♠️Feel -> ♠️ Feel
+    return t.strip()
 
 
 def to_ig(meta):
@@ -336,7 +354,7 @@ def build_gaming(cfg, lo, hi):
                 tb = re.search(r"Twitter btag[:\s]+(\S+)", bt)
                 lk = ws.cell(r, 11).value
                 cards.append({"section": "Live Casino", "name": tc(nm), "type": tc(ws.cell(r, 2).value),
-                              "date": fmt(date), "meta": meta, "twitter": collapse_emoji(meta),
+                              "date": fmt(date), "meta": meta, "twitter": to_tw(meta),
                               "instagram": to_ig(meta),
                               "design": ws.cell(r, 1).hyperlink.target if ws.cell(r, 1).hyperlink else "",
                               "facebook_link": link(lk, mb.group(1) if mb else ""),
@@ -349,7 +367,7 @@ def build_gaming(cfg, lo, hi):
                 meta = ws.cell(r, 6).value or ""
                 lk = ws.cell(r, 7).value
                 cards.append({"section": "Gaming", "name": tc(nm), "type": tc(ws.cell(r, 2).value),
-                              "date": fmt(date), "meta": meta, "twitter": collapse_emoji(meta),
+                              "date": fmt(date), "meta": meta, "twitter": to_tw(meta),
                               "instagram": to_ig(meta),
                               "design": ws.cell(r, 1).hyperlink.target if ws.cell(r, 1).hyperlink else "",
                               "facebook_link": link(lk, ws.cell(r, 8).value),
