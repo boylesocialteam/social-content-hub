@@ -184,6 +184,11 @@ def build_promotions(cfg):
         day = ws.cell(r, col("day")).value
         if not day:
             continue
+        # honour the "Include on Promotions Page?" flag — dedups promos that recur
+        # across days so each shows only on its event day.
+        inc_col = col("include on promotions page?")
+        if inc_col and str(ws.cell(r, inc_col).value or "Y").strip().upper() == "N":
+            continue
         sport = (ws.cell(r, col("sport")).value or "").strip()
         ptype = (ws.cell(r, col("promotion type")).value or "").strip()
         match = (ws.cell(r, col("event / match")).value or "").strip()

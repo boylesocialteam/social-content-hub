@@ -190,10 +190,15 @@
   .b-bg{background:var(--bbg);} .b-ab{background:var(--bab);color:#3a2e00;} .b-ss{background:var(--bss);}
   .b-epo{background:var(--bepo);} .b-fb{background:var(--bfb);} .b-ac{background:var(--bac);}
   .b-mb{background:#ea580c;} .b-places{background:#059669;}
+  .b-boost{background:#0d9488;} .b-bog{background:#0891b2;}
   .b-special{background:var(--special);} .b-exclusive{background:var(--exclusive);} .b-promo{background:var(--promo);}
   .b-trending{background:var(--trending);color:#3a2700;} .b-gotw,.b-game{background:var(--gotw);} .b-highlighted{background:var(--highlighted);} .b-potpourri{background:var(--potpourri);}
   .card-top .mn{font-weight:800;font-size:1rem;line-height:1.2;flex:1;}
   .card-top .mn small{display:block;font-weight:500;color:var(--faint);font-size:.76rem;margin-top:3px;}
+  /* Promo cards: fixed-width badge slot so every match title starts at the same x. */
+  .card-top-promo{align-items:flex-start;}
+  .card-top-promo .pslot{flex:0 0 118px;display:flex;}
+  .card-top-promo .badge{white-space:normal;text-align:center;line-height:1.15;}
   .sect-tag{flex:none;align-self:flex-start;font-size:.64rem;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:6px;border:1px solid transparent;}
   .sect-gaming{background:#eceaff;color:#3d2bb8;border-color:#d7d2ff;}
   .sect-live-casino{background:#e6f7f4;color:#0b7064;border-color:#bfe9e2;}
@@ -404,7 +409,20 @@ ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 chev:'<svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>'};
 
 /* badge class from promo type */
-const promoBadge = t => 'b-'+t;
+const promoBadge = t => {
+  const k=(t||'').toLowerCase();
+  if(k.includes('50'))return'b-50'; if(k.includes('25'))return'b-25';
+  if(k.includes('super'))return'b-sb';
+  if(k.includes('bet & get')||k.includes('bet and get')||k.includes('b&g'))return'b-bg';
+  if(k.includes('free bet'))return'b-fb';
+  if(k.includes('epo'))return'b-epo';
+  if(k.includes('acca'))return'b-ac'; if(k.includes('sub'))return'b-ss';
+  if(k.includes('money'))return'b-mb';
+  if(k.includes('place'))return'b-places';
+  if(k.includes('bog')||k.includes('best odds'))return'b-bog';
+  if(k.includes('price')||k.includes('outright')||k.includes('ppb')||k.includes('boost'))return'b-boost';
+  return'b-promo';
+};
 const gamingBadgeClass = t => {
   const k=(t||'').toLowerCase();
   if(k.includes('special'))return'b-special'; if(k.includes('exclusive'))return'b-exclusive';
@@ -606,7 +624,7 @@ function promoCard(p){
   const body=isSB?'':`<div class="card-body">${caps.join('')}</div>`;
   const foot=isSB ? `<div class="card-foot">${air}</div>` : `<div class="card-foot">${air}${bs}</div>`;
   return `<div class="card${isSB?' card-sb':''}" data-search="${esc((p.match+' '+p.promo+' '+p.competition).toLowerCase())}">
-    <div class="card-top"><span class="badge ${promoBadge(p.type)}">${esc(p.promo)}</span>
+    <div class="card-top card-top-promo"><span class="pslot"><span class="badge ${promoBadge(p.type)}">${esc(p.type||p.promo)}</span></span>
       <div class="mn">${esc(p.match)}<small>${esc(p.competition||'')}</small></div></div>
     ${promoPreview(p)}
     ${body}

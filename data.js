@@ -24,7 +24,7 @@ window.SCH_DATA = {
         },
         {
           "title": "The Open",
-          "note": "Boost / Places · Outright Boost · Price Boost · Bet & Get",
+          "note": "Boost / Places · Outright Boost · Bet & Get",
           "level": "med"
         },
         {
@@ -549,23 +549,10 @@ window.SCH_DATA = {
           "type": "Bet & Get",
           "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
           "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "",
+          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
           "image": "",
-          "note": "Multi bet & get; no link supplied"
-        },
-        {
-          "day": "Monday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "The Open - 12 Places",
-          "type": "Boost / Places",
-          "twitter": "We're paying 12 PLACES on The Open.\n\nTap below to view the full market.",
-          "facebook": "We're paying 12 PLACES on The Open.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major (The Open Championship); enhanced 12 places"
+          "note": "Daily racing multi bet & get"
         },
         {
           "day": "Tuesday",
@@ -573,8 +560,8 @@ window.SCH_DATA = {
           "competition": "World Cup",
           "promo": "50% Bet Builder Boost: France v Spain",
           "type": "50% BBB",
-          "twitter": "🚀 Win 50% more with Bet Builder Boost as France meet Spain in the World Cup.\n\nTap below to view the full market.",
-          "facebook": "Win 50% more with Bet Builder Boost as France meet Spain in the World Cup.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/international-world-cup/france-v-spain",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as France face Spain in the World Cup.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as France face Spain in the World Cup.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/international-world-cup/france-v-spain",
           "air": "",
           "boylesports": "https://www.boylesports.com/sports/football/event/international-world-cup/france-v-spain",
           "image": "",
@@ -592,32 +579,6 @@ window.SCH_DATA = {
           "boylesports": "https://www.boylesports.com/promotions/online/football",
           "image": "",
           "note": "World Cup semi-final; football matches design folder"
-        },
-        {
-          "day": "Tuesday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "The Open - 12 Places",
-          "type": "Boost / Places",
-          "twitter": "We're paying 12 PLACES on The Open.\n\nTap below to view the full market.",
-          "facebook": "We're paying 12 PLACES on The Open.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; enhanced 12 places"
-        },
-        {
-          "day": "Tuesday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Outright Boost: The Open",
-          "type": "Outright Boost",
-          "twitter": "🚀 Boosted outright prices for The Open!\n\nTap below to view the market.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; outright market boost"
         },
         {
           "day": "Wednesday",
@@ -653,10 +614,10 @@ window.SCH_DATA = {
           "type": "Boost / Places",
           "twitter": "We're paying 12 PLACES on The Open.\n\nTap below to view the full market.",
           "facebook": "We're paying 12 PLACES on The Open.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
-          "air": "",
+          "air": "https://app.air.inc/a/b89381410",
           "boylesports": "https://www.boylesports.com/sports/golf",
           "image": "",
-          "note": "Golf major; enhanced 12 places"
+          "note": "Golf major; event-day copy for the outright/places promo"
         },
         {
           "day": "Wednesday",
@@ -669,20 +630,7 @@ window.SCH_DATA = {
           "air": "",
           "boylesports": "https://www.boylesports.com/sports/golf",
           "image": "",
-          "note": "Golf major; outright market boost"
-        },
-        {
-          "day": "Thursday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Price Boost: The Open",
-          "type": "Price Boost",
-          "twitter": "🚀 Price Boost on The Open — enhanced odds available now.\n\nTap below to add to your betslip.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; price boost"
+          "note": "Golf major; event-day copy for the outright boost"
         },
         {
           "day": "Thursday",
@@ -705,10 +653,10 @@ window.SCH_DATA = {
           "type": "Bet & Get",
           "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
           "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "",
+          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
           "image": "",
-          "note": "Multi bet & get; no link supplied"
+          "note": "Daily racing multi bet & get"
         },
         {
           "day": "Friday",
@@ -721,33 +669,7 @@ window.SCH_DATA = {
           "air": "",
           "boylesports": "https://www.boylesports.com/sports/golf",
           "image": "",
-          "note": "Golf major; non-football bet & get, no link supplied"
-        },
-        {
-          "day": "Friday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Price Boost: The Open",
-          "type": "Price Boost",
-          "twitter": "🚀 Price Boost on The Open — enhanced odds available now.\n\nTap below to add to your betslip.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; price boost"
-        },
-        {
-          "day": "Friday",
-          "match": "3rd Place Play-Off",
-          "competition": "World Cup",
-          "promo": "50% Bet Builder Boost: 3rd Place Play-Off",
-          "type": "50% BBB",
-          "twitter": "🚀 Win 50% more with Bet Builder Boost on the 3rd Place Play-Off.\n\nTap below to view the full market.",
-          "facebook": "Win 50% more with Bet Builder Boost on the 3rd Place Play-Off.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/promotions/online/football",
-          "image": "",
-          "note": "World Cup 3rd place play-off; teams TBC"
+          "note": "Golf major; non-football bet & get"
         },
         {
           "day": "Friday",
@@ -757,10 +679,10 @@ window.SCH_DATA = {
           "type": "Bet & Get",
           "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
           "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "",
+          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
           "image": "",
-          "note": "Multi bet & get; no link supplied"
+          "note": "Daily racing multi bet & get"
         },
         {
           "day": "Saturday",
@@ -777,32 +699,6 @@ window.SCH_DATA = {
         },
         {
           "day": "Saturday",
-          "match": "All-Ireland Hurling Final",
-          "competition": "GAA",
-          "promo": "Super Boost: All-Ireland Hurling Final",
-          "type": "Super Boost",
-          "twitter": "",
-          "facebook": "",
-          "air": "",
-          "boylesports": "",
-          "image": "",
-          "note": "GAA major; non-football Super Boost, no link"
-        },
-        {
-          "day": "Saturday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Price Boost: The Open",
-          "type": "Price Boost",
-          "twitter": "🚀 Price Boost on The Open — enhanced odds available now.\n\nTap below to add to your betslip.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; price boost"
-        },
-        {
-          "day": "Saturday",
           "match": "3rd Place Play-Off",
           "competition": "World Cup",
           "promo": "50% Bet Builder Boost: 3rd Place Play-Off",
@@ -812,20 +708,7 @@ window.SCH_DATA = {
           "air": "",
           "boylesports": "https://www.boylesports.com/promotions/online/football",
           "image": "",
-          "note": "World Cup 3rd place play-off; teams TBC"
-        },
-        {
-          "day": "Saturday",
-          "match": "World Cup Final",
-          "competition": "World Cup",
-          "promo": "Super Boost: World Cup Final",
-          "type": "Super Boost",
-          "twitter": "",
-          "facebook": "",
-          "air": "https://app.bannerflow.com/studio/brand/5553724f320a791594148995/creativeset/1185282?version=1981413",
-          "boylesports": "",
-          "image": "",
-          "note": "World Cup Final; football Super Boost creative; teams TBC"
+          "note": "World Cup 3rd place play-off; event day; teams TBC"
         },
         {
           "day": "Saturday",
@@ -877,7 +760,7 @@ window.SCH_DATA = {
           "air": "",
           "boylesports": "",
           "image": "",
-          "note": "GAA major; non-football Super Boost, no link"
+          "note": "GAA major; event day; non-football Super Boost, no link"
         },
         {
           "day": "Sunday",
@@ -890,20 +773,7 @@ window.SCH_DATA = {
           "air": "https://app.bannerflow.com/studio/brand/5553724f320a791594148995/creativeset/1185282?version=1981413",
           "boylesports": "",
           "image": "",
-          "note": "World Cup Final; football Super Boost creative; teams TBC"
-        },
-        {
-          "day": "Sunday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Price Boost: The Open",
-          "type": "Price Boost",
-          "twitter": "🚀 Price Boost on The Open — enhanced odds available now.\n\nTap below to add to your betslip.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; price boost"
+          "note": "World Cup Final; event day; football Super Boost creative; teams TBC"
         },
         {
           "day": "Sunday",
