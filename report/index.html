@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media — Doing Less, Better</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --navy:#191919;
+    --navy2:#2400f6;
+    --blue:#2400f6;
+    --blue-light:#6a5cff;
+    --gold:#d1f20c;
+    --gold-deep:#2400f6;
+    --lime:#d1f20c;
+    --lime-ink:#7c8f00;
+    --ink:#191919;
+    --muted:#5b6478;
+    --line:#e6e9f2;
+    --bg:#f5f6fa;
+    --card:#ffffff;
+    --good:#2400f6;
+    --bad:#9aa0b0;
+    --radius:16px;
+    --shadow:0 4px 24px rgba(25,25,25,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:radial-gradient(1100px 520px at 88% -20%,rgba(209,242,12,.34),transparent 55%),
+               linear-gradient(165deg,#15008f 0%,#2400f6 52%,#1d00c2 100%);
+    color:#fff;padding:64px 0 72px;position:relative;overflow:hidden;
+  }
+  .hero:after{content:"";position:absolute;inset:0;background:
+    repeating-linear-gradient(115deg,transparent 0 38px,rgba(255,255,255,.02) 38px 39px);pointer-events:none;}
+  .logo-lockup{display:flex;align-items:center;margin-bottom:22px;position:relative;z-index:2;}
+  .logo-img{height:40px;width:auto;display:block;}
+  @media(max-width:520px){.logo-img{height:30px;}}
+  .kicker{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;
+    letter-spacing:.08em;text-transform:uppercase;font-size:12px;padding:6px 14px;border-radius:100px;position:relative;z-index:2;}
+  .hero h1{font-size:46px;line-height:1.08;margin:20px 0 10px;font-weight:800;letter-spacing:-.02em;max-width:820px;}
+  .hero h1 span{color:var(--gold);}
+  .hero p.sub{font-size:19px;color:#c9d2f2;max-width:680px;margin:0;}
+  .hero .meta{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:13px;color:#aab6e6;}
+  .hero .meta b{color:#fff;font-weight:700;}
+
+  /* ---------- NAV ---------- */
+  nav.toc{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);}
+  nav.toc .wrap{display:flex;gap:6px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;}
+  nav.toc a{font-size:13.5px;font-weight:600;color:var(--muted);text-decoration:none;padding:8px 14px;border-radius:100px;transition:.15s;}
+  nav.toc a:hover{background:var(--bg);color:var(--navy);}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:56px 0;border-bottom:1px solid var(--line);}
+  .sec-num{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);}
+  h2{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:6px 0 8px;color:var(--navy);}
+  .lead{font-size:18px;color:var(--muted);max-width:760px;margin:0 0 8px;}
+  h3{font-size:20px;font-weight:750;margin:36px 0 12px;color:var(--navy);}
+  p{margin:14px 0;}
+  a.inline{color:var(--blue);font-weight:600;}
+
+  /* ---------- EXEC SUMMARY ---------- */
+  .summary{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;margin-top:-44px;position:relative;z-index:5;border:1px solid var(--line);}
+  .summary h2{margin-top:0;}
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px;}
+  .stat{background:var(--bg);border-radius:14px;padding:20px;border:1px solid var(--line);}
+  .stat .big{font-size:34px;font-weight:800;color:var(--navy);line-height:1;letter-spacing:-.02em;}
+  .stat .big.gold{color:var(--gold-deep);}
+  .stat .big.bad{color:var(--bad);}
+  .stat .lbl{font-size:13px;color:var(--muted);margin-top:8px;font-weight:600;}
+  @media(max-width:820px){.stat-row{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- CALLOUT ---------- */
+  .callout{background:var(--lime);border:1px solid #b9d900;border-left:6px solid var(--blue);
+    border-radius:12px;padding:20px 24px;margin:26px 0;}
+  .callout .tag{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);}
+  .callout p{margin:6px 0 0;font-size:16.5px;color:#191919;}
+  .callout p b{color:#000;}
+
+  /* ---------- HUB & SPOKE ---------- */
+  .flow{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:36px 28px;border:1px solid var(--line);}
+  .node{border-radius:12px;padding:16px 22px;text-align:center;font-weight:750;}
+  .node.trigger{background:var(--navy);color:#fff;font-size:19px;max-width:420px;margin:0 auto;}
+  .node.hub{background:var(--gold);color:var(--navy);font-size:18px;max-width:380px;margin:0 auto;}
+  .node.outcome{background:linear-gradient(135deg,var(--good),#1d00c2);color:#fff;font-size:19px;max-width:440px;margin:0 auto;}
+  .arrow{width:2px;height:30px;background:var(--blue-light);margin:8px auto;position:relative;}
+  .arrow:after{content:"";position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);
+    border:6px solid transparent;border-top-color:var(--blue-light);}
+  .spokes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0;}
+  .spoke{background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:12px;padding:16px;text-align:center;transition:.18s;}
+  .spoke:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .spoke .ic{font-size:22px;}
+  .spoke .t{font-weight:750;color:var(--navy);margin-top:6px;font-size:15px;}
+  .spoke .d{font-size:12.5px;color:var(--muted);margin-top:4px;}
+  @media(max-width:720px){.spokes{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- TABLE ---------- */
+  .tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);margin:22px 0;}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card);min-width:640px;}
+  thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 16px;font-weight:700;font-size:13px;letter-spacing:.02em;}
+  thead th.num{text-align:right;}
+  tbody td{padding:12px 16px;border-top:1px solid var(--line);}
+  tbody td.num{text-align:right;font-variant-numeric:tabular-nums;}
+  tbody tr.me{background:#f4fcd4;}
+  tbody tr.me td{font-weight:750;color:var(--navy);}
+  tbody tr.avg{background:#eef1fb;font-style:italic;}
+  .brand-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle;}
+  caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(--muted);padding:10px 4px;}
+
+  /* ---------- CHART CARD ---------- */
+  .chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0;}
+  @media(max-width:820px){.chart-grid{grid-template-columns:1fr;}}
+  .chart-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;border:1px solid var(--line);}
+  .chart-card h4{margin:0 0 4px;font-size:16px;color:var(--navy);font-weight:750;}
+  .chart-card .cap{font-size:12.5px;color:var(--muted);margin:0 0 14px;}
+  .chart-box{position:relative;height:300px;}
+  .chart-box.tall{height:340px;}
+
+  /* ---------- INSIGHT PILLS ---------- */
+  .insights{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+  @media(max-width:720px){.insights{grid-template-columns:1fr;}}
+  .ins{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow);}
+  .ins .h{font-weight:750;color:var(--navy);display:flex;align-items:center;gap:8px;}
+  .ins .h .em{font-size:18px;}
+  .ins p{margin:8px 0 0;font-size:14.5px;color:var(--muted);}
+  .ins b{color:var(--ink);}
+
+  /* ---------- PLACEHOLDER ---------- */
+  .todo{background:repeating-linear-gradient(135deg,#fbfcff,#fbfcff 12px,#f4f7ff 12px,#f4f7ff 24px);
+    border:2px dashed var(--blue-light);border-radius:14px;padding:26px;margin:22px 0;color:var(--muted);}
+  .todo .h{font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;}
+  .todo h3{margin-top:10px;}
+  .todo ul{margin:10px 0 0;padding-left:20px;}
+  .todo li{margin:6px 0;font-size:14.5px;}
+
+  /* ---------- BRANCHES (Section 5) ---------- */
+  .branches{display:flex;flex-direction:column;gap:18px;margin:26px 0;}
+  .branch{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--blue);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 26px;}
+  .branch-head{display:flex;align-items:center;gap:12px;margin-bottom:2px;}
+  .branch-head .bic{font-size:26px;line-height:1;}
+  .branch-head h3{margin:0;color:var(--navy);font-size:20px;}
+  .branch p{margin:10px 0 14px;color:#2b3040;}
+  .branch-change{background:#f6fdd6;border-left:4px solid var(--lime);border-radius:8px;padding:12px 16px;font-size:14.5px;color:#191919;}
+  .branch-change b{color:var(--blue);text-transform:uppercase;letter-spacing:.04em;font-size:12px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy);color:#aab6e6;padding:40px 0;font-size:13px;}
+  footer b{color:#fff;}
+  .divider{height:4px;background:linear-gradient(90deg,var(--gold),var(--blue));}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="logo-lockup"><img class="logo-img" src="data:image/png;base64,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" alt="BOYLE Sports"></div>
+    <span class="kicker">Social Media Strategy</span>
+    <h1>Doing <span>Less</span>, Better.</h1>
+    <p class="sub">A data-led case for reducing posting volume to unlock the time, quality and reactivity our channels are missing.</p>
+    <div class="meta">
+      <span><b>Prepared by</b> Social Media Team</span>
+      <span><b>Data window</b> 15 May – 15 Jul 2026 (61 days)</span>
+      <span><b>Source</b> Brandwatch · X &amp; Instagram</span>
+    </div>
+  </div>
+</header>
+
+<!-- EXEC SUMMARY -->
+<div class="wrap">
+  <div class="summary">
+    <span class="sec-num">Executive Summary</span>
+    <h2>We're producing more content than anyone for very little reward.</h2>
+    <p class="lead">Over 61 days, we published more than nearly every competitor across both platforms, yet ranked at or near the bottom for engagement per post. The issue is not effort or output; it is that the current volume leaves too little capacity for quality, planning and timely reaction. Reducing low-value posting is the key change that creates space to improve all three.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="big">1,450</div><div class="lbl">Our X posts in 61 days — 2nd most of any brand tracked</div></div>
+      <div class="stat"><div class="big">3.3</div><div class="lbl">Engagements per X post — the lowest in the set</div></div>
+      <div class="stat"><div class="big">244</div><div class="lbl">Our IG posts — the MOST of anyone, 2.3× Paddy Power</div></div>
+      <div class="stat"><div class="big">~4×</div><div class="lbl">We post ~4× the industry average on X</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="toc">
+  <div class="wrap">
+    <a href="#plan">1 · Plan of Action</a>
+    <a href="#volume">2 · How Much We Post</a>
+    <a href="#whatwepost">3 · What We Post</a>
+    <a href="#notworking">4 · What's Working &amp; Not</a>
+    <a href="#better">5 · Better With More Time</a>
+  </div>
+</nav>
+
+<!-- SECTION 1 -->
+<section id="plan">
+  <div class="wrap">
+    <span class="sec-num">Section 1</span>
+    <h2>The Plan of Action</h2>
+    <p class="lead">One decision sits upstream of everything else. Reducing posting volume isn't the goal — it's the lever. The time and headspace it returns is what makes better content, planning, video, reaction and analysis possible.</p>
+
+    <div class="flow">
+      <div class="node trigger">Reduce posting volume</div>
+      <div class="arrow"></div>
+      <div class="node hub">More time &amp; capacity</div>
+      <div class="arrow"></div>
+      <div class="spokes">
+        <div class="spoke"><div class="ic">✍️</div><div class="t">Better Content</div><div class="d">Fewer, sharper, higher-craft posts</div></div>
+        <div class="spoke"><div class="ic">🗓️</div><div class="t">Better Planning</div><div class="d">Plan ahead, not scramble daily</div></div>
+        <div class="spoke"><div class="ic">🎬</div><div class="t">More Video</div><div class="d">The format the algorithm rewards</div></div>
+        <div class="spoke"><div class="ic">⚡</div><div class="t">More Reactive</div><div class="d">Ride real-time moments</div></div>
+        <div class="spoke"><div class="ic">📊</div><div class="t">Better Analysis</div><div class="d">Learn from what actually lands</div></div>
+        <div class="spoke"><div class="ic">😌</div><div class="t">Less Team Pressure</div><div class="d">Sustainable, quality-first pace</div></div>
+      </div>
+      <div class="arrow"></div>
+      <div class="node outcome">Better social performance</div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">The core idea</span>
+      <p>Every branch above is currently starved of the same resource: <b>time</b>. Volume is what's eating it. Cut the low-value output and the rest of the plan funds itself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section id="volume">
+  <div class="wrap">
+    <span class="sec-num">Section 2</span>
+    <h2>How Much We Post vs. the Competition</h2>
+    <p class="lead">Benchmarked against Paddy Power, Bet365, Betfred and Betway over the same 61-day window, with Brandwatch's "Online Media" figure as the industry-average reference point. All per-day / per-week figures are calculated from the totals.</p>
+
+    <div class="callout">
+      <span class="tag">Read this first</span>
+      <p>Volume and engagement are almost perfectly <b>inversely</b> related here. Paddy Power posts a lot <i>and</i> earns a lot — but they're the exception. For us, high output is pairing with the weakest engagement per post on the table. More posts is not translating into more impact.</p>
+    </div>
+
+    <!-- X TABLE -->
+    <h3>X (Twitter) — 15 May to 15 Jul</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Posts</th>
+            <th class="num">Per day</th>
+            <th class="num">Per week</th>
+            <th class="num">Total engagement</th>
+            <th class="num">Eng. / post</th>
+            <th class="num">Eng. rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">2,050</td><td class="num">33.6</td><td class="num">235</td><td class="num">1.54M</td><td class="num">751</td><td class="num">1.04%</td></tr>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">1,450</td><td class="num">23.8</td><td class="num">166</td><td class="num">4,840</td><td class="num">3.3</td><td class="num">0.01%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">991</td><td class="num">16.2</td><td class="num">114</td><td class="num">128,800</td><td class="num">130</td><td class="num">0.25%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">827</td><td class="num">13.6</td><td class="num">95</td><td class="num">23,060</td><td class="num">27.9</td><td class="num">0.02%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#191919"></span>Betway</td><td class="num">208</td><td class="num">3.4</td><td class="num">24</td><td class="num">2,730</td><td class="num">13.1</td><td class="num">0.00%</td></tr>
+          <tr class="avg"><td>Industry avg (Online Media)</td><td class="num">363</td><td class="num">5.9</td><td class="num">42</td><td class="num">55,190</td><td class="num">152</td><td class="num">0.40%</td></tr>
+        </tbody>
+        <caption>Per-day = total ÷ 61 days · Per-week = total ÷ 8.71 weeks · Eng./post = total engagement ÷ posts. Source: Brandwatch.</caption>
+      </table>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>Posts per week on X</h4>
+        <p class="cap">We publish ~166/week — roughly 4× the industry average of 42.</p>
+        <div class="chart-box"><canvas id="xPosts"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Engagement per X post</h4>
+        <p class="cap">Despite the volume, we earn 3.3 — the lowest of every brand tracked.</p>
+        <div class="chart-box"><canvas id="xEng"></canvas></div>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">🔁</span>Output ≠ impact</div><p>We post <b>7× more</b> than Betway on X but earn only <b>~1.8×</b> their total engagement. Each extra post is adding almost nothing.</p></div>
+      <div class="ins"><div class="h"><span class="em">🥇</span>Paddy Power is the outlier, not the model</div><p>They post most <i>and</i> engage most — but at <b>751 per post</b> vs our 3.3, their edge is craft, not quantity.</p></div>
+    </div>
+
+    <h3>The daily pattern — steady grind vs. strategic spikes</h3>
+    <p>Brandwatch's day-by-day X view (15 May–15 Jul) adds an important nuance. For the first month we out-posted Paddy Power on most days. From mid-June they changed gear — spiking to as much as <b>~96 posts in a single day</b> around big fixtures, while dialling right back in between. Our own line stays in a flat <b>~20–40/day</b> band the whole period: relentless, but undifferentiated. Bet365 and Betfred sit in a similarly steady mid-band. Paddy Power picks its moments; we post the same volume regardless of whether anything's happening.</p>
+
+    <div class="chart-card" style="margin-top:12px;">
+      <h4>Posts per day on X — the four brands compared</h4>
+      <p class="cap">Illustrative of Brandwatch's daily "posts over time" view. Our line (blue) holds a flat band; Paddy Power (green) sits low, then spikes hard around the mid-June/July fixture run. Bet365 and Betfred stay steady throughout.</p>
+      <div class="chart-box tall"><canvas id="dailyPattern"></canvas></div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">📈</span>They spike, we grind</div><p>Paddy Power concentrates output around <b>peak moments</b> and eases off otherwise. Our volume is <b>constant</b> — the same whether it's Cup final day or a quiet Tuesday.</p></div>
+      <div class="ins"><div class="h"><span class="em">🎯</span>Consistency isn't the same as impact</div><p>A steady 20–40/day feels productive, but flat output means we're <b>not matching effort to opportunity</b> — the spikes are where engagement is won.</p></div>
+    </div>
+
+    <!-- IG TABLE -->
+    <h3>Instagram — 15 May to 15 Jul</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Posts</th>
+            <th class="num">Per day</th>
+            <th class="num">Per week</th>
+            <th class="num">Total engagement</th>
+            <th class="num">Eng. / post</th>
+            <th class="num">Eng. rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">244</td><td class="num">4.0</td><td class="num">28</td><td class="num">9,760</td><td class="num">40</td><td class="num">6.48%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#191919"></span>Betway</td><td class="num">125</td><td class="num">2.0</td><td class="num">14</td><td class="num">7,310</td><td class="num">58</td><td class="num">10.75%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">108</td><td class="num">1.8</td><td class="num">12</td><td class="num">417,360</td><td class="num">3,864</td><td class="num">8.33%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">61</td><td class="num">1.0</td><td class="num">7</td><td class="num">27,940</td><td class="num">458</td><td class="num">7.21%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">26</td><td class="num">0.4</td><td class="num">3</td><td class="num">491</td><td class="num">19</td><td class="num">4.39%</td></tr>
+          <tr class="avg"><td>Industry avg (Online Media)</td><td class="num">106</td><td class="num">1.7</td><td class="num">12</td><td class="num">1.57M</td><td class="num">—</td><td class="num">4.96%</td></tr>
+        </tbody>
+        <caption>We post the most of any brand on IG — more than 2× Paddy Power — yet earn ~1/43rd of their engagement per post. Source: Brandwatch.</caption>
+      </table>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>Posts per week on Instagram</h4>
+        <p class="cap">We publish the most of anyone — 28/week, over 2× Paddy Power.</p>
+        <div class="chart-box"><canvas id="igPosts"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Engagement per Instagram post (log scale)</h4>
+        <p class="cap">Paddy Power earns 3,864 per post from less than half our volume.</p>
+        <div class="chart-box"><canvas id="igEng"></canvas></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">What this means for the plan</span>
+      <p>On both platforms we are the <b>volume leader and the engagement laggard</b>. That's the clearest possible signal that output has passed the point of diminishing returns — and that reallocating that effort into fewer, better posts is the obvious next move.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — WHAT WE POST -->
+<section id="whatwepost">
+  <div class="wrap">
+    <span class="sec-num">Section 3</span>
+    <h2>What We Post — Content Formats (X &amp; Instagram)</h2>
+    <p class="lead">It's not just how much we post, but what. Brandwatch's format breakdown for the same 15 May–15 Jul window shows we're publishing a fundamentally different content mix to the brands that are winning — and leaning hardest on the formats that engage the least.</p>
+
+    <div class="callout">
+      <span class="tag">The headline</span>
+      <p>We are the only brand in the set built on <b>image posts</b> (~40% of our output, ~580 posts — more image posts than anyone). Everyone else runs on <b>text</b>. And <b>video — the format the algorithm rewards — is barely 5% of what we do.</b></p>
+    </div>
+
+    <h3>Format mix by brand (share of X posts)</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Total posts</th>
+            <th class="num">Image</th>
+            <th class="num">Text / Promo*</th>
+            <th class="num">Video</th>
+            <th class="num">Link</th>
+            <th class="num">Poll</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">1,450</td><td class="num">40%</td><td class="num">53%</td><td class="num">5%</td><td class="num">1%</td><td class="num">1%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">2,050</td><td class="num">4%</td><td class="num">85%</td><td class="num">6%</td><td class="num">3%</td><td class="num">1%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">991</td><td class="num">14%</td><td class="num">78%</td><td class="num">4%</td><td class="num">2%</td><td class="num">3%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">827</td><td class="num">18%</td><td class="num">62%</td><td class="num">17%</td><td class="num">2%</td><td class="num">1%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#191919"></span>Betway</td><td class="num">208</td><td class="num">58%</td><td class="num">29%</td><td class="num">5%</td><td class="num">4%</td><td class="num">4%</td></tr>
+        </tbody>
+        <caption>Estimated from Brandwatch "Posts format mix" (X, 15 May–15 Jul). *Brandwatch files any post without an image or video as "Text" — on X that bucket mixes genuine editorial text with text-based promotions it can't tell apart, so these "Text" shares overstate real editorial output. Corrected below.</caption>
+      </table>
+    </div>
+
+    <div class="callout">
+      <span class="tag">Correcting the "Text" number</span>
+      <p>Because Brandwatch can't separate editorial text from promotions, we ran every post through our own classifier (see the promotional analysis later in this section). Applying those measured rates, the true <b>purpose</b> split of each X feed is:</p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Promotional</th>
+            <th class="num">Editorial (non-promo)</th>
+            <th class="num">≈ Promo posts / week</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">52%</td><td class="num">48%</td><td class="num">~86</td></tr>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">56%</td><td class="num">44%</td><td class="num">~63</td></tr>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">22%</td><td class="num">78%</td><td class="num">~32</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">16%</td><td class="num">84%</td><td class="num">~13</td></tr>
+        </tbody>
+        <caption>Promotional / editorial split from our keyword classifier (X posts, 10–17 July, same week for all brands). "Promo posts/week" is the count in that sample week. Note: promotions appear as image tiles and video as well as text, so this is a purpose split, not a pure carve-out of the "Text" bucket.</caption>
+      </table>
+    </div>
+
+    <div class="callout">
+      <span class="tag">What the correction reveals</span>
+      <p>Paddy Power's headline "85% text" is genuine editorial — <b>78% of their feed is non-promotional</b> content that earns attention. Our "53% text" is the opposite: once promotions are stripped out, only <b>48% of our feed is editorial at all</b>, and much of that is image reactions rather than text. We look like a content-led channel in Brandwatch; in reality we're a promotions channel.</p>
+    </div>
+
+    <div class="chart-card" style="margin-top:8px;">
+      <h4>Posts by format — the mix, in absolute numbers</h4>
+      <p class="cap">Our blue image block dwarfs everyone's. Paddy Power's bar is almost entirely text (black). Video (lime) is a sliver for us and Betfred's secret weapon.</p>
+      <div class="chart-box tall"><canvas id="formatMix"></canvas></div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">🖼️</span>We're the image brand in a text world</div><p>40% of our posts are images vs 4–18% for everyone else. We produce <b>~580 image posts</b> in 61 days — the format that generates the least engagement per post.</p></div>
+      <div class="ins"><div class="h"><span class="em">🎬</span>Video is our single biggest gap</div><p>At ~5% we're near the bottom for video. Betfred runs <b>17%</b> and it drives an outsized share of their engagement. This is the clearest open goal.</p></div>
+      <div class="ins"><div class="h"><span class="em">💬</span>Their "text" is editorial; ours is promo</div><p>Paddy Power's text bucket is genuine banter and reaction (78% of their feed is non-promo). Ours is mostly promotions in disguise — the cheap, high-performing editorial text is what we actually under-use.</p></div>
+      <div class="ins"><div class="h"><span class="em">⚖️</span>Effort in the wrong place</div><p>Image posts are the most <b>design-heavy</b> to produce, yet return the least. We're spending our scarcest resource — design time — on our lowest-yield format.</p></div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">Why this matters for "post less"</span>
+      <p>The engagement-by-format data is stark: on X, <b>text and video drive almost all engagement</b>, while image posts drive very little. We over-produce the low-yield format and under-produce the high-yield ones. Cutting image volume doesn't just save time — it frees the design hours to make the <b>video and reactive text</b> that actually perform.</p>
+    </div>
+
+    <h3>Instagram — a different formats picture (and a harder truth)</h3>
+    <p>On Instagram the story flips. The winners here are built almost entirely on <b>video</b> — Paddy Power ~80%, Bet365 ~90%. We're more spread out — video 44% of posts, single images 37%, carousels 19% — and our carousels barely engage. Paddy Power's video pulls <b>~4.7M reach and ~417K engagement</b>; ours barely registers. Our IG problem is twofold: not enough video, and the video we make doesn't yet compete on craft.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Total IG posts</th>
+            <th class="num">Video</th>
+            <th class="num">Image</th>
+            <th class="num">Carousel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">244</td><td class="num">44%</td><td class="num">37%</td><td class="num">19%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">108</td><td class="num">80%</td><td class="num">11%</td><td class="num">9%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">61</td><td class="num">90%</td><td class="num">7%</td><td class="num">3%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">26</td><td class="num">38%</td><td class="num">38%</td><td class="num">23%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#191919"></span>Betway</td><td class="num">125</td><td class="num">10%</td><td class="num">73%</td><td class="num">18%</td></tr>
+        </tbody>
+        <caption>Cross-brand shares from Brandwatch's competitive benchmarking tool — the only source with competitor data. Shares approximate and total ~100% per brand.</caption>
+      </table>
+    </div>
+
+    <div class="chart-card" style="margin-top:8px;">
+      <h4>Instagram posts by format</h4>
+      <p class="cap">The winners lean almost entirely on video (lime). We still carry the heaviest image load (blue) of the serious players — and it's our images that drag the mix down.</p>
+      <div class="chart-box tall"><canvas id="formatMixIG"></canvas></div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">🎥</span>The winners go all-in on video; we don't</div><p>Paddy Power and Bet365 build their IG on video. We split across video (44%), single images (37%) and carousels (19%) — diluting focus on the one format that wins.</p></div>
+      <div class="ins"><div class="h"><span class="em">🎠</span>Carousels are underperforming</div><p>Our carousels are 19% of posts but return just <b>7% of our engagement</b> (~15/post) — our weakest static format. A strong case to <b>post fewer and rework the approach</b>, rather than scrap them.</p></div>
+      <div class="ins"><div class="h"><span class="em">🏆</span>The winners specialise</div><p>Bet365 (90%) and Paddy Power (80%) go almost all-in on video. Our spread across three formats dilutes focus and quality on the one that matters.</p></div>
+      <div class="ins"><div class="h"><span class="em">🔗</span>Same conclusion, both platforms</div><p>X says "do more video"; IG says "make the video count". Both point to <b>fewer posts, more time, higher craft</b> — the core of this plan.</p></div>
+    </div>
+
+    <h3>The craft gap, quantified — video engagement</h3>
+    <p>Brandwatch's IG "engagement format mix" makes the point impossible to ignore. Video drives roughly <b>85% of Paddy Power's total Instagram engagement</b> — it is the format that matters, and it pulls them <b>~4.7M reach</b>. But the per-post comparison stings: from a similar number of video posts, we earn a tiny fraction of the return.</p>
+
+    <div class="stat-row" style="margin:20px 0;">
+      <div class="stat"><div class="big" style="color:#9aa0b0;">~4,100</div><div class="lbl">Paddy Power — engagement per IG video post</div></div>
+      <div class="stat"><div class="big bad">~49</div><div class="lbl">BOYLE Sports — engagement per IG video post</div></div>
+      <div class="stat"><div class="big gold">~85×</div><div class="lbl">Their video return vs ours — same format</div></div>
+      <div class="stat"><div class="big">~4.7M</div><div class="lbl">Paddy Power video reach — we earn a fraction</div></div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">The takeaway</span>
+      <p>An ~85× gap on the same format, on the same platform, in the same window, can't be explained by volume or format choice — it's <b>craft, concept and production quality</b>. Every hour we save by posting fewer low-yield static posts is an hour we can put into making video that competes.</p>
+    </div>
+
+    <h3>The engagement we earn from each IG format — our own numbers</h3>
+    <p>Using Brandwatch's format-mix view of our published feed (244 posts, 15 May–15 Jul), which separates video, single images and carousels, here's how each format performs for us:</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Format</th>
+            <th class="num">Posts</th>
+            <th class="num">Total engagement</th>
+            <th class="num">Avg. engagement / post</th>
+            <th class="num">% of our posts</th>
+            <th class="num">% of our engagement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="me"><td><span class="brand-dot" style="background:#d1f20c"></span>Video (incl. Reels)</td><td class="num">107</td><td class="num">5,280</td><td class="num">49</td><td class="num">44%</td><td class="num">54%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#9aa0b0"></span>Single image</td><td class="num">90</td><td class="num">3,790</td><td class="num">42</td><td class="num">37%</td><td class="num">39%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#2400f6"></span>Carousel</td><td class="num">47</td><td class="num">687</td><td class="num">15</td><td class="num">19%</td><td class="num">7%</td></tr>
+          <tr class="avg"><td>All formats (average)</td><td class="num">244</td><td class="num">9,760</td><td class="num">40</td><td class="num">100%</td><td class="num">100%</td></tr>
+        </tbody>
+        <caption>BOYLE Sports Instagram, 15 May–15 Jul, Brandwatch format-mix view of published posts. Per-post and shares calculated. Source: Brandwatch.</caption>
+      </table>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>Average engagement per IG post, by format</h4>
+        <p class="cap">Dashed line = our channel average of 40 per post. Video (49) and single images (42) sit above it; carousels (15) drag well below.</p>
+        <div class="chart-box"><canvas id="igEngFormat"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Share of posts vs. share of engagement</h4>
+        <p class="cap">Carousels are 19% of our posts but only 7% of our engagement — effort that isn't earning its place.</p>
+        <div class="chart-box"><canvas id="igShare"></canvas></div>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">😐</span>Video barely beats a static image</div><p>At 49 vs 42 per post, our video carries almost no premium over a still — on a healthy channel it should be several times higher. A <b>quality signal</b>, not a format one.</p></div>
+      <div class="ins"><div class="h"><span class="em">🎠</span>Carousels are our weakest format</div><p>19% of our posts, just 7% of our engagement, ~15 per post — our lowest-yield IG format. Worth posting less often or reworking, rather than cutting outright.</p></div>
+    </div>
+
+    <h3>How promotional are we? — the market, ranked</h3>
+    <p>We exported a full week of X posts (<b>10–17 July</b>) for four brands — 506 posts in total — and ran every one through the <b>same</b> keyword classifier, flagging offers, casino/slots, competitions and betting/odds language as <b>promotional</b> and match reaction, stats, banter and questions as <b>editorial</b>. The classifier is tuned to catch betting content wherever it appears, including the softer "favourite to win" style used heavily by Bet365.</p>
+
+    <div class="stat-row" style="margin:20px 0;">
+      <div class="stat"><div class="big" style="color:#1d00c2;">56%</div><div class="lbl">Bet365 — most promotional of the four</div></div>
+      <div class="stat"><div class="big gold">52%</div><div class="lbl">BOYLE Sports — 88 of 168 posts</div></div>
+      <div class="stat"><div class="big" style="color:#9aa0b0;">22%</div><div class="lbl">Paddy Power — the highest-engagement brand</div></div>
+      <div class="stat"><div class="big">16%</div><div class="lbl">Betfred — least promotional</div></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>Promotional vs. editorial across the market</h4>
+        <p class="cap">Share of X posts, 10–17 July, ranked by promotional intensity.</p>
+        <div class="chart-box tall"><canvas id="promoCompare"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>What drives our "promotional" tag</h4>
+        <p class="cap">Signals across our 88 promotional posts (a post can carry more than one).</p>
+        <div class="chart-box tall"><canvas id="promoSignals"></canvas></div>
+      </div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th class="num">Promotional</th>
+            <th class="num">Editorial</th>
+            <th class="num">Posts</th>
+            <th class="num">Engagement rate (X)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="brand-dot" style="background:#14805e"></span>Bet365</td><td class="num">56%</td><td class="num">44%</td><td class="num">113</td><td class="num">0.25%</td></tr>
+          <tr class="me"><td><span class="brand-dot" style="background:#2400f6"></span>BOYLE Sports</td><td class="num">52%</td><td class="num">48%</td><td class="num">168</td><td class="num">0.01%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#00a03e"></span>Paddy Power</td><td class="num">22%</td><td class="num">78%</td><td class="num">145</td><td class="num">1.04%</td></tr>
+          <tr><td><span class="brand-dot" style="background:#c8102e"></span>Betfred</td><td class="num">16%</td><td class="num">84%</td><td class="num">80</td><td class="num">0.02%</td></tr>
+        </tbody>
+        <caption>Promotional / editorial split from the classifier (X posts, 10–17 Jul). Engagement rate is the Brandwatch X figure for 15 May–15 Jul, shown for reference. Source: Brandwatch.</caption>
+      </table>
+    </div>
+
+    <div class="callout">
+      <span class="tag">Reading the table</span>
+      <p>BOYLE Sports and Bet365 are the heaviest sellers, both above 50%; Paddy Power and Betfred sit around a fifth. Set against the engagement-rate column, the pattern is hard to miss: <b>Paddy Power posts the least promotion and carries by far the highest engagement rate (1.04%)</b>, while our own rate — with the second-heaviest promo load — is the lowest of the four at 0.01%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section id="notworking">
+  <div class="wrap">
+    <span class="sec-num">Section 4</span>
+    <h2>What's Working, What Isn't — The Posts We Can Cut</h2>
+    <p class="lead">Pulling every strand of the analysis together, the data points to a clear set of cut candidates — then, using our full Brandwatch content export, shows exactly which formats and themes earn engagement and which don't. Cut the losers, protect the winners.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Cut candidate</th>
+            <th>What the data shows</th>
+            <th>Why it's the right call</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Static image posts on X</b></td><td>Images earn just <b>1.3 eng/post</b> — the lowest of any X format (text 4.8, video 6.5) — yet they're ~40% of our X output.</td><td>Biggest single time-saver. The most design-heavy format to make, returning the least — effort in the wrong place.</td></tr>
+          <tr><td><b>Polls on X</b></td><td>Effectively dead at <b>0.3 eng/post</b> across the window — the weakest format on the platform.</td><td>Near-zero return for the space they take. Stop entirely unless there's a specific reason.</td></tr>
+          <tr><td><b>Over-promotion on X</b></td><td><b>52% of our X posts are promotional</b> — vs just <b>22% for Paddy Power</b>, the runaway engagement leader, and 16% for Betfred.</td><td>Promos crowd out the editorial content that builds audience. Rebalancing the ratio is the single clearest lever.</td></tr>
+          <tr><td><b>Low-interest sports coverage on X</b></td><td>Consistently below par: NBA (0.3), UEL (0.2), OPTA (0.4), Tennis (0.7), Golf (0.8) — all a fraction of a strong post.</td><td>Niche coverage that reliably doesn't land. Trim to focus effort on the sports our audience actually engages with.</td></tr>
+          <tr><td><b>Instagram carousels (reduce / rework)</b></td><td>19% of our IG posts but only 7% of our engagement — <b>~15 eng/post vs ~42 for a single image</b> (format-mix view), our weakest IG format.</td><td>Not a hard cut — post fewer and rethink the format, redirecting the freed effort into video (which earns 3× more).</td></tr>
+          <tr><td><b>Casino / Gaming posts on Instagram</b></td><td>Our <b>worst-performing IG theme</b> — 0.68% engagement rate, ~1.4 eng/post — well below every sports theme.</td><td>Lowest-yield subject on the channel. Cut back or rethink the format entirely.</td></tr>
+          <tr><td><b>"Constant-volume" filler on quiet days</b></td><td>We post a flat <b>20–40/day regardless of the fixtures</b>; Paddy Power spikes to ~96 on big days and eases off otherwise.</td><td>Volume isn't matched to opportunity. A daily quota creates posts nobody asked for and drains the team.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">✂️</span>Cut the format, not the channel</div><p>The common thread: our lowest-engaging output is also our most <b>time-expensive</b> to make. Cutting it is a double win — less effort out, no engagement lost.</p></div>
+      <div class="ins"><div class="h"><span class="em">📉</span>"Always-on" ≠ "always valuable"</div><p>A daily quota creates posts nobody asked for. Matching output to <b>real moments</b> beats a flat line of filler every time.</p></div>
+    </div>
+
+    <h3>What actually performs — our own content, by format</h3>
+    <p>Grouping our content by format confirms the cut list (X figures from the post-level export; IG from the format-mix view). The pattern is the same on both channels: <b>video wins, and static formats — especially carousels — lag</b>.</p>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>X — engagement per post by format</h4>
+        <p class="cap">Video and text earn 4–5× what image posts do. Polls are effectively dead.</p>
+        <div class="chart-box"><canvas id="s4xFormat"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Instagram — engagement per post by format</h4>
+        <p class="cap">Video (49) and single images (42) lead; carousels (15) are the weakest static format by a distance.</p>
+        <div class="chart-box"><canvas id="s4igFormat"></canvas></div>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="ins"><div class="h"><span class="em">🎬</span>Video leads, but only just</div><p>IG video averages <b>49/post</b> vs 42 for a single image — barely a premium, when it should be multiples. A quality signal: our video needs to be better, not just more frequent.</p></div>
+      <div class="ins"><div class="h"><span class="em">🎠</span>Carousels are the weak link</div><p>At <b>~15/post</b> — a third of a single image — carousels are our lowest-yield IG format. A clear case to reduce and rework, not scrap.</p></div>
+    </div>
+
+    <h3>What actually performs — by content theme</h3>
+    <p>Brandwatch's labels let us rank content by <i>subject</i> too. A handful of themes punch far above their weight; the high-volume staples we lean on are middling at best.</p>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>X — engagement per post by theme</h4>
+        <p class="cap">Ambassadors and GAA lead; our biggest-volume themes (Football, World Cup, Stats) sit near the bottom.</p>
+        <div class="chart-box tall"><canvas id="s4xTheme"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Instagram — engagement rate by theme</h4>
+        <p class="cap">Ambassadors, From The Stands and Stats lead on rate; the big unlabelled bulk sits at the bottom. (Gaming covered separately below.)</p>
+        <div class="chart-box tall"><canvas id="s4igTheme"></canvas></div>
+      </div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Verdict</th><th>Works well — protect &amp; scale</th><th>Underperforms — cut or rethink</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Format</b></td><td>X: video &amp; text · IG: <b>video</b> (49/post) &amp; single images</td><td>X: static images (1.3/post), polls · IG: <b>carousels</b> (15/post — weakest static format)</td></tr>
+          <tr><td><b>Theme</b></td><td><b>Ambassadors</b> (X 11.9/post; IG 312/post, 2.26%) · <b>GAA</b> (X 5.1; IG 55/post) · niche cup football (UCL/UECL) · From The Stands · Line-Ups</td><td><b>Gaming/Casino</b> (IG 0.68% — worst theme) · low-interest sports on X (NBA, Tennis, Golf, OPTA, UEL) · generic Tables</td></tr>
+          <tr><td><b>Channel split</b></td><td><b>Stats</b> is a winner on IG (1.52% ER, 6.7/post)</td><td>…but a loser on X (0.9/post) — don't treat channels the same</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Spotlight: Gaming content</h3>
+    <p>Gaming deserves its own look, because we produce so much of it. We post around <b>8–9 Gaming videos every week</b> on Instagram — of our 107 IG videos in the window, roughly <b>two-thirds are Gaming</b>. Yet it's our single <b>worst-performing theme</b>: Instagram's own breakdown shows that <b>every one of our Gaming videos ranks below all our other content</b> for reach, viewership and engagement. We're pouring the majority of our video effort into the content that works least — and, at sometimes two Gaming posts a day, it's a major reason we out-post the average IG competitor by <b>2.5×</b>.</p>
+
+    <div class="stat-row" style="margin:20px 0;">
+      <div class="stat"><div class="big">71</div><div class="lbl">Gaming posts in 61 days — ~8–9 videos/week</div></div>
+      <div class="stat"><div class="big">0</div><div class="lbl">New follows generated by all 71 Gaming posts</div></div>
+      <div class="stat"><div class="big">19</div><div class="lbl">Profile visits from all 71 Gaming posts combined</div></div>
+      <div class="stat"><div class="big">203</div><div class="lbl">Average reach per Gaming post — the lowest of any theme</div></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h4>Share of our IG video output</h4>
+        <p class="cap">Roughly two-thirds of the video we make on Instagram is Gaming — our lowest-engaging theme.</p>
+        <div class="chart-box"><canvas id="gamingVideoShare"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h4>Engagement rate — Gaming vs. our best themes</h4>
+        <p class="cap">Gaming (0.68%) sits far below the sport and ambassador content that earns attention.</p>
+        <div class="chart-box"><canvas id="gamingCompare"></canvas></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">Organically, it adds almost nothing</span>
+      <p>Across the whole window, <b>71 Gaming posts earned a combined 98 engagements, 19 profile visits and zero new follows</b>. That isn't a small underperformance — it's the majority of our Instagram video production returning next to no organic value and <b>nothing at all in growth</b>. The audience we've built on sport simply doesn't come to us for casino content.</p>
+    </div>
+
+    <div class="callout" style="background:#fff4f4;border-color:#e7b7b7;border-left-color:#191919;">
+      <span class="tag" style="color:#191919;">The evidence it could be hurting our reach</span>
+      <p>Instagram doesn't distribute posts evenly. Head of Instagram Adam Mosseri has described an <b>"audition system"</b>: every post is first shown to a small test group, and only pushed to a wider audience if they engage. Gaming's rock-bottom engagement means it <b>fails that audition every time</b> — which is exactly why its average reach is just 203. Instagram's own guidance compounds the concern:</p>
+      <ul style="margin:10px 0 0;padding-left:20px;font-size:14.5px;color:#191919;">
+        <li>Mosseri states <b>engagement rate matters more than reach</b>, and that you should post the content <b>"your ideal follower will engage with"</b> — Gaming is the opposite for a sports audience.</li>
+        <li>He warns that pushing volume <b>above the optimal threshold without maintaining quality "can actually hurt your algorithmic standing."</b> Instagram suggests ~2–4 Reels/week; we post <b>8–9 Gaming videos/week</b> alone.</li>
+      </ul>
+      <p style="margin-top:10px;">Instagram doesn't publicly confirm a blanket account-wide penalty, so we can't state it as fact — but every mechanism they <i>have</i> described points the same way: <b>high-volume, low-engagement Gaming content is at best wasted effort, and at worst is teaching the algorithm to expect little from us and limiting the reach of the content that performs.</b></p>
+      <p style="font-size:12px;opacity:.7;margin-top:10px;">Sources: Adam Mosseri / Instagram on ranking signals and the "audition" test-group system; Mosseri on engagement rate vs. reach and sustainable, quality-first posting (2025).</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section id="better">
+  <div class="wrap">
+    <span class="sec-num">Section 5</span>
+    <h2>What We Could Do Better With More Time</h2>
+    <p class="lead">The pay-off. Each of the six branches from the plan of action, made concrete — what "good" looks like when the hours freed up by posting less are reinvested.</p>
+
+    <div class="branches">
+      <div class="branch" style="border-left-color:#2400f6;">
+        <div class="branch-head"><span class="bic">✍️</span><h3>Better Content</h3></div>
+        <p>Reducing the daily volume gives each post a clearer purpose: entertain, inform, react or convert. Instead of producing constant image-led filler to meet a quota, the team can spend more time on stronger concepts, sharper copy, better creative and the content themes that have already proved they can earn attention.</p>
+        <div class="branch-change"><b>What changes</b> — Fewer posts, but every post has a reason to exist and a higher creative standard.</div>
+      </div>
+
+      <div class="branch" style="border-left-color:#2400f6;">
+        <div class="branch-head"><span class="bic">🗓️</span><h3>Better Planning</h3></div>
+        <p>The current always-on pace leaves little room to plan beyond the immediate calendar. With fewer low-value posts to turn around each day, the team can build a proper weekly content plan around fixtures, tentpole moments, campaigns and priority products — while still leaving space for the unexpected.</p>
+        <div class="branch-change"><b>What changes</b> — Move from filling a daily schedule to planning around the moments that matter most.</div>
+      </div>
+
+      <div class="branch" style="border-left-color:#d1f20c;">
+        <div class="branch-head"><span class="bic">🎬</span><h3>More Video</h3></div>
+        <p>Video is the clearest format opportunity across both channels, but good video needs time: concepts, filming or sourcing, editing, approvals and platform-native finishing. Cutting low-return static posts and carousels creates the production capacity to make fewer, more distinctive videos rather than treating video as another item on an already overloaded checklist.</p>
+        <div class="branch-change"><b>What changes</b> — Prioritise purposeful, higher-craft video over routine static output — especially for major fixtures, ambassadors and reactive moments.</div>
+      </div>
+
+      <div class="branch" style="border-left-color:#15008f;">
+        <div class="branch-head"><span class="bic">⚡</span><h3>More Reactive</h3></div>
+        <p>A flat publishing rhythm means the team is busy even when nothing significant is happening, and has less capacity when something does. Reducing baseline volume gives the team the headspace to react quickly to match moments, fan conversation, breaking stories and cultural opportunities without sacrificing planned work or rushing the creative.</p>
+        <div class="branch-change"><b>What changes</b> — Flex output around opportunity: quieter on quiet days, faster and more ambitious when the moment is worth it.</div>
+      </div>
+
+      <div class="branch" style="border-left-color:#1d00c2;">
+        <div class="branch-head"><span class="bic">📊</span><h3>Better Analysis</h3></div>
+        <p>When production is relentless, performance review becomes an afterthought. Protected time each week would allow the team to identify what worked, what did not, and why — then use that learning to improve the next week's content rather than repeating the same output pattern.</p>
+        <div class="branch-change"><b>What changes</b> — Introduce a simple weekly review of formats, themes, creative approaches and platform performance, with clear actions fed back into the plan.</div>
+      </div>
+
+      <div class="branch" style="border-left-color:#1d00c2;">
+        <div class="branch-head"><span class="bic">😌</span><h3>Less Team Pressure</h3></div>
+        <p>The issue is not effort; it is a workflow built around constant output. High posting volume creates continuous briefing, design, approvals, publishing and reporting pressure, leaving little room for proactive work or recovery. A more deliberate rhythm lets the team focus on quality, make better decisions and work sustainably without reducing ambition.</p>
+        <div class="branch-change"><b>What changes</b> — Replace a constant-content treadmill with a quality-first operating model that gives the team room to plan, create, react and learn.</div>
+      </div>
+    </div>
+
+    <h3>A pilot to test the theory — proposed targets</h3>
+    <p>Rather than change everything at once, we run a focused pilot: cut the low-yield output the data has flagged, and channel the freed time straight into the formats and content that perform. Illustrative targets to agree as a team:</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Current</th>
+            <th>Pilot target</th>
+            <th>Reinvest in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><b>X output</b></td><td style="color:#9aa0b0;font-weight:700;">166 posts/week</td><td style="color:#2400f6;font-weight:700;">e.g. 80–100/week</td><td>Reactive editorial, video</td></tr>
+          <tr><td><b>X image posts</b></td><td style="color:#9aa0b0;font-weight:700;">~40%</td><td style="color:#2400f6;font-weight:700;">e.g. &lt;15%</td><td>Higher-impact formats</td></tr>
+          <tr><td><b>IG carousels</b></td><td style="color:#9aa0b0;font-weight:700;">19%</td><td style="color:#2400f6;font-weight:700;">e.g. &lt;8%</td><td>Reels / video concepts</td></tr>
+          <tr><td><b>Promotional X posts</b></td><td style="color:#9aa0b0;font-weight:700;">52%</td><td style="color:#2400f6;font-weight:700;">e.g. &lt;35%</td><td>Audience-building editorial</td></tr>
+        </tbody>
+        <caption>Illustrative pilot targets — final numbers to be set with the team. Each cut is matched to a reinvestment, so "post less" translates directly into "do more of what works".</caption>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>BOYLE Sports — Social Media Strategy.</b> Data window 15 May – 15 Jul 2026 (61 days). Source: Brandwatch, X &amp; Instagram. Per-day and per-week figures calculated from period totals.</p>
+    <p>Draft for internal review · Pilot targets illustrative, to be agreed with the team.</p>
+  </div>
+</footer>
+<div class="divider"></div>
+
+<script>
+Chart.defaults.font.family = "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+Chart.defaults.font.size = 12.5;
+Chart.defaults.color = "#5b6478";
+const NAVY="#191919", BLUE="#2400f6", GOLD="#d1f20c", GOLDD="#2400f6", GREY="#c4cbe0", AVG="#9aa0b0";
+// Brand-relative colours (approximating each brand's real-world identity)
+const BRAND={"BOYLE Sports":"#2400f6","Paddy Power":"#00a03e","Bet365":"#14805e","Betfred":"#c8102e","Betway":"#191919","Industry avg":"#9aa0b0","Industry avg (Online Media)":"#9aa0b0"};
+const brandCol=l=>BRAND[l]||"#9aa0b0";
+
+function barChart(id, labels, data, meIndex, opts){
+  opts = opts || {};
+  const colors = labels.map((l,i)=> brandCol(l));
+  new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{labels, datasets:[{data, backgroundColor:colors, borderRadius:6, barPercentage:0.72, categoryPercentage:0.8}]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>' '+c.parsed.y.toLocaleString()+(opts.suffix||'')}}},
+      scales:{
+        y:{beginAtZero:true, type:opts.log?'logarithmic':'linear', grid:{color:'#eef1f7'}, ticks:{callback:v=>v.toLocaleString()}},
+        x:{grid:{display:false}}
+      }
+    }
+  });
+}
+
+// X posts per week
+barChart('xPosts',
+  ['Paddy Power','BOYLE Sports','Bet365','Betfred','Betway','Industry avg'],
+  [235,166,114,95,24,42], 1, {avgIndex:5});
+
+// X engagement per post
+barChart('xEng',
+  ['Paddy Power','Bet365','Betfred','Betway','BOYLE Sports'],
+  [751,130,27.9,13.1,3.3], 4, {});
+
+// IG posts per week
+barChart('igPosts',
+  ['BOYLE Sports','Betway','Paddy Power','Bet365','Betfred','Industry avg'],
+  [28,14,12,7,3,12], 0, {avgIndex:5});
+
+// IG engagement per post (log)
+barChart('igEng',
+  ['Paddy Power','Bet365','Betway','BOYLE Sports','Betfred'],
+  [3864,458,58,40,19], 3, {log:true});
+
+// Daily posting pattern (X) — illustrative of Brandwatch "posts over time"
+new Chart(document.getElementById('dailyPattern'), {
+  type:'line',
+  data:{
+    labels:['15 May','18','21','24','27','30','2 Jun','5','8','11','14','17','20','23','26','29','2 Jul','5','8','11','14'],
+    datasets:[
+      {label:'BOYLE Sports', data:[32,35,18,17,15,18,20,28,20,18,25,35,28,32,24,40,30,26,35,22,30],
+       borderColor:BRAND['BOYLE Sports'], backgroundColor:BRAND['BOYLE Sports'], borderWidth:3, tension:.4, pointRadius:0},
+      {label:'Paddy Power', data:[30,25,6,3,2,3,5,12,9,40,72,96,58,78,60,80,70,78,34,16,42],
+       borderColor:BRAND['Paddy Power'], backgroundColor:BRAND['Paddy Power'], borderWidth:3, tension:.4, pointRadius:0},
+      {label:'Bet365', data:[22,15,12,14,10,12,14,16,12,15,20,25,22,24,18,26,22,20,24,18,30],
+       borderColor:BRAND['Bet365'], backgroundColor:BRAND['Bet365'], borderWidth:2, tension:.4, pointRadius:0},
+      {label:'Betfred', data:[8,10,12,10,8,12,15,18,14,16,20,22,25,20,22,25,20,18,22,15,28],
+       borderColor:BRAND['Betfred'], backgroundColor:BRAND['Betfred'], borderWidth:2, tension:.4, pointRadius:0}
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{position:'top'}, tooltip:{mode:'index',intersect:false}},
+    scales:{
+      y:{beginAtZero:true, title:{display:true,text:'Posts per day'}, grid:{color:'#eef1f7'}},
+      x:{grid:{display:false}, ticks:{maxRotation:0, autoSkip:true, maxTicksLimit:11}}
+    }
+  }
+});
+
+// Format mix — stacked horizontal bar (X posts by format)
+const fmtBrands=['BOYLE Sports','Paddy Power','Bet365','Betfred','Betway'];
+const fmt={
+  Image:[580,90,140,150,120],
+  Text:[770,1740,770,512,60],
+  Video:[70,130,41,140,10],
+  Link:[20,60,15,15,10],
+  Poll:[10,30,25,10,8]
+};
+const fmtColors={Image:'#2400f6',Text:'#191919',Video:'#d1f20c',Link:'#6a5cff',Poll:'#15008f'};
+new Chart(document.getElementById('formatMix'),{
+  type:'bar',
+  data:{labels:fmtBrands,datasets:Object.keys(fmt).map(k=>({
+    label:k,data:fmt[k],backgroundColor:fmtColors[k],borderWidth:0,barPercentage:0.72
+  }))},
+  options:{
+    indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>' '+c.dataset.label+': '+c.parsed.x.toLocaleString()}}},
+    scales:{
+      x:{stacked:true,beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Posts (15 May – 15 Jul)'}},
+      y:{stacked:true,grid:{display:false}}
+    }
+  }
+});
+
+// Instagram format mix — stacked horizontal bar
+const igBrands=['BOYLE Sports','Paddy Power','Bet365','Betfred','Betway'];
+const igFmt={
+  Video:[107,86,55,10,12],
+  Image:[90,12,4,10,91],
+  Carousel:[47,10,2,6,22]
+};
+const igColors={Video:'#d1f20c',Image:'#2400f6',Carousel:'#191919'};
+new Chart(document.getElementById('formatMixIG'),{
+  type:'bar',
+  data:{labels:igBrands,datasets:Object.keys(igFmt).map(k=>({
+    label:k,data:igFmt[k],backgroundColor:igColors[k],borderWidth:0,barPercentage:0.72
+  }))},
+  options:{
+    indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>' '+c.dataset.label+': '+c.parsed.x.toLocaleString()}}},
+    scales:{
+      x:{stacked:true,beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Posts (15 May – 15 Jul)'}},
+      y:{stacked:true,grid:{display:false}}
+    }
+  }
+});
+
+// Our IG engagement per post, by format (with channel-average reference line)
+new Chart(document.getElementById('igEngFormat'),{
+  data:{labels:['Video','Single image','Carousel'],datasets:[
+    {type:'bar',label:'Engagement per post',data:[49,42,15],backgroundColor:['#2400f6','#1d00c2','#9aa0b0'],borderRadius:6,barPercentage:0.6,order:2},
+    {type:'line',label:'Channel average (40)',data:[40,40,40],borderColor:'#191919',borderWidth:2,borderDash:[6,5],pointRadius:0,order:1}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'top'},tooltip:{callbacks:{label:c=>c.dataset.type==='line'?' Channel average: 12 per post':' '+c.parsed.y+' per post'}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagement per post'}},x:{grid:{display:false}}}
+  }
+});
+
+// Promotional vs editorial across the market (X, 10–17 Jul), ranked by promo%
+new Chart(document.getElementById('promoCompare'),{
+  type:'bar',
+  data:{labels:['Bet365','BOYLE Sports','Paddy Power','Betfred'],datasets:[
+    {label:'Promotional',data:[56,52,22,16],backgroundColor:'#d1f20c',borderRadius:5,stack:'s'},
+    {label:'Editorial',data:[44,48,78,84],backgroundColor:'#2400f6',borderRadius:5,stack:'s'}
+  ]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>' '+c.dataset.label+': '+c.parsed.x+'%'}}},
+    scales:{x:{stacked:true,beginAtZero:true,max:100,grid:{color:'#eef1f7'},ticks:{callback:v=>v+'%'}},y:{stacked:true,grid:{display:false}}}
+  }
+});
+
+// Promotional signal frequency
+new Chart(document.getElementById('promoSignals'),{
+  type:'bar',
+  data:{labels:['Sportsbook / offers','Price / money','Casino & slots','Competitions'],datasets:[{
+    data:[77,19,12,5],backgroundColor:['#2400f6','#1d00c2','#15008f','#d1f20c'],borderRadius:6,barPercentage:0.7
+  }]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.x+' posts'}}},
+    scales:{x:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Posts flagged (of 88 promotional)'}},y:{grid:{display:false}}}
+  }
+});
+
+// Section 4 — X engagement per post by format
+new Chart(document.getElementById('s4xFormat'),{
+  type:'bar',
+  data:{labels:['Video','Text','Link','Image','Poll'],datasets:[{
+    data:[6.5,4.8,2.0,1.3,0.3],
+    backgroundColor:['#2400f6','#2400f6','#9aa0b0','#9aa0b0','#9aa0b0'],borderRadius:6,barPercentage:0.7
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.y+' eng/post'}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagements per post'}},x:{grid:{display:false}}}}
+});
+
+// Section 4 — IG engagement per post by format
+new Chart(document.getElementById('s4igFormat'),{
+  type:'bar',
+  data:{labels:['Video','Single image','Carousel'],datasets:[{
+    data:[49,42,15],
+    backgroundColor:['#2400f6','#1d00c2','#9aa0b0'],borderRadius:6,barPercentage:0.7
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.y+' eng/post'}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagements per post'}},x:{grid:{display:false}}}}
+});
+
+// Section 4 — X theme (eng/post)
+(function(){
+  const L=['Ambassadors','GAA','Line-Up','UCL','Football','World Cup','Stats','NBA','UEL'];
+  const V=[11.9,5.1,3.8,3.3,1.4,1.3,0.9,0.3,0.2];
+  new Chart(document.getElementById('s4xTheme'),{
+    type:'bar',
+    data:{labels:L,datasets:[{data:V,backgroundColor:V.map(v=>v>=3?'#2400f6':(v<=1?'#9aa0b0':'#9aa0b0')),borderRadius:5,barPercentage:0.8}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.x+' eng/post'}}},
+      scales:{x:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagements per post'}},y:{grid:{display:false}}}}
+  });
+})();
+
+// Section 4 — IG theme (engagement rate %)
+(function(){
+  const L=['Ambassadors','From The Stands','Tables','Stats','GAA','Football','World Cup','Unlabelled'];
+  const V=[2.26,2.10,1.90,1.52,1.36,1.12,0.92,0.47];
+  new Chart(document.getElementById('s4igTheme'),{
+    type:'bar',
+    data:{labels:L,datasets:[{data:V,backgroundColor:V.map(v=>v>=1.3?'#2400f6':(v<=0.8?'#9aa0b0':'#9aa0b0')),borderRadius:5,barPercentage:0.8}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.x+'% ER'}}},
+      scales:{x:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagement rate (reach)'},ticks:{callback:v=>v+'%'}},y:{grid:{display:false}}}}
+  });
+})();
+
+// Share of posts vs share of engagement (IG)
+new Chart(document.getElementById('igShare'),{
+  type:'bar',
+  data:{labels:['Video','Single image','Carousel'],datasets:[
+    {label:'% of posts',data:[44,37,19],backgroundColor:'#191919',borderRadius:6,barPercentage:0.8,categoryPercentage:0.7},
+    {label:'% of engagement',data:[54,39,7],backgroundColor:'#2400f6',borderRadius:6,barPercentage:0.8,categoryPercentage:0.7}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{position:'top'},tooltip:{callbacks:{label:c=>' '+c.dataset.label+': '+c.parsed.y+'%'}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#eef1f7'},ticks:{callback:v=>v+'%'}},x:{grid:{display:false}}}
+  }
+});
+
+// Gaming — share of IG video output
+new Chart(document.getElementById('gamingVideoShare'),{
+  type:'doughnut',
+  data:{labels:['Gaming video (71)','Other video (36)'],datasets:[{
+    data:[71,36],backgroundColor:['#191919','#2400f6'],borderColor:'#fff',borderWidth:3
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
+    plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>' '+c.label+' — '+Math.round(c.parsed/107*100)+'%'}}}}
+});
+
+// Gaming — engagement rate vs best themes
+new Chart(document.getElementById('gamingCompare'),{
+  type:'bar',
+  data:{labels:['Ambassadors','Stats','GAA','Football','Gaming'],datasets:[{
+    data:[2.26,1.52,1.36,1.12,0.68],backgroundColor:['#2400f6','#2400f6','#2400f6','#2400f6','#191919'],borderRadius:6,barPercentage:0.7
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.parsed.y+'% ER'}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#eef1f7'},title:{display:true,text:'Engagement rate (reach)'},ticks:{callback:v=>v+'%'}},x:{grid:{display:false}}}}
+});
+</script>
+</body>
+</html>
