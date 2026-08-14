@@ -2,521 +2,20 @@
 window.SCH_DATA = {
   "weeks": [
     {
-      "label": "13–19 Jul 2026",
-      "commencing": "2026-07-13",
-      "theme": "World Cup Final week · The Open · All-Ireland Hurling Final",
-      "updated": "2026-07-10",
-      "priorities": [
-        {
-          "title": "Argentina v England",
-          "note": "Super Boost · Bet & Get",
-          "level": "high"
-        },
-        {
-          "title": "All-Ireland Hurling Final",
-          "note": "Super Boost",
-          "level": "high"
-        },
-        {
-          "title": "World Cup Final",
-          "note": "Super Boost",
-          "level": "high"
-        },
-        {
-          "title": "The Open",
-          "note": "Boost / Places · Outright Boost · Bet & Get",
-          "level": "med"
-        },
-        {
-          "title": "World Matchplay",
-          "note": "PPB · Bet & Get · EPO",
-          "level": "med"
-        }
-      ],
-      "schedule": [
-        {
-          "date": "2026-07-13",
-          "label": "Monday 13 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "World Cup 2026 - Semi-Final preview",
-              "cat": "schedule"
-            },
-            {
-              "time": "10:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:30",
-              "text": "The Open - 12 Places",
-              "cat": "promo"
-            },
-            {
-              "time": "11:30",
-              "text": "Horse Racing",
-              "cat": "fixture"
-            },
-            {
-              "time": "12:00",
-              "text": "Multi Bet & Get - Horse Racing",
-              "cat": "promo"
-            },
-            {
-              "time": "15:00",
-              "text": "France v Spain",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:00",
-              "text": "World Cup 2026 - Semi-Final schedule",
-              "cat": "schedule"
-            },
-            {
-              "time": "20:00",
-              "text": "France v Spain",
-              "cat": "fixture"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Tuesday 14 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "World Cup 2026 - Semi-Final schedule",
-              "cat": "schedule"
-            },
-            {
-              "time": "10:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:30",
-              "text": "The Open - 12 Places",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "Outright Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "11:30",
-              "text": "France v Spain",
-              "cat": "fixture"
-            },
-            {
-              "time": "12:00",
-              "text": "50% BBB - France v Spain",
-              "cat": "promo"
-            },
-            {
-              "time": "12:30",
-              "text": "Bet 10 Get 5 Squad Builder - France v Spain",
-              "cat": "promo"
-            },
-            {
-              "time": "15:00",
-              "text": "France v Spain",
-              "cat": "fixture"
-            },
-            {
-              "time": "17:00",
-              "text": "EPO",
-              "cat": "promo"
-            },
-            {
-              "time": "18:30",
-              "text": "France v Spain",
-              "cat": "fixture"
-            },
-            {
-              "time": "19:00",
-              "text": "Lineups",
-              "cat": "lineups"
-            },
-            {
-              "time": "19:30",
-              "text": "50% BBB - France v Spain",
-              "cat": "promo"
-            },
-            {
-              "time": "19:45",
-              "text": "Bet 10 Get 5 Squad Builder - France v Spain",
-              "cat": "promo"
-            },
-            {
-              "time": "21:00",
-              "text": "Argentina v England",
-              "cat": "fixture"
-            },
-            {
-              "time": "21:30",
-              "text": "Super Boost - Argentina v England",
-              "cat": "promo"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-15",
-          "label": "Wednesday 15 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "World Cup 2026 - Semi-Final schedule",
-              "cat": "schedule"
-            },
-            {
-              "time": "10:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:30",
-              "text": "The Open - 12 Places",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "Outright Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "11:30",
-              "text": "Argentina v England",
-              "cat": "fixture"
-            },
-            {
-              "time": "12:00",
-              "text": "Super Boost - Argentina v England",
-              "cat": "promo"
-            },
-            {
-              "time": "12:30",
-              "text": "Bet 5 Get 5 + 5 if Qualify - Argentina v England",
-              "cat": "promo"
-            },
-            {
-              "time": "14:00",
-              "text": "Argentina v England",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:00",
-              "text": "Argentina v England",
-              "cat": "fixture"
-            },
-            {
-              "time": "17:00",
-              "text": "EPO",
-              "cat": "promo"
-            },
-            {
-              "time": "18:30",
-              "text": "Argentina v England",
-              "cat": "fixture"
-            },
-            {
-              "time": "19:00",
-              "text": "Lineups",
-              "cat": "lineups"
-            },
-            {
-              "time": "19:30",
-              "text": "Super Boost - Argentina v England",
-              "cat": "promo"
-            },
-            {
-              "time": "19:45",
-              "text": "Bet 5 Get 5 + 5 if Qualify - Argentina v England",
-              "cat": "promo"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-16",
-          "label": "Thursday 16 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "The Open tee times",
-              "cat": "schedule"
-            },
-            {
-              "time": "09:30",
-              "text": "Price Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "Horse Racing",
-              "cat": "fixture"
-            },
-            {
-              "time": "11:30",
-              "text": "Multi Bet & Get - Horse Racing",
-              "cat": "promo"
-            },
-            {
-              "time": "12:00",
-              "text": "World Cup 2026 - Final build-up",
-              "cat": "schedule"
-            },
-            {
-              "time": "13:00",
-              "text": "World Cup 2026 outrights",
-              "cat": "schedule"
-            },
-            {
-              "time": "15:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:00",
-              "text": "World Matchplay",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:30",
-              "text": "Outright PPB - World Matchplay",
-              "cat": "promo"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-17",
-          "label": "Friday 17 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "09:30",
-              "text": "Bet 10 Get 5 - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "Horse Racing",
-              "cat": "fixture"
-            },
-            {
-              "time": "11:30",
-              "text": "Multi Bet & Get - Horse Racing",
-              "cat": "promo"
-            },
-            {
-              "time": "12:00",
-              "text": "Price Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "15:00",
-              "text": "3rd Place Play-Off",
-              "cat": "fixture"
-            },
-            {
-              "time": "15:30",
-              "text": "50% BBB - 3rd Place Play-Off",
-              "cat": "promo"
-            },
-            {
-              "time": "16:00",
-              "text": "World Cup 2026 - Final build-up",
-              "cat": "schedule"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-18",
-          "label": "Saturday 18 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "09:30",
-              "text": "Price Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "10:00",
-              "text": "Horse Racing",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:30",
-              "text": "Best Odds Guaranteed - Horse Racing",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "All-Ireland Hurling Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "11:30",
-              "text": "Super Boost - All-Ireland Hurling Final",
-              "cat": "promo"
-            },
-            {
-              "time": "12:00",
-              "text": "3rd Place Play-Off",
-              "cat": "fixture"
-            },
-            {
-              "time": "12:30",
-              "text": "50% BBB - 3rd Place Play-Off",
-              "cat": "promo"
-            },
-            {
-              "time": "16:00",
-              "text": "World Matchplay",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:30",
-              "text": "EPO - World Matchplay",
-              "cat": "promo"
-            },
-            {
-              "time": "17:00",
-              "text": "Bet & Get - World Matchplay",
-              "cat": "promo"
-            },
-            {
-              "time": "19:30",
-              "text": "EPO",
-              "cat": "promo"
-            },
-            {
-              "time": "20:00",
-              "text": "World Cup Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "20:15",
-              "text": "Super Boost - World Cup Final",
-              "cat": "promo"
-            },
-            {
-              "time": "20:30",
-              "text": "3rd Place Play-Off",
-              "cat": "fixture"
-            },
-            {
-              "time": "21:00",
-              "text": "Lineups",
-              "cat": "lineups"
-            },
-            {
-              "time": "21:30",
-              "text": "50% BBB - 3rd Place Play-Off",
-              "cat": "promo"
-            }
-          ]
-        },
-        {
-          "date": "2026-07-19",
-          "label": "Sunday 19 Jul",
-          "posts": [
-            {
-              "time": "09:00",
-              "text": "World Cup Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:00",
-              "text": "The Open",
-              "cat": "fixture"
-            },
-            {
-              "time": "10:30",
-              "text": "Price Boost - The Open",
-              "cat": "promo"
-            },
-            {
-              "time": "11:00",
-              "text": "Horse Racing",
-              "cat": "fixture"
-            },
-            {
-              "time": "11:30",
-              "text": "Best Odds Guaranteed - Horse Racing",
-              "cat": "promo"
-            },
-            {
-              "time": "12:00",
-              "text": "All-Ireland Hurling Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "12:30",
-              "text": "Super Boost - All-Ireland Hurling Final",
-              "cat": "promo"
-            },
-            {
-              "time": "13:00",
-              "text": "World Cup Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "13:30",
-              "text": "Super Boost - World Cup Final",
-              "cat": "promo"
-            },
-            {
-              "time": "15:00",
-              "text": "World Cup Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:00",
-              "text": "World Matchplay",
-              "cat": "fixture"
-            },
-            {
-              "time": "16:15",
-              "text": "EPO - World Matchplay",
-              "cat": "promo"
-            },
-            {
-              "time": "16:30",
-              "text": "Bet & Get - World Matchplay",
-              "cat": "promo"
-            },
-            {
-              "time": "17:00",
-              "text": "EPO",
-              "cat": "promo"
-            },
-            {
-              "time": "18:30",
-              "text": "World Cup Final",
-              "cat": "fixture"
-            },
-            {
-              "time": "19:00",
-              "text": "Lineups",
-              "cat": "lineups"
-            },
-            {
-              "time": "19:30",
-              "text": "Super Boost - World Cup Final",
-              "cat": "promo"
-            }
-          ]
-        }
-      ]
+      "label": "10–16 Aug 2026",
+      "commencing": "2026-08-10",
+      "theme": "Gaming line-up in — promotions & schedule to follow",
+      "updated": "2026-08-09",
+      "priorities": [],
+      "schedule": []
+    },
+    {
+      "label": "17–23 Aug 2026",
+      "commencing": "2026-08-17",
+      "theme": "Gaming line-up in — promotions & schedule to follow",
+      "updated": "2026-08-14",
+      "priorities": [],
+      "schedule": []
     }
   ],
   "links": [
@@ -539,390 +38,229 @@ window.SCH_DATA = {
   ],
   "promoWeeks": [
     {
-      "label": "13–19 Jul 2026",
-      "items": [
-        {
-          "day": "Monday",
-          "match": "Horse Racing",
-          "competition": "Horse Racing",
-          "promo": "Multi Bet & Get (Bet 10 Get 5): Horse Racing",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
-          "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "",
-          "note": "Daily racing multi bet & get"
-        },
-        {
-          "day": "Tuesday",
-          "match": "France v Spain",
-          "competition": "World Cup",
-          "promo": "50% Bet Builder Boost: France v Spain",
-          "type": "50% BBB",
-          "twitter": "🚀 Win 50% more with Bet Builder Boost as France face Spain in the World Cup.\n\nTap below to view the full market.",
-          "facebook": "Win 50% more with Bet Builder Boost as France face Spain in the World Cup.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/international-world-cup/france-v-spain",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/football/event/international-world-cup/france-v-spain",
-          "image": "",
-          "note": "World Cup semi-final; local BBB asset"
-        },
-        {
-          "day": "Tuesday",
-          "match": "France v Spain",
-          "competition": "World Cup",
-          "promo": "Bet 10 Get 5 Squad Builder: France v Spain",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a Squad Builder for France v Spain in the World Cup.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a Squad Builder for France v Spain in the World Cup.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
-          "air": "https://app.air.inc/b/matches-c2b73d4a-bc7d-4f49-a8b8-933ae731123a",
-          "boylesports": "https://www.boylesports.com/promotions/online/football",
-          "image": "",
-          "note": "World Cup semi-final; football matches design folder"
-        },
-        {
-          "day": "Wednesday",
-          "match": "Argentina v England",
-          "competition": "World Cup",
-          "promo": "Super Boost: Argentina v England",
-          "type": "Super Boost",
-          "twitter": "",
-          "facebook": "",
-          "air": "https://app.bannerflow.com/studio/brand/5553724f320a791594148995/creativeset/1185282?version=1981413",
-          "boylesports": "",
-          "image": "",
-          "note": "World Cup semi-final; football Super Boost creative"
-        },
-        {
-          "day": "Wednesday",
-          "match": "Argentina v England",
-          "competition": "World Cup",
-          "promo": "Bet 5 Get 5 + 5 if Qualify: Argentina v England",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€5 on a Bet Builder for Argentina v England in the World Cup — and £/€5 more if they qualify.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€5 on a Bet Builder for Argentina v England in the World Cup — and £/€5 more if they qualify.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
-          "air": "https://app.air.inc/b/matches-c2b73d4a-bc7d-4f49-a8b8-933ae731123a",
-          "boylesports": "https://www.boylesports.com/promotions/online/football",
-          "image": "",
-          "note": "World Cup semi-final; football matches design folder"
-        },
-        {
-          "day": "Wednesday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "The Open - 12 Places",
-          "type": "Boost / Places",
-          "twitter": "We're paying 12 PLACES on The Open.\n\nTap below to view the full market.",
-          "facebook": "We're paying 12 PLACES on The Open.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
-          "air": "https://app.air.inc/a/b89381410",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; event-day copy for the outright/places promo"
-        },
-        {
-          "day": "Wednesday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Outright Boost: The Open",
-          "type": "Outright Boost",
-          "twitter": "🚀 Boosted outright prices for The Open!\n\nTap below to view the market.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; event-day copy for the outright boost"
-        },
-        {
-          "day": "Thursday",
-          "match": "World Matchplay",
-          "competition": "World Matchplay",
-          "promo": "Outright PPB: World Matchplay",
-          "type": "PPB",
-          "twitter": "🚀 Outright Price Boost on the World Matchplay!\n\nTap below to view the market.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/darts",
-          "image": "",
-          "note": "Darts (Betfred World Matchplay); outright price-promise boost"
-        },
-        {
-          "day": "Thursday",
-          "match": "Horse Racing",
-          "competition": "Horse Racing",
-          "promo": "Multi Bet & Get (Bet 10 Get 5): Horse Racing",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
-          "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "",
-          "note": "Daily racing multi bet & get"
-        },
-        {
-          "day": "Friday",
-          "match": "The Open",
-          "competition": "The Open",
-          "promo": "Bet 10 Get 5: The Open",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a Bet Builder for The Open.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a Bet Builder for The Open.\n\n📲 Opt in — https://www.boylesports.com/sports/golf",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "",
-          "note": "Golf major; non-football bet & get"
-        },
-        {
-          "day": "Friday",
-          "match": "Horse Racing",
-          "competition": "Horse Racing",
-          "promo": "Multi Bet & Get (Bet 10 Get 5): Horse Racing",
-          "type": "Bet & Get",
-          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\nTap below to opt in.",
-          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a multiple for Horse Racing.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
-          "air": "https://app.air.inc/a/b777f31db/b/c0af55dd-471b-4102-9ed9-d760999a8f72",
-          "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "",
-          "note": "Daily racing multi bet & get"
-        },
-        {
-          "day": "Saturday",
-          "match": "Horse Racing",
-          "competition": "Horse Racing",
-          "promo": "Best Odds Guaranteed: Horse Racing",
-          "type": "BOG",
-          "twitter": "Best Odds Guaranteed on all UK & Irish racing — take an early price and if the SP is bigger, we pay out at the bigger odds.\n\nTap below to view the racecard.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "",
-          "note": "Best Odds Guaranteed"
-        },
-        {
-          "day": "Saturday",
-          "match": "3rd Place Play-Off",
-          "competition": "World Cup",
-          "promo": "50% Bet Builder Boost: 3rd Place Play-Off",
-          "type": "50% BBB",
-          "twitter": "🚀 Win 50% more with Bet Builder Boost on the 3rd Place Play-Off.\n\nTap below to view the full market.",
-          "facebook": "Win 50% more with Bet Builder Boost on the 3rd Place Play-Off.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/promotions/online/football",
-          "image": "",
-          "note": "World Cup 3rd place play-off; event day; teams TBC"
-        },
-        {
-          "day": "Saturday",
-          "match": "World Matchplay",
-          "competition": "World Matchplay",
-          "promo": "Bet & Get: World Matchplay",
-          "type": "Bet & Get",
-          "twitter": "Bet & Get available on World Matchplay — back a Bet Builder and claim your Free Bet.\n\nTap below to opt in.",
-          "facebook": "Bet & Get available on World Matchplay — back a Bet Builder and claim your Free Bet.\n\n📲 Opt in — https://www.boylesports.com/sports/darts",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/darts",
-          "image": "",
-          "note": "Darts (World Matchplay); non-football bet & get"
-        },
-        {
-          "day": "Saturday",
-          "match": "World Matchplay",
-          "competition": "World Matchplay",
-          "promo": "EPO: World Matchplay",
-          "type": "EPO",
-          "twitter": "Stay one step ahead of the drama with BOYLE Sports Early Payout!\n\nGet paid out when your player goes 4 legs ahead at the World Matchplay, no matter how the match ends.\n\nTap below to find out more.",
-          "facebook": "Stay one step ahead of the drama with BOYLE Sports Early Payout!\n\nGet paid out when your player goes 4 legs ahead at the World Matchplay, no matter how the match ends.\n\n📲 Find out more — https://www.boylesports.com/sports/darts",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/darts",
-          "image": "",
-          "note": "Darts (World Matchplay)"
-        },
-        {
-          "day": "Sunday",
-          "match": "Horse Racing",
-          "competition": "Horse Racing",
-          "promo": "Best Odds Guaranteed: Horse Racing",
-          "type": "BOG",
-          "twitter": "Best Odds Guaranteed on all UK & Irish racing — take an early price and if the SP is bigger, we pay out at the bigger odds.\n\nTap below to view the racecard.",
-          "facebook": "",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "",
-          "note": "Best Odds Guaranteed"
-        },
-        {
-          "day": "Sunday",
-          "match": "All-Ireland Hurling Final",
-          "competition": "GAA",
-          "promo": "Super Boost: All-Ireland Hurling Final",
-          "type": "Super Boost",
-          "twitter": "",
-          "facebook": "",
-          "air": "",
-          "boylesports": "",
-          "image": "",
-          "note": "GAA major; event day; non-football Super Boost, no link"
-        },
-        {
-          "day": "Sunday",
-          "match": "World Cup Final",
-          "competition": "World Cup",
-          "promo": "Super Boost: World Cup Final",
-          "type": "Super Boost",
-          "twitter": "",
-          "facebook": "",
-          "air": "https://app.bannerflow.com/studio/brand/5553724f320a791594148995/creativeset/1185282?version=1981413",
-          "boylesports": "",
-          "image": "",
-          "note": "World Cup Final; event day; football Super Boost creative; teams TBC"
-        },
-        {
-          "day": "Sunday",
-          "match": "World Matchplay",
-          "competition": "World Matchplay",
-          "promo": "Bet & Get: World Matchplay",
-          "type": "Bet & Get",
-          "twitter": "Bet & Get available on World Matchplay — back a Bet Builder and claim your Free Bet.\n\nTap below to opt in.",
-          "facebook": "Bet & Get available on World Matchplay — back a Bet Builder and claim your Free Bet.\n\n📲 Opt in — https://www.boylesports.com/sports/darts",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/darts",
-          "image": "",
-          "note": "Darts (World Matchplay); non-football bet & get"
-        },
-        {
-          "day": "Sunday",
-          "match": "World Matchplay",
-          "competition": "World Matchplay",
-          "promo": "EPO: World Matchplay",
-          "type": "EPO",
-          "twitter": "Stay one step ahead of the drama with BOYLE Sports Early Payout!\n\nGet paid out when your player goes 4 legs ahead at the World Matchplay, no matter how the match ends.\n\nTap below to find out more.",
-          "facebook": "Stay one step ahead of the drama with BOYLE Sports Early Payout!\n\nGet paid out when your player goes 4 legs ahead at the World Matchplay, no matter how the match ends.\n\n📲 Find out more — https://www.boylesports.com/sports/darts",
-          "air": "",
-          "boylesports": "https://www.boylesports.com/sports/darts",
-          "image": "",
-          "note": "Darts (World Matchplay)"
-        }
-      ]
+      "label": "10–16 Aug 2026",
+      "items": []
+    },
+    {
+      "label": "17–23 Aug 2026",
+      "items": []
     }
   ],
   "gamingWeeks": [
     {
-      "label": "13–19 Jul 2026",
+      "label": "10–16 Aug 2026",
       "items": [
         {
           "section": "Gaming",
-          "name": "Promo World Tour",
-          "type": "PROMO World Tour",
-          "date": "13 Jul 2026",
-          "meta": "☀️☀️ Start Your Journey with Up to 100 Free Spins! 👉 Join the WORLD TOUR & Unlock more Prizes + Rewards!",
-          "twitter": "☀️ Start Your Journey with Up to 100 Free Spins! Join the WORLD TOUR & Unlock more Prizes + Rewards!",
-          "instagram": "☀️ Start Your Journey with Up to 100 Free Spins! 👉 Join the WORLD TOUR & Unlock more Prizes + Rewards!\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/bc8a18d78/b/93f7e9a5-d2da-4597-990f-d7b5c97937a4",
-          "facebook_link": "https://promo.boylesports.com/gaming/promo4/game38/?btag=55497",
-          "twitter_link": "https://promo.boylesports.com/gaming/promo4/game38/?btag=55498",
-          "files": ""
-        },
-        {
-          "section": "Gaming",
-          "name": "Ra and Cleopatra Nile Rising Power combo",
-          "type": "",
-          "date": "13 Jul 2026",
-          "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥 ",
-          "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
-          "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/bbc097919/b/21ec92a6-38f6-4d8f-aa3d-35381a230469",
-          "facebook_link": "https://games.boylesports.com/games/ra-and-cleopatra-nile-rising-power-combo/",
-          "twitter_link": "https://games.boylesports.com/games/ra-and-cleopatra-nile-rising-power-combo/",
+          "name": "Prag Wheel - 500K / Prag Tournament.",
+          "type": "Promotional Post",
+          "date": "10 Aug 2026",
+          "meta": "☀️☀️ Claim Up to 100 Free Spins at BOYLE Casino 👉Join Tournament & Wheel Drops for a share of £/€50K in Cash & Free Spins.",
+          "twitter": "☀️ Claim Up to 100 Free Spins at BOYLE Casino Join Tournament & Wheel Drops for a share of £/€50K in Cash & Free Spins.",
+          "instagram": "☀️ Claim Up to 100 Free Spins at BOYLE Casino 👉Join Tournament & Wheel Drops for a share of £/€50K in Cash & Free Spins.\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b4521bf84/b/aba6d7a8-321e-4c1b-b16a-ba8dd6ff5060",
+          "facebook_link": "https://games.boylesports.com/promotions-and-offers/wheels-leaderboard/?btag=56100",
+          "twitter_link": "https://games.boylesports.com/promotions-and-offers/wheels-leaderboard/?btag=56101",
           "files": ""
         },
         {
           "section": "Live Casino",
-          "name": "World Cup Drops",
-          "type": "Promo Post",
-          "date": "13 Jul 2026",
-          "meta": "🔝🔝 500K in random Cash Prizes to be won! Stake in Live Casino & join the World Cup Drops!🔝🔝",
-          "twitter": "🔝 500K in random Cash Prizes to be won! Stake in Live Casino & join the World Cup Drops!",
-          "instagram": "🔝 500K in random Cash Prizes to be won! Stake in Live Casino & join the World Cup Drops!🔝\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://boylesports.sharepoint.com/sites/DesignTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDesignTeam%2FShared%20Documents%2F00%5FBack%5FYourself%2F03%5FDigital%2F03%5FGAMING%2F14%5FLive%20Casino%2FWorld%20Cup%20Drops%2FSocial&viewid=1c74581b%2D83eb%2D4158%2D96bc%2Dcbe5821bd850&or=EXCEL%2DWEB%2EBODY%2ENT&ct=1782373728331",
-          "facebook_link": "https://games.boylesports.com/promotions-and-offers/world-cup-drops/?btag=55393",
-          "twitter_link": "https://games.boylesports.com/promotions-and-offers/world-cup-drops/?btag=55394",
+          "name": "London Roulette Live",
+          "type": "New Game Release",
+          "date": "10 Aug 2026",
+          "meta": "🆕🆕 New Game Release at Boyle Live Casino! 🆕🆕  London Roulette Live",
+          "twitter": "🆕 New Game Release at Boyle Live Casino! London Roulette Live",
+          "instagram": "🆕 New Game Release at Boyle Live Casino! 🆕  London Roulette Live\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b89845cb9/b/2509d780-037f-4193-acab-5f12089c4db9",
+          "facebook_link": "https://games.boylesports.com/games/london-roulette-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/london-roulette-live/?btag=55401",
           "files": ""
         },
         {
           "section": "Gaming",
-          "name": "Aztec Inferno Gold Eruption Ultra Link and Win King Millions",
+          "name": "Prospector Wilds Hold and Blitz",
           "type": "New Game Release",
-          "date": "14 Jul 2026",
+          "date": "11 Aug 2026",
           "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
           "twitter": "🤩 New Game Release at BOYLE Casino!",
           "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b75c6739f/b/638dc327-5b43-492e-96ce-ba1a21dea3b6",
-          "facebook_link": "https://games.boylesports.com/games/Aztec-Inferno-Gold-Eruption-Ultra-Link-and-Win-King-Millions/?btag=52901",
-          "twitter_link": "https://games.boylesports.com/games/Aztec-Inferno-Gold-Eruption-Ultra-Link-and-Win-King-Millions/?btag=52962",
+          "design": "https://app.air.inc/a/b4814976b/b/9f425d09-6bf1-4ff2-9bd8-22296f1c991e",
+          "facebook_link": "https://games.boylesports.com/games/Prospector-Wilds-Hold-and-Blitz/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/Prospector-Wilds-Hold-and-Blitz/?btag=52962",
           "files": ""
         },
         {
           "section": "Gaming",
-          "name": "Fishin' Frenzy The Big Match GOTW",
+          "name": "Cash Strike Fire Lock",
+          "type": "New Game Release",
+          "date": "12 Aug 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/bc6020d9a/b/1a323034-2a10-4a22-bb94-27829c1f653e",
+          "facebook_link": "https://games.boylesports.com/games/Cash-Strike-Fire-Lock/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/Cash-Strike-Fire-Lock/?btag=52962",
+          "files": ""
+        },
+        {
+          "section": "Gaming",
+          "name": "Lemon Squeezy",
+          "type": "New Game Release",
+          "date": "13 Aug 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b2a40ff7b/b/e73bec60-b31c-4e85-8805-0c7fbdb9eae7",
+          "facebook_link": "https://games.boylesports.com/games/Lemon-Squeezy/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/Lemon-Squeezy/?btag=52962",
+          "files": ""
+        },
+        {
+          "section": "Live Casino",
+          "name": "London Blackjack Live",
+          "type": "New Game Release",
+          "date": "13 Aug 2026",
+          "meta": "🆕🆕 New Game Release at Boyle Live Casino! 🆕🆕  London Blackjack Live",
+          "twitter": "🆕 New Game Release at Boyle Live Casino! London Blackjack Live",
+          "instagram": "🆕 New Game Release at Boyle Live Casino! 🆕  London Blackjack Live\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b19b781a5",
+          "facebook_link": "https://games.boylesports.com/games/london-blackjack-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/london-blackjack-live/?btag=55401",
+          "files": ""
+        },
+        {
+          "section": "Gaming",
+          "name": "The Devil's Draw",
           "type": "Gotw",
-          "date": "15 Jul 2026",
+          "date": "14 Aug 2026",
           "meta": "✨✨Game of the Week at BOYLE Casino! ✨✨",
           "twitter": "✨ Game of the Week at BOYLE Casino!",
           "instagram": "✨ Game of the Week at BOYLE Casino! ✨\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b084a6e2b",
-          "facebook_link": "https://games.boylesports.com/games/fishin-frenzy-the-big-match/?btag=52901",
-          "twitter_link": "https://games.boylesports.com/games/fishin-frenzy-the-big-match/?btag=52962",
+          "design": "https://app.air.inc/a/bf3bbadd7/b/358f2ca5-6777-4e4a-be00-546ed9e12942",
+          "facebook_link": "https://games.boylesports.com/games/the-devils-draw/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/the-devils-draw/?btag=52962",
+          "files": ""
+        },
+        {
+          "section": "Live Casino",
+          "name": "Hippodrome Live Roulette",
+          "type": "New Game Release",
+          "date": "15 Aug 2026",
+          "meta": "🆕🆕 New Game Release at Boyle Live Casino! 🆕🆕  Hippodrome London Roulette Live",
+          "twitter": "🆕 New Game Release at Boyle Live Casino! Hippodrome London Roulette Live",
+          "instagram": "🆕 New Game Release at Boyle Live Casino! 🆕  Hippodrome London Roulette Live\n\n📲 Click the link in our bio to learn more.",
+          "design": "",
+          "facebook_link": "https://games.boylesports.com/games/hippodrome-live-roulette/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/hippodrome-live-roulette/?btag=55401",
+          "files": ""
+        },
+        {
+          "section": "Live Casino",
+          "name": "Light's on, it's showtime!",
+          "type": "Potpourri",
+          "date": "16 Aug 2026",
+          "meta": "🎬🎭 Lights, camera, action! Discover live game shows at Boyle Live Casino 🎬🎭",
+          "twitter": "🎬 Lights, camera, action! Discover live game shows at Boyle Live Casino",
+          "instagram": "🎬🎭 Lights, camera, action! Discover live game shows at Boyle Live Casino 🎬🎭\n\n📲 Click the link in our bio to learn more.",
+          "design": "",
+          "facebook_link": "https://games.boylesports.com/live-game-shows/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/live-game-shows/?btag=55401",
+          "files": ""
+        }
+      ]
+    },
+    {
+      "label": "17–23 Aug 2026",
+      "items": [
+        {
+          "section": "Gaming",
+          "name": "25K Giveaway",
+          "type": "Promotional Post",
+          "date": "17 Aug 2026",
+          "meta": "🎯🎯Jump in for your chance to land a share of our 25K cash prize pot🎯🎯",
+          "twitter": "🎯 Jump in for your chance to land a share of our 25K cash prize pot",
+          "instagram": "🎯 Jump in for your chance to land a share of our 25K cash prize pot🎯\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://boylesports.sharepoint.com/sites/DesignTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDesignTeam%2FShared%20Documents%2F00%5FBack%5FYourself%2F03%5FDigital%2F03%5FGAMING%2F12%5FGiveaways%2F25K%20Giveaway%20Playngo%2FPROOF%2FSocial&viewid=1c74581b%2D83eb%2D4158%2D96bc%2Dcbe5821bd850&ga=1",
+          "facebook_link": "https://games.boylesports.com/promotions-and-offers/25k-giveaway/?btag=55299",
+          "twitter_link": "https://games.boylesports.com/promotions-and-offers/25k-giveaway/?btag=55300",
           "files": ""
         },
         {
           "section": "Gaming",
-          "name": "Wolf Fury Fire Blitz",
+          "name": "4 Supershiny Diamonds Hold and Win",
           "type": "New Game Release",
-          "date": "16 Jul 2026",
+          "date": "18 Aug 2026",
           "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
           "twitter": "🤩 New Game Release at BOYLE Casino!",
           "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b43534321/b/5441b483-d5b3-4969-af75-fe1aa3b2f5a7",
-          "facebook_link": "",
-          "twitter_link": "",
+          "design": "https://app.air.inc/a/bb4279b83/b/7509f65d-94c2-4fb8-a1b0-5faaa511dcf2",
+          "facebook_link": "https://games.boylesports.com/games/4-Supershiny-Diamonds-Hold-and-Win/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/4-Supershiny-Diamonds-Hold-and-Win/?btag=52962",
           "files": ""
         },
         {
           "section": "Gaming",
-          "name": "Scarab Surge",
-          "type": "Trending slots",
-          "date": "17 Jul 2026",
+          "name": "Legends of the Lure",
+          "type": "Trending Slot",
+          "date": "19 Aug 2026",
           "meta": "🚀🚀Check out this month's Trending slot at BOYLE Casino!!👀",
           "twitter": "🚀 Check out this month's Trending slot at BOYLE Casino!!",
           "instagram": "🚀 Check out this month's Trending slot at BOYLE Casino!!👀\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b54023208/b/614b9ff3-c3b7-4c85-9a9b-217376abaf92",
-          "facebook_link": "https://games.boylesports.com/games/scarab-surge/?btag=52901",
-          "twitter_link": "https://games.boylesports.com/games/scarab-surge/?btag=52962",
+          "design": "https://boylesports.sharepoint.com/sites/DesignTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDesignTeam%2FShared%20Documents%2F00%5FBack%5FYourself%2F05%5FVideo%2F02%5FGaming%2FTrending%20slots%2FLegends%20of%20the%20Lure&p=true&ga=1&or=EXCEL%2DWEB%2EBODY%2ENT&ct=1779953919017&OR=EXCEL%2DWEB%2EBODY%2ENT&CT=1784275172294",
+          "facebook_link": "https://games.boylesports.com/games/legends-of-the-lure/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/legends-of-the-lure/?btag=52962",
+          "files": ""
+        },
+        {
+          "section": "Gaming",
+          "name": "7x7 Zeus Max",
+          "type": "Exclusive",
+          "date": "20 Aug 2026",
+          "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥",
+          "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
+          "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b534f216e/b/ef3d1e55-d68a-43af-97b3-5a2185b367aa",
+          "facebook_link": "https://games.boylesports.com/games/7x7-Zeus-Max/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/7x7-Zeus-Max/?btag=52962",
+          "files": ""
+        },
+        {
+          "section": "Gaming",
+          "name": "Captain Jacks Voyage",
+          "type": "New Game Release",
+          "date": "21 Aug 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/beddef67e/b/fa77991c-2f91-4377-a912-11e23498d968",
+          "facebook_link": "https://games.boylesports.com/games/Captain-Jacks-Voyage/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/Captain-Jacks-Voyage/?btag=52962",
           "files": ""
         },
         {
           "section": "Live Casino",
-          "name": "Boyle Casino Red baron Live",
-          "type": "Exclusive Game",
-          "date": "18 Jul 2026",
-          "meta": "✨✨BOYLE Live Casino presents BOYLE CASINO RED BARON LIVE✨ ✨",
-          "twitter": "✨ BOYLE Live Casino presents BOYLE CASINO RED BARON LIVE",
-          "instagram": "✨ BOYLE Live Casino presents BOYLE CASINO RED BARON LIVE✨\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b150550b8",
-          "facebook_link": "https://games.boylesports.com/games/boyle-casino-red-baron-live/?btag=55400",
-          "twitter_link": "https://games.boylesports.com/games/boyle-casino-red-baron-live/?btag=55401",
+          "name": "Gates of Olympus Roulette Live",
+          "type": "Highlighted game",
+          "date": "22 Aug 2026",
+          "meta": "✨✨BOYLE Live Casino presents GATES OF OLYMPUS ✨ ✨",
+          "twitter": "✨ BOYLE Live Casino presents GATES OF OLYMPUS",
+          "instagram": "✨ BOYLE Live Casino presents GATES OF OLYMPUS ✨\n\n📲 Click the link in our bio to learn more.",
+          "design": "",
+          "facebook_link": "https://games.boylesports.com/games/gates-of-olympus-roulette-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/gates-of-olympus-roulette-live/?btag=55401",
           "files": ""
         },
         {
           "section": "Live Casino",
-          "name": "Blackjack Potpourri",
+          "name": "Roulette Potpourri version 1",
           "type": "Potpourri",
-          "date": "19 Jul 2026",
-          "meta": "♠️♥️Feel the energy? Step into the action of our hottest live blackjack tables, at Boyle Live Casino ♠️♥️ ",
-          "twitter": "♠️ Feel the energy? Step into the action of our hottest live blackjack tables, at Boyle Live Casino",
-          "instagram": "♠️♥️Feel the energy? Step into the action of our hottest live blackjack tables, at Boyle Live Casino ♠️♥️\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://boylesports.sharepoint.com/sites/DesignTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDesignTeam%2FShared%20Documents%2F00%5FBack%5FYourself%2F05%5FVideo%2F02%5FGaming%2FLive%20Casino%5FGeneric%20Promos%2FGames%20Potpourri%2FBlackjack%20Potpourri%5FJan2026&viewid=1c74581b%2D83eb%2D4158%2D96bc%2Dcbe5821bd850&p=true&or=EXCEL%2DWEB%2EBODY%2ENT&ct=1780919885063",
-          "facebook_link": "https://games.boylesports.com/live-casino/?btag=55400",
-          "twitter_link": "https://games.boylesports.com/live-casino/?btag=55401",
+          "date": "23 Aug 2026",
+          "meta": "🎡🎡 Ready to spin? Enjoy our fantastic roulettes with real dealers at Boyle Live Casino 🎡🎡",
+          "twitter": "🎡 Ready to spin? Enjoy our fantastic roulettes with real dealers at Boyle Live Casino",
+          "instagram": "🎡 Ready to spin? Enjoy our fantastic roulettes with real dealers at Boyle Live Casino 🎡\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/bf9c335eb",
+          "facebook_link": "https://games.boylesports.com/live-roulette/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/live-roulette/?btag=55401",
           "files": ""
         }
       ]
