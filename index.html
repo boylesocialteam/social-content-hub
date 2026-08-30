@@ -190,7 +190,7 @@
   .b-bg{background:var(--bbg);} .b-ab{background:var(--bab);color:#3a2e00;} .b-ss{background:var(--bss);}
   .b-epo{background:var(--bepo);} .b-fb{background:var(--bfb);} .b-ac{background:var(--bac);}
   .b-mb{background:#ea580c;} .b-places{background:#059669;}
-  .b-boost{background:#0d9488;} .b-bog{background:#0891b2;}
+  .b-boost{background:#0d9488;} .b-bog{background:#0891b2;} .b-ftp{background:#7c3aed;}
   .b-special{background:var(--special);} .b-exclusive{background:var(--exclusive);} .b-promo{background:var(--promo);}
   .b-trending{background:var(--trending);color:#3a2700;} .b-gotw,.b-game{background:var(--gotw);} .b-highlighted{background:var(--highlighted);} .b-potpourri{background:var(--potpourri);}
   .card-top .mn{font-weight:800;font-size:1rem;line-height:1.2;flex:1;}
@@ -420,6 +420,7 @@ const promoBadge = t => {
   if(k.includes('money'))return'b-mb';
   if(k.includes('place'))return'b-places';
   if(k.includes('bog')||k.includes('best odds'))return'b-bog';
+  if(k.includes('free to play')||k.includes('ftp'))return'b-ftp';
   if(k.includes('price')||k.includes('outright')||k.includes('ppb')||k.includes('boost'))return'b-boost';
   return'b-promo';
 };
