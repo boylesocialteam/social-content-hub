@@ -191,10 +191,62 @@
   .b-epo{background:var(--bepo);} .b-fb{background:var(--bfb);} .b-ac{background:var(--bac);}
   .b-mb{background:#ea580c;} .b-places{background:#059669;}
   .b-boost{background:#0d9488;} .b-bog{background:#0891b2;} .b-ftp{background:#7c3aed;}
+  /* Gaming workflow status (from the Monday.com plan) */
+  .st-row{padding:0 16px 10px;margin-top:-4px;}
+  .st-pill{display:inline-flex;align-items:center;gap:6px;font-size:.66rem;font-weight:800;
+    padding:3px 10px;border-radius:20px;border:1px solid transparent;}
+  .st-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;}
+  .st-sched{background:#e8f7ee;color:#177245;border-color:#bfe6cd;}
+  .st-ready{background:#eaf0ff;color:#2400F6;border-color:#c9d6ff;}
+  .st-wip{background:#fff4e5;color:#a35b00;border-color:#ffdfb0;}
+  .st-done{background:#eef1f4;color:#475569;border-color:#dbe2ea;}
+  .st-other{background:#f3f4f6;color:#64748b;border-color:#e2e6eb;}
   .b-special{background:var(--special);} .b-exclusive{background:var(--exclusive);} .b-promo{background:var(--promo);}
   .b-trending{background:var(--trending);color:#3a2700;} .b-gotw,.b-game{background:var(--gotw);} .b-highlighted{background:var(--highlighted);} .b-potpourri{background:var(--potpourri);}
   .card-top .mn{font-weight:800;font-size:1rem;line-height:1.2;flex:1;}
   .card-top .mn small{display:block;font-weight:500;color:var(--faint);font-size:.76rem;margin-top:3px;}
+
+  /* ===== Week plan (Home) — fixtures in kick-off order ===== */
+  .plan{display:flex;flex-direction:column;gap:16px;}
+  .pw-day{border:1px solid var(--line-2);border-radius:12px;overflow:hidden;background:#fff;}
+  .pw-dayhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+    padding:10px 14px;background:var(--blue);color:#fff;}
+  .pw-dayhead h3{margin:0;font-size:.92rem;font-weight:800;letter-spacing:.2px;}
+  .pw-count{font-size:.7rem;font-weight:700;color:#fff;opacity:.85;}
+  .pw-match{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:11px 14px;
+    border-top:1px solid var(--line-2);}
+  .pw-match:first-of-type{border-top:none;}
+  .pw-ko{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:var(--line-2);border-radius:9px;padding:6px 4px;font-weight:800;font-size:.95rem;
+    color:var(--blue);line-height:1.1;height:fit-content;}
+  .pw-ko small{display:block;font-size:.6rem;font-weight:700;color:var(--sub);margin-top:2px;
+    letter-spacing:.4px;text-transform:uppercase;}
+  .pw-ko.tbc{background:#f4f5f7;color:var(--faint);font-size:.72rem;}
+  .pw-body h4{margin:0 0 7px;font-size:.95rem;font-weight:800;cursor:pointer;}
+  .pw-body h4:hover{color:var(--blue);text-decoration:underline;}
+  .pw-promos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px;}
+  .pw-promo{display:grid;grid-template-columns:112px 1fr auto;gap:10px;align-items:center;
+    padding:6px 9px;border-radius:8px;background:var(--line-3,#f7f8fa);
+    border-left:3px solid var(--line-2);}
+  .pw-promo.p-high{border-left-color:var(--blue);background:#f4f3ff;}
+  .pw-promo.p-med{border-left-color:#D1F20C;background:#fbfee8;}
+  .pw-name{font-size:.8rem;color:var(--ink);}
+  .pw-meta{display:flex;align-items:center;gap:7px;white-space:nowrap;}
+  .asset{font-size:.64rem;font-weight:800;color:#a3690b;text-transform:uppercase;letter-spacing:.3px;}
+  .asset.ready{color:#177245;}
+  .onpage{font-size:.62rem;font-weight:800;color:var(--blue);background:#eceaff;
+    padding:2px 7px;border-radius:20px;text-transform:uppercase;letter-spacing:.3px;}
+  .pw-strip{border-top:1px solid var(--line-2);background:#fafbfc;padding:9px 14px 11px;}
+  .pw-strip h5{margin:0 0 6px;font-size:.66rem;font-weight:800;text-transform:uppercase;
+    letter-spacing:.5px;color:var(--sub);}
+  .pw-strip ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;}
+  .pw-strip li{display:grid;grid-template-columns:96px 1fr auto;gap:10px;align-items:center;font-size:.78rem;}
+  .pw-sport{font-size:.64rem;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:.3px;}
+  .pw-filters{display:flex;gap:6px;}
+  @media(max-width:720px){
+    .pw-match{grid-template-columns:58px 1fr;}
+    .pw-promo,.pw-strip li{grid-template-columns:1fr;gap:3px;}
+  }
   /* Promo cards: fixed-width badge slot so every match title starts at the same x. */
   .card-top-promo{align-items:flex-start;}
   .card-top-promo .pslot{flex:0 0 118px;display:flex;}
@@ -207,6 +259,13 @@
   .preview{height:150px;position:relative;overflow:hidden;background:linear-gradient(135deg,#eef2f6,#e3e8ee);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);}
   .pv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;cursor:pointer;background:#e3e8ee;transition:transform .3s;}
   .pv-img:hover{transform:scale(1.04);}
+  /* Promo creatives are 2:1 with text top (fixture) and bottom (offer line), so any
+     crop loses something. Match the box to the artwork and fit the whole image —
+     2:1 creatives fill it exactly, odd sizes letterbox onto the dark surround
+     rather than being cut. Gaming poster frames keep the centred cover crop. */
+  .preview-promo{height:auto;aspect-ratio:2/1;background:#0f1115;}
+  .preview-promo .pv-img{object-fit:contain;object-position:center;}
+  .preview-promo .pv-img:hover{transform:none;filter:brightness(1.07);}
   .pv-fallback{position:absolute;inset:0;display:grid;place-items:center;}
   .pv-fallback.has-air{cursor:pointer;}
   .pv-src{position:absolute;top:8px;right:8px;z-index:2;background:rgba(36,0,246,.82);color:#fff;font-size:.58rem;font-weight:800;letter-spacing:.5px;padding:3px 7px;border-radius:5px;text-transform:uppercase;backdrop-filter:blur(2px);}
@@ -284,15 +343,18 @@
 
     <div class="panel" style="margin-bottom:20px;">
       <div class="panel-head">
-        <h2>This Week's Highlights</h2>
-        <div style="display:flex;align-items:center;gap:14px;">
+        <h2>This Week's Plan</h2>
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <span class="meta" id="sched-meta"></span>
+          <div class="pw-filters">
+            <button class="chip" id="f-page" data-pwf="page">Promotions page only</button>
+            <button class="chip active" id="f-other" data-pwf="other">Other sports</button>
+          </div>
           <button class="link-btn-sched" data-view="schedule">Full schedule →</button>
         </div>
       </div>
       <div class="panel-body">
-        <div class="board-legend" id="board-legend"></div>
-        <div class="board" id="board"></div>
+        <div class="plan" id="plan"></div>
       </div>
     </div>
 
@@ -361,6 +423,7 @@ const D = window.SCH_DATA || {promos:[],gaming:[],schedule:[],priorities:[],link
 const $ = s => document.querySelector(s);
 const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 let state = {view:'home', q:'', promoFilter:'all', gamingFilter:'all', schedMode:'highlights',
+  pageOnly:false, otherSports:true,
   week:0};  // shared week index across Home, Promotions and Gaming
 
 /* ---- highlights: promo type -> [label, bg, text] ---- */
@@ -424,6 +487,14 @@ const promoBadge = t => {
   if(k.includes('price')||k.includes('outright')||k.includes('ppb')||k.includes('boost'))return'b-boost';
   return'b-promo';
 };
+const statusClass = s => {
+  const k=(s||'').toLowerCase();
+  if(k.includes('posted')||k.includes('live')||k.includes('complete'))return'done';
+  if(k.includes('scheduled')&&!k.includes('ready'))return'sched';
+  if(k.includes('ready'))return'ready';
+  if(k.includes('progress')||k.includes('wip'))return'wip';
+  return'other';
+};
 const gamingBadgeClass = t => {
   const k=(t||'').toLowerCase();
   if(k.includes('special'))return'b-special'; if(k.includes('exclusive'))return'b-exclusive';
@@ -465,48 +536,44 @@ function renderHome(){
 
   const q=state.q;
 
-  // ---- legend (promo badges + any campaign categories present this week) ----
-  const CAMPLEG={buz:['The Buz','#9333ea'],talent:['Guest Talent','#ea580c'],fan:['Fan Forecast','#0891b2'],launch:['Launch','#059669']};
-  const weekCats=[...new Set(((D.campaign||{}).events||[]).filter(e=>weekDates.has(e.date)).map(e=>e.cat))];
-  $('#board-legend').innerHTML=MB_LEGEND.map(([k,name])=>{
-      const c=MB[k]; return `<span class="lg"><i style="background:${c[1]}"></i>${name}</span>`;
-    }).join('')
-    + weekCats.map(c=>CAMPLEG[c]?`<span class="lg"><i style="background:${CAMPLEG[c][1]}"></i>${CAMPLEG[c][0]}</span>`:'').join('');
-
-  // ---- highlights board (matches/promos + campaign content events) ----
-  const campByDate={}; ((D.campaign||{}).events||[]).forEach(e=>(campByDate[e.date]=campByDate[e.date]||[]).push(e));
-  let shown=0;
-  const epoSeen=new Set(); // EPO is a recurring promo — each subject's EPO badge shows once per week
-  const boardHtml=(w.schedule||[]).map(day=>{
-    let entries=deriveDay(day).map(([name,types])=>{
-      if(types.has('epo')){
-        if(epoSeen.has(name)){ const t=new Set(types); t.delete('epo'); return [name,t]; }
-        epoSeen.add(name);
-      }
-      return [name,types];
-    }).filter(([name,types])=> !(name==='EPO' && types.size===0)); // drop the standalone EPO after its first day
-    if(q) entries=entries.filter(([name])=>name.toLowerCase().includes(q));
-    let camp=campByDate[day.date]||[];
-    if(q) camp=camp.filter(e=>match(e,q));
-    if(!entries.length && !camp.length)return'';
-    shown+=entries.length;
-    const ab=day.label.split(' '); // [Weekday, DD, Mon]
-    const rows=entries.map(([name,types])=>{
-      const badges=[...types].map(t=>{const c=MB[t];return `<span class="mb" style="background:${c[1]};color:${c[2]}">${c[0]}</span>`;}).join('');
-      return `<div class="subj ${types.size?'':'plain'}" data-fixture="${esc(name)}" title="Click to find ${esc(name)}"><span class="nm">${esc(name)}</span><span class="minibadges">${badges}</span></div>`;
+  // ---- week plan: fixtures in kick-off order, with day-wide promos beneath ----
+  const plan=w.plan||[];
+  let fxCount=0, prCount=0;
+  const planHtml=plan.map(day=>{
+    const keep=p=>(!state.pageOnly||p.onpage);
+    let fixtures=(day.fixtures||[]).map(f=>({...f,promos:(f.promos||[]).filter(keep)})).filter(f=>f.promos.length);
+    let strip=(day.strip||[]).filter(keep).filter(s2=>state.otherSports||s2.sport==='Football');
+    if(q){
+      fixtures=fixtures.filter(f=>(f.match+' '+f.promos.map(p=>p.name+' '+p.type).join(' ')).toLowerCase().includes(q));
+      strip=strip.filter(s2=>(s2.name+' '+s2.sport+' '+s2.event).toLowerCase().includes(q));
+    }
+    if(!fixtures.length && !strip.length) return '';
+    fxCount+=fixtures.length; prCount+=fixtures.reduce((a,f)=>a+f.promos.length,0)+strip.length;
+    const dparts=(day.date||'').split(' ');            // ["Mon","7","Sep","2026"]
+    const heading=`${day.day} ${dparts[1]||''} ${dparts[2]||''}`.trim();
+    const cnt=`${fixtures.length} fixture${fixtures.length===1?'':'s'} · ${fixtures.reduce((a,f)=>a+f.promos.length,0)+strip.length} promo${(fixtures.reduce((a,f)=>a+f.promos.length,0)+strip.length)===1?'':'s'}`;
+    const matches=fixtures.map(f=>{
+      const ko=f.ko?`<div class="pw-ko">${esc(f.ko)}${f.comp?`<small>${esc(f.comp)}</small>`:''}</div>`
+                   :`<div class="pw-ko tbc">KO<small>TBC</small></div>`;
+      const promos=f.promos.map(p=>`<li class="pw-promo p-${esc(p.prio)}">
+          <span class="badge ${promoBadge(p.type)}">${esc(p.type)}</span>
+          <span class="pw-name">${esc(p.name)}</span>
+          <span class="pw-meta"><span class="asset ${p.status==='Ready'?'ready':''}">${esc(p.status)}</span>${p.onpage?'<span class="onpage">Promo page</span>':''}</span>
+        </li>`).join('');
+      return `<div class="pw-match">${ko}<div class="pw-body">
+        <h4 data-fixture="${esc(f.match)}" title="Find ${esc(f.match)} →">${esc(f.match)}</h4>
+        <ul class="pw-promos">${promos}</ul></div></div>`;
     }).join('');
-    const campHtml=camp.length?`<div class="dc-camp">${camp.map(e=>{
-      const mk=(e.marker||'').toLowerCase();
-      return `<div class="camp-chip cat-${e.cat}" title="${esc(e.title+' — '+e.sub)}"><span class="cc-t">${esc(evLabel(e))}</span><span class="cc-mk mk-${mk}">${esc((e.marker||'').replace('RECORD','REC'))}</span></div>`;
-    }).join('')}</div>`:'';
-    return `<div class="day-card"><div class="dc-head" data-day="${esc(day.label)}" title="View ${esc(day.label)} schedule →">
-        <div class="dnum"><b>${esc(ab[1]||'')}</b><span>${esc((ab[0]||'').slice(0,3).toUpperCase())} ${esc(ab[2]||'')}</span></div>
-        <span class="cnt">${entries.length}</span></div>
-      <div class="dc-body">${rows}${campHtml}</div></div>`;
+    const stripHtml=strip.length?`<div class="pw-strip"><h5>Day-wide &amp; other sports</h5><ul>${
+      strip.map(s2=>`<li><span class="pw-sport">${esc(s2.sport)}</span><span class="pw-name">${esc(s2.name)}</span>
+        <span class="pw-meta"><span class="asset ${s2.status==='Ready'?'ready':''}">${esc(s2.status)}</span>${s2.onpage?'<span class="onpage">Promo page</span>':''}</span></li>`).join('')
+    }</ul></div>`:'';
+    return `<section class="pw-day"><div class="pw-dayhead"><h3>${esc(heading)}</h3><span class="pw-count">${esc(cnt)}</span></div>${matches}${stripHtml}</section>`;
   }).join('');
-  $('#board').innerHTML=boardHtml||'<div class="empty" style="grid-column:1/-1">Nothing matches your search.</div>';
-
-  $('#sched-meta').textContent=shown+' key matches & promos';
+  $('#plan').innerHTML=planHtml||`<div class="empty">${plan.length?'Nothing matches your search.':'No promotions database loaded for this week yet.'}</div>`;
+  $('#f-page').classList.toggle('active',state.pageOnly);
+  $('#f-other').classList.toggle('active',state.otherSports);
+  $('#sched-meta').textContent=fxCount+' fixtures · '+prCount+' promos';
 
   $('#priorities').innerHTML=(w.priorities||[]).map(p=>`<div class="prio ${p.level==='high'?'high':p.level==='med'?'med':'low'}">
     <span class="dot"></span><div><div class="pt">${esc(p.title)}</div><div class="pn">${esc(p.note)}</div></div></div>`).join('');
@@ -676,9 +743,12 @@ function gamingCard(g){
   const tw=g.twitter_link?`<a class="lk lk-bs" href="${esc(g.twitter_link)}" target="_blank" rel="noopener">${ICON('ext')} Twitter Link</a>`:'';
   const links=(fb||tw)?`<div class="lk-row">${fb}${tw}</div>`:`<span class="lk disabled">No platform links</span>`;
   const sect=g.section?`<span class="sect-tag sect-${slugify(g.section)}">${esc(g.section)}</span>`:'';
+  const st=g.status?`<span class="st-pill st-${statusClass(g.status)}">${esc(g.status)}</span>`:'';
+  const lead=g.lead?` · ${esc(g.lead)}`:'';
   return `<div class="card">
     <div class="card-top"><span class="badge ${gamingBadgeClass(g.type)}">${esc(g.type||'Promo')}</span>
-      <div class="mn">${esc(g.name)}<small>${esc(g.date||'')}</small></div>${sect}</div>
+      <div class="mn">${esc(g.name)}<small>${esc(g.date||'')}${lead}</small></div>${sect}</div>
+    ${st?`<div class="st-row">${st}</div>`:''}
     ${gamingPreview(g)}
     <div class="card-body">${caps.join('')}</div>
     <div class="card-foot">${design}${links}</div></div>`;
@@ -720,7 +790,7 @@ function promoPreview(p){
     ? `<div class="glow"></div><div class="ph">${ICON('air')}<div>Open design in Air</div></div>`
     : `<div class="glow"></div><div class="tagword">${esc((p.promo||'').toUpperCase())}</div>`;
   const fbAttrs = air ? `class="pv-fallback has-air" onclick="window.open('${esc(air)}','_blank')"` : `class="pv-fallback"`;
-  return `<div class="preview"${air?` data-air="${esc(air)}"`:''}>
+  return `<div class="preview preview-promo"${air?` data-air="${esc(air)}"`:''}>
     <span class="pv-src">${kind}</span>
     <img class="pv-img" src="${esc(cands[0])}" data-cands='${esc(JSON.stringify(cands))}' data-i="0" loading="lazy" alt="${esc(p.match)} design" onerror="imgErr(this)" onclick="pvClick(this)">
     <div ${fbAttrs} style="display:none">${fbInner}</div></div>`;
@@ -772,6 +842,8 @@ document.addEventListener('click',e=>{
     return;
   }
   const dv=e.target.closest('[data-view]'); if(dv){$('#q').value='';state.q='';setView(dv.dataset.view);return;}
+  const pwf=e.target.closest('[data-pwf]');
+  if(pwf){ if(pwf.dataset.pwf==='page') state.pageOnly=!state.pageOnly; else state.otherSports=!state.otherSports; renderHome(); return; }
   const pf=e.target.closest('[data-pf]'); if(pf){state.promoFilter=pf.dataset.pf;renderPromos();}
   const gf=e.target.closest('[data-gf]'); if(gf){state.gamingFilter=gf.dataset.gf;renderGaming();}
   const wk=e.target.closest('[data-wk]'); if(wk){state.week=+wk.dataset.wk;state.gamingFilter='all';state.promoFilter='all';renderAll();}
