@@ -271,7 +271,7 @@ window.SCH_DATA = {
                 {
                   "type": "50% BBB",
                   "name": "50% Bet Builder Boost: Rams v 49ers",
-                  "status": "Awaiting",
+                  "status": "Ready",
                   "onpage": true,
                   "prio": "med"
                 }
@@ -346,7 +346,7 @@ window.SCH_DATA = {
             {
               "type": "BOG",
               "name": "Best Odds Guaranteed: St Leger",
-              "status": "Ready",
+              "status": "Awaiting",
               "onpage": false,
               "prio": "other",
               "sport": "Horse Racing",
@@ -373,7 +373,7 @@ window.SCH_DATA = {
             {
               "type": "Boost / Places",
               "name": "Irish Open - Outright 10 Places",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "Golf",
@@ -391,7 +391,7 @@ window.SCH_DATA = {
             {
               "type": "Free Bet",
               "name": "Completely Free GBP2 Bet: NFL Opening Night",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "US Sports",
@@ -400,7 +400,7 @@ window.SCH_DATA = {
             {
               "type": "EPO",
               "name": "EPO: NFL Start of Season",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "US Sports",
@@ -409,7 +409,7 @@ window.SCH_DATA = {
             {
               "type": "Streaming",
               "name": "Live Streaming: NFL Start of Season",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "US Sports",
@@ -466,7 +466,7 @@ window.SCH_DATA = {
             {
               "type": "Bet & Get",
               "name": "Friday Bet & Get: Irish Open",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "Golf",
@@ -484,7 +484,7 @@ window.SCH_DATA = {
             {
               "type": "Bet & Get",
               "name": "Daily In-Play Bet & Get: English Open",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "Snooker",
@@ -628,7 +628,7 @@ window.SCH_DATA = {
             {
               "type": "BOG",
               "name": "Best Odds Guaranteed: Greyhound Derby Final",
-              "status": "Ready",
+              "status": "Awaiting",
               "onpage": false,
               "prio": "other",
               "sport": "Greyhounds",
@@ -646,7 +646,7 @@ window.SCH_DATA = {
             {
               "type": "BOG",
               "name": "Best Odds Guaranteed: Irish Champions Festival",
-              "status": "Ready",
+              "status": "Awaiting",
               "onpage": false,
               "prio": "other",
               "sport": "Horse Racing",
@@ -676,7 +676,7 @@ window.SCH_DATA = {
                 {
                   "type": "50% BBB",
                   "name": "50% Bet Builder Boost: Chiefs v Broncos",
-                  "status": "Awaiting",
+                  "status": "Ready",
                   "onpage": true,
                   "prio": "med"
                 }
@@ -772,7 +772,7 @@ window.SCH_DATA = {
             {
               "type": "Bet & Get",
               "name": "Acca Bet & Get: NFL Sunday 6pm",
-              "status": "Awaiting",
+              "status": "Ready",
               "onpage": false,
               "prio": "other",
               "sport": "US Sports",
@@ -1176,7 +1176,7 @@ window.SCH_DATA = {
           "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the St Leger Doncaster.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
           "air": "https://app.air.inc/b/st-leger-irish-champions-festival-17cf6f7f-aa1e-4b52-afb8-39df3806540c",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "https://air-prod.imgix.net/d77933e9-6785-4528-beb8-09bd36a2319c.jpg",
+          "image": "https://air-prod.imgix.net/c6de86c9-1fdb-44b4-a5e9-237404b683fd.jpg",
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
@@ -1192,7 +1192,7 @@ window.SCH_DATA = {
           "facebook": "🏇 Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the St Leger Doncaster!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
           "air": "https://app.air.inc/b/st-leger-irish-champions-festival-17cf6f7f-aa1e-4b52-afb8-39df3806540c",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "https://air-prod.imgix.net/2fbe8258-0b70-4d66-9b9f-85fd653e8d11.jpg",
+          "image": "https://air-prod.imgix.net/6279af90-54c1-4330-a1ae-3cb7f134704d.jpg",
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
@@ -1212,7 +1212,7 @@ window.SCH_DATA = {
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
-          "status": "Ready"
+          "status": "Awaiting"
         },
         {
           "day": "Thursday",
@@ -1240,7 +1240,7 @@ window.SCH_DATA = {
           "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the St Leger Doncaster.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
           "air": "https://app.air.inc/b/st-leger-irish-champions-festival-17cf6f7f-aa1e-4b52-afb8-39df3806540c",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "https://air-prod.imgix.net/d77933e9-6785-4528-beb8-09bd36a2319c.jpg",
+          "image": "https://air-prod.imgix.net/c6de86c9-1fdb-44b4-a5e9-237404b683fd.jpg",
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
@@ -1256,11 +1256,11 @@ window.SCH_DATA = {
           "facebook": "🏌️ We're paying 10 PLACES on the Irish Open.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
           "air": "https://app.air.inc/b/extra-places-63dbdd8b-be94-43ac-8a90-cdaba723b4c6",
           "boylesports": "https://www.boylesports.com/sports/golf",
-          "image": "https://air-prod.imgix.net/006540be-891b-4788-955c-ff4013cf8faa.jpg",
+          "image": "https://air-prod.imgix.net/dea2c417-1ed2-45a3-bec6-a7be115acc7e.jpg",
           "note": "Golf SBK > Extra Places",
           "sport": "Golf",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Friday",
@@ -1276,7 +1276,7 @@ window.SCH_DATA = {
           "note": "Golf SBK > Bet & Get",
           "sport": "Golf",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Thursday",
@@ -1284,15 +1284,15 @@ window.SCH_DATA = {
           "competition": "US Sports",
           "promo": "Completely Free GBP2 Bet: NFL Opening Night",
           "type": "Free Bet",
-          "twitter": "",
-          "facebook": "",
-          "air": "https://app.air.inc/b/sbk-31d5ae59-3277-4b49-9cf3-2543a55a59ab",
+          "twitter": "Get a £/€2 Free Bet to use on the NFL Start of Season.\n\nTap below to claim your Free Bet.",
+          "facebook": "🏈 Get a £/€2 Free Bet to use on the NFL Start of Season.\n\n📲 Claim now — https://www.boylesports.com/sports/american-football/competition/usa-nfl",
+          "air": "https://app.air.inc/b/nfl-new-season-3a8144d0-3737-4e4b-9d2b-adb06a2a8784",
           "boylesports": "https://www.boylesports.com/sports/american-football/competition/usa-nfl",
-          "image": "",
+          "image": "https://air-prod.imgix.net/228c0240-bb2d-4b8d-bbd5-acb2761c8e9b.jpg",
           "note": "NFL SBK (no promo sub-folders yet)",
           "sport": "US Sports",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Thursday",
@@ -1308,7 +1308,7 @@ window.SCH_DATA = {
           "note": "NFL SBK (no promo sub-folders yet); competition/KO sourced from web (not in Football Fixtures connector)",
           "sport": "US Sports",
           "onpage": true,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Sunday",
@@ -1324,7 +1324,7 @@ window.SCH_DATA = {
           "note": "NFL SBK (no promo sub-folders yet); competition/KO sourced from web (not in Football Fixtures connector)",
           "sport": "US Sports",
           "onpage": true,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Thursday",
@@ -1336,11 +1336,11 @@ window.SCH_DATA = {
           "facebook": "🏈 Get paid out early with BOYLE Sports Early Payout on the NFL Start of Season.\n\n📲 Find out more — https://www.boylesports.com/sports/american-football/competition/usa-nfl",
           "air": "https://app.air.inc/b/sbk-31d5ae59-3277-4b49-9cf3-2543a55a59ab",
           "boylesports": "https://www.boylesports.com/sports/american-football/competition/usa-nfl",
-          "image": "https://air-prod.imgix.net/a926c8f3-9a02-4de4-ba4c-8151dee63d88.jpg",
+          "image": "https://air-prod.imgix.net/60ed31ab-d1b3-41e4-a115-f8792d0dbe01.jpg",
           "note": "NFL SBK (no promo sub-folders yet)",
           "sport": "US Sports",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Thursday",
@@ -1348,15 +1348,15 @@ window.SCH_DATA = {
           "competition": "US Sports",
           "promo": "Live Streaming: NFL Start of Season",
           "type": "Streaming",
-          "twitter": "",
-          "facebook": "",
+          "twitter": "Watch every game live with BOYLE Sports live streaming on the NFL Start of Season.\n\nTap below to watch.",
+          "facebook": "🏈 Watch every game live with BOYLE Sports live streaming on the NFL Start of Season.\n\n📲 Watch here — https://www.boylesports.com/sports/american-football/competition/usa-nfl",
           "air": "https://app.air.inc/b/sbk-31d5ae59-3277-4b49-9cf3-2543a55a59ab",
           "boylesports": "https://www.boylesports.com/sports/american-football/competition/usa-nfl",
-          "image": "https://air-prod.imgix.net/1c203465-1bef-44ec-9a2f-0fb1ced233fd.jpg",
+          "image": "https://air-prod.imgix.net/eb7be90c-1336-4b5a-977f-4161287d1d06.jpg",
           "note": "NFL SBK (no promo sub-folders yet)",
           "sport": "US Sports",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Sunday",
@@ -1368,11 +1368,11 @@ window.SCH_DATA = {
           "facebook": "🏈 Claim your Free Bet when you bet on Accas at the NFL Sunday 6pm Matches.\n\n📲 Opt in — https://www.boylesports.com/sports/american-football/competition/usa-nfl",
           "air": "https://app.air.inc/b/sbk-31d5ae59-3277-4b49-9cf3-2543a55a59ab",
           "boylesports": "https://www.boylesports.com/sports/american-football/competition/usa-nfl",
-          "image": "https://air-prod.imgix.net/c3b87979-54db-4c12-b3a7-9707f408dfd4.jpg",
+          "image": "https://air-prod.imgix.net/cebc1133-92f6-4606-8621-a392c6d785a2.jpg",
           "note": "NFL SBK (no promo sub-folders yet)",
           "sport": "US Sports",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Friday",
@@ -1388,7 +1388,7 @@ window.SCH_DATA = {
           "note": "Snooker Digital > Bet & Get",
           "sport": "Snooker",
           "onpage": false,
-          "status": "Awaiting"
+          "status": "Ready"
         },
         {
           "day": "Saturday",
@@ -1436,7 +1436,7 @@ window.SCH_DATA = {
           "note": "Greyhound Derby SBK Air board (per Q3 plan)",
           "sport": "Greyhounds",
           "onpage": false,
-          "status": "Ready"
+          "status": "Awaiting"
         },
         {
           "day": "Saturday",
@@ -1448,7 +1448,7 @@ window.SCH_DATA = {
           "facebook": "🏇 Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the Irish Champions Festival!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
           "air": "https://app.air.inc/b/st-leger-irish-champions-festival-17cf6f7f-aa1e-4b52-afb8-39df3806540c",
           "boylesports": "https://www.boylesports.com/sports/horse-racing",
-          "image": "https://air-prod.imgix.net/2fbe8258-0b70-4d66-9b9f-85fd653e8d11.jpg",
+          "image": "https://air-prod.imgix.net/6279af90-54c1-4330-a1ae-3cb7f134704d.jpg",
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
@@ -1468,7 +1468,7 @@ window.SCH_DATA = {
           "note": "Racing > Events T1 > St Leger & Irish Champions Festival (assets prepared)",
           "sport": "Horse Racing",
           "onpage": false,
-          "status": "Ready"
+          "status": "Awaiting"
         },
         {
           "day": "Saturday",
@@ -1607,7 +1607,7 @@ window.SCH_DATA = {
   ],
   "campaign": {
     "title": "SBK Plan — Fixtures & Key Events",
-    "note": "From the 2026 SBK Plan · 1 Sep – 15 Oct 2026",
+    "note": "From the 2026 SBK Plan · events shown on the days they actually run",
     "months": [
       "2026-09",
       "2026-10"
@@ -1617,856 +1617,1082 @@ window.SCH_DATA = {
       {
         "date": "2026-09-01",
         "cat": "fixture",
-        "title": "West Ham Utd v Wolves",
+        "title": "Stoke v Norwich",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-01",
+        "end": "2026-09-01"
       },
       {
         "date": "2026-09-01",
         "cat": "fixture",
-        "title": "Stoke v Norwich",
+        "title": "West Ham Utd v Wolves",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-01",
+        "end": "2026-09-01"
       },
       {
         "date": "2026-09-01",
         "cat": "other",
         "title": "Taylor v Pili",
         "sub": "Other",
-        "marker": "WEEK"
+        "marker": "WEEK",
+        "start": "2026-09-01",
+        "end": "2026-09-01"
       },
       {
         "date": "2026-09-01",
         "cat": "snooker",
         "title": "British Open",
         "sub": "Snooker",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-01",
+        "end": "2026-09-06"
       },
       {
         "date": "2026-09-01",
         "cat": "tennis",
         "title": "US Open",
         "sub": "Sports · Tennis",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-01",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-02",
         "cat": "fixture",
         "title": "Burnley v Boro",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-02",
+        "end": "2026-09-02"
       },
       {
         "date": "2026-09-02",
         "cat": "fixture",
         "title": "Celtic v Aberdeen",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-02",
+        "end": "2026-09-02"
       },
       {
         "date": "2026-09-02",
         "cat": "fixture",
         "title": "Falkirk v Rangers",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-02",
+        "end": "2026-09-02"
       },
       {
         "date": "2026-09-03",
         "cat": "fixture",
         "title": "Hibernian v Hearts",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-03",
+        "end": "2026-09-03"
       },
       {
         "date": "2026-09-03",
         "cat": "fixture",
         "title": "Real Sociedad v Celta Vigo",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-03",
+        "end": "2026-09-03"
       },
       {
         "date": "2026-09-04",
         "cat": "fixture",
         "title": "Ipswich v Liverpool",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-04",
+        "end": "2026-09-04"
       },
       {
         "date": "2026-09-04",
         "cat": "fixture",
         "title": "LOI- Rovers v Shelbourne",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-04",
+        "end": "2026-09-04"
       },
       {
         "date": "2026-09-04",
         "cat": "fixture",
         "title": "Real Betis v Real Madrid",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-05",
-        "cat": "fixture",
-        "title": "Newcastle v Bournemouth",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-05",
-        "cat": "fixture",
-        "title": "Forest v Spurs",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-05",
-        "cat": "fixture",
-        "title": "Hull v Aston Villa",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-05",
-        "cat": "fixture",
-        "title": "St Mirren v Celtic",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-04",
+        "end": "2026-09-04"
       },
       {
         "date": "2026-09-05",
         "cat": "fixture",
         "title": "Brighton v Leeds Utd",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
       },
       {
         "date": "2026-09-05",
         "cat": "fixture",
-        "title": "West Ham Utd v Derby County",
+        "title": "Forest v Spurs",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
+      },
+      {
+        "date": "2026-09-05",
+        "cat": "fixture",
+        "title": "Hull v Aston Villa",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
+      },
+      {
+        "date": "2026-09-05",
+        "cat": "fixture",
+        "title": "Newcastle v Bournemouth",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
+      },
+      {
+        "date": "2026-09-05",
+        "cat": "fixture",
+        "title": "St Mirren v Celtic",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
       },
       {
         "date": "2026-09-05",
         "cat": "fixture",
         "title": "Swansea v Wrexham",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
+      },
+      {
+        "date": "2026-09-05",
+        "cat": "fixture",
+        "title": "West Ham Utd v Derby County",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-05",
+        "end": "2026-09-05"
       },
       {
         "date": "2026-09-06",
         "cat": "fixture",
         "title": "Arsenal v Chelsea",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-06",
-        "cat": "fixture",
-        "title": "Everton v Man Utd",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-06",
-        "cat": "fixture",
-        "title": "Juventus v AC Milan",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-06",
+        "end": "2026-09-06"
       },
       {
         "date": "2026-09-06",
         "cat": "fixture",
         "title": "Espanyol v Sevilla",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-06",
+        "end": "2026-09-06"
       },
       {
-        "date": "2026-09-07",
-        "cat": "cricket",
-        "title": "Eng v Pak Test",
-        "sub": "Cricket",
-        "marker": "WEEK"
+        "date": "2026-09-06",
+        "cat": "fixture",
+        "title": "Everton v Man Utd",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-06",
+        "end": "2026-09-06"
+      },
+      {
+        "date": "2026-09-06",
+        "cat": "fixture",
+        "title": "Juventus v AC Milan",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-06",
+        "end": "2026-09-06"
       },
       {
         "date": "2026-09-07",
         "cat": "fixture",
         "title": "Bromley v Wimbledon",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "football",
-        "title": "UCL Start",
-        "sub": "UEFA",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "football",
-        "title": "Carabo Cup 3rd Round",
-        "sub": "GB Domestic",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "golf",
-        "title": "Irish Open",
-        "sub": "Golf",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "other",
-        "title": "Garcia v Benn",
-        "sub": "Other",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "racing",
-        "title": "St Leger/Irish Champions Festivals",
-        "sub": "Racing · Tier 1",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-07",
+        "end": "2026-09-07"
       },
       {
         "date": "2026-09-07",
         "cat": "snooker",
         "title": "English Open",
         "sub": "Snooker",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "tennis",
-        "title": "US Open",
-        "sub": "Sports · Tennis",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-07",
-        "cat": "us",
-        "title": "NFL Start",
-        "sub": "US Sports",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-08",
-        "cat": "fixture",
-        "title": "Porto v Man City",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-08",
-        "cat": "fixture",
-        "title": "Real Madrid v Inter Milan",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-07",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-08",
         "cat": "fixture",
         "title": "Bolton v West Ham Utd",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-08"
       },
       {
         "date": "2026-09-08",
         "cat": "fixture",
         "title": "Club Brugge v Aston Villa",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-08"
+      },
+      {
+        "date": "2026-09-08",
+        "cat": "fixture",
+        "title": "Porto v Man City",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-08"
+      },
+      {
+        "date": "2026-09-08",
+        "cat": "fixture",
+        "title": "Real Madrid v Inter Milan",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-08"
+      },
+      {
+        "date": "2026-09-08",
+        "cat": "football",
+        "title": "Carabo Cup 3rd Round",
+        "sub": "GB Domestic",
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-10"
+      },
+      {
+        "date": "2026-09-08",
+        "cat": "football",
+        "title": "UCL Start",
+        "sub": "UEFA",
+        "marker": "",
+        "start": "2026-09-08",
+        "end": "2026-09-10"
       },
       {
         "date": "2026-09-09",
-        "cat": "fixture",
-        "title": "Liverpool v Atletico Madrid",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-09",
-        "cat": "fixture",
-        "title": "Napoli v Arsenal",
-        "sub": "Football fixture",
-        "marker": ""
+        "cat": "cricket",
+        "title": "Eng v Pak Test",
+        "sub": "Cricket",
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-09",
         "cat": "fixture",
         "title": "Barcelona v Feyenoord",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-09"
       },
       {
         "date": "2026-09-09",
         "cat": "fixture",
         "title": "Chelsea v Leeds Utd",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-09"
       },
       {
-        "date": "2026-09-10",
+        "date": "2026-09-09",
         "cat": "fixture",
-        "title": "Man Utd v Sabah",
+        "title": "Liverpool v Atletico Madrid",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-09"
+      },
+      {
+        "date": "2026-09-09",
+        "cat": "fixture",
+        "title": "Napoli v Arsenal",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-09"
+      },
+      {
+        "date": "2026-09-09",
+        "cat": "golf",
+        "title": "Irish Open",
+        "sub": "Golf",
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-13"
+      },
+      {
+        "date": "2026-09-09",
+        "cat": "us",
+        "title": "NFL Start",
+        "sub": "US Sports",
+        "marker": "",
+        "start": "2026-09-09",
+        "end": "2026-09-09"
       },
       {
         "date": "2026-09-10",
         "cat": "fixture",
         "title": "Bayern v Bodo/Glimt",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-10",
+        "end": "2026-09-10"
       },
       {
         "date": "2026-09-10",
         "cat": "fixture",
         "title": "Fenerbahce v Roma",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-10",
+        "end": "2026-09-10"
       },
       {
-        "date": "2026-09-11",
+        "date": "2026-09-10",
         "cat": "fixture",
-        "title": "West Ham Utd v Wrexham",
+        "title": "Man Utd v Sabah",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-10",
+        "end": "2026-09-10"
+      },
+      {
+        "date": "2026-09-10",
+        "cat": "racing",
+        "title": "St Leger/Irish Champions Festivals",
+        "sub": "Racing · Tier 1",
+        "marker": "",
+        "start": "2026-09-10",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-11",
         "cat": "fixture",
         "title": "Sevilla v Valencia",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-11",
+        "end": "2026-09-11"
       },
       {
-        "date": "2026-09-12",
+        "date": "2026-09-11",
         "cat": "fixture",
-        "title": "Spurs v Everton",
+        "title": "West Ham Utd v Wrexham",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-12",
-        "cat": "fixture",
-        "title": "Liverpool v Fulham",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-12",
-        "cat": "fixture",
-        "title": "Sunderland v Arsenal",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-12",
-        "cat": "fixture",
-        "title": "Derby v Birmingham",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-11",
+        "end": "2026-09-11"
       },
       {
         "date": "2026-09-12",
         "cat": "fixture",
         "title": "Aston Villa v Nottingham Forest",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
+      },
+      {
+        "date": "2026-09-12",
+        "cat": "fixture",
+        "title": "Derby v Birmingham",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
+      },
+      {
+        "date": "2026-09-12",
+        "cat": "fixture",
+        "title": "Liverpool v Fulham",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
       },
       {
         "date": "2026-09-12",
         "cat": "fixture",
         "title": "Real Madrid v Real Vallecano",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
       },
       {
-        "date": "2026-09-13",
+        "date": "2026-09-12",
         "cat": "fixture",
-        "title": "Man Utd v Man City",
+        "title": "Spurs v Everton",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
+      },
+      {
+        "date": "2026-09-12",
+        "cat": "fixture",
+        "title": "Sunderland v Arsenal",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
+      },
+      {
+        "date": "2026-09-12",
+        "cat": "other",
+        "title": "Garcia v Benn",
+        "sub": "Other",
+        "marker": "",
+        "start": "2026-09-12",
+        "end": "2026-09-12"
       },
       {
         "date": "2026-09-13",
         "cat": "fixture",
         "title": "Coventry v Brighton",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-13",
+        "end": "2026-09-13"
+      },
+      {
+        "date": "2026-09-13",
+        "cat": "fixture",
+        "title": "Man Utd v Man City",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-13",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-13",
         "cat": "fixture",
         "title": "Rangers v Celtic",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-13",
-        "cat": "fixture",
-        "title": "Sassuolo v Juventus",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-13",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-13",
         "cat": "fixture",
         "title": "Real Sociedad v Atletico Madrid",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-13",
+        "end": "2026-09-13"
       },
       {
-        "date": "2026-09-14",
-        "cat": "cricket",
-        "title": "Eng v Sri Lanka T20",
-        "sub": "Cricket",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-14",
+        "date": "2026-09-13",
         "cat": "fixture",
-        "title": "Leeds v Newcastle",
+        "title": "Sassuolo v Juventus",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-13",
+        "end": "2026-09-13"
       },
       {
         "date": "2026-09-14",
         "cat": "fixture",
         "title": "Inter Milan v Udinese",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-14",
+        "end": "2026-09-14"
       },
       {
         "date": "2026-09-14",
-        "cat": "football",
-        "title": "Tottenham v Aston Villa",
-        "sub": "Big Prem Games",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-14",
-        "cat": "football",
-        "title": "UEL Start Date",
-        "sub": "UEFA",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-14",
-        "cat": "golf",
-        "title": "BMW PGA Championshjip",
-        "sub": "Golf",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-14",
-        "cat": "other",
-        "title": "UFC 331",
-        "sub": "Other",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-14",
-        "cat": "racing",
-        "title": "Ayr",
-        "sub": "Tier 3",
-        "marker": "WEEK"
+        "cat": "fixture",
+        "title": "Leeds v Newcastle",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-14",
+        "end": "2026-09-14"
       },
       {
         "date": "2026-09-15",
-        "cat": "fixture",
-        "title": "Liverpool v Spurs",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-15",
-        "cat": "fixture",
-        "title": "Ipswich v Arsenal",
-        "sub": "Football fixture",
-        "marker": ""
+        "cat": "cricket",
+        "title": "Eng v Sri Lanka T20",
+        "sub": "Cricket",
+        "marker": "",
+        "start": "2026-09-15",
+        "end": "2026-09-19"
       },
       {
         "date": "2026-09-15",
         "cat": "fixture",
         "title": "Elche v Real Madrid",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-15",
+        "end": "2026-09-15"
+      },
+      {
+        "date": "2026-09-15",
+        "cat": "fixture",
+        "title": "Ipswich v Arsenal",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-15",
+        "end": "2026-09-15"
+      },
+      {
+        "date": "2026-09-15",
+        "cat": "fixture",
+        "title": "Liverpool v Spurs",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-15",
+        "end": "2026-09-15"
+      },
+      {
+        "date": "2026-09-15",
+        "cat": "golf",
+        "title": "BMW PGA Championshjip",
+        "sub": "Golf",
+        "marker": "",
+        "start": "2026-09-15",
+        "end": "2026-09-20"
       },
       {
         "date": "2026-09-16",
         "cat": "fixture",
         "title": "Man Utd v Brighton",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-16",
+        "end": "2026-09-16"
       },
       {
         "date": "2026-09-16",
         "cat": "fixture",
         "title": "Sunderland v AZ Alkmar",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-16",
+        "end": "2026-09-16"
+      },
+      {
+        "date": "2026-09-17",
+        "cat": "darts",
+        "title": "WS Darts Finals",
+        "sub": "Darts",
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-20"
       },
       {
         "date": "2026-09-17",
         "cat": "fixture",
         "title": "Celtic v Ferencavoros",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-17"
       },
       {
         "date": "2026-09-17",
         "cat": "fixture",
         "title": "Crystal Palace v Lech Poznan",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-17"
       },
       {
         "date": "2026-09-17",
         "cat": "fixture",
         "title": "Real Sociedad v Bournemouth",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-17"
       },
       {
-        "date": "2026-09-18",
-        "cat": "fixture",
-        "title": "Brentford v Chelsea",
-        "sub": "Football fixture",
-        "marker": ""
+        "date": "2026-09-17",
+        "cat": "football",
+        "title": "UEL Start Date",
+        "sub": "UEFA",
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-17"
+      },
+      {
+        "date": "2026-09-17",
+        "cat": "racing",
+        "title": "Ayr",
+        "sub": "Tier 3",
+        "marker": "",
+        "start": "2026-09-17",
+        "end": "2026-09-19"
       },
       {
         "date": "2026-09-18",
         "cat": "fixture",
         "title": "Bayern Munich v Union Berlin",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-18",
+        "end": "2026-09-18"
       },
       {
-        "date": "2026-09-19",
+        "date": "2026-09-18",
         "cat": "fixture",
-        "title": "Spurs v Villa",
+        "title": "Brentford v Chelsea",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-18",
+        "end": "2026-09-18"
       },
       {
         "date": "2026-09-19",
         "cat": "fixture",
         "title": "Nottingham Forest v Coventry",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-19",
+        "end": "2026-09-19"
       },
       {
         "date": "2026-09-19",
         "cat": "fixture",
         "title": "Sevilla v Barcelona",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-19",
+        "end": "2026-09-19"
+      },
+      {
+        "date": "2026-09-19",
+        "cat": "fixture",
+        "title": "Spurs v Villa",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-19",
+        "end": "2026-09-19"
+      },
+      {
+        "date": "2026-09-19",
+        "cat": "football",
+        "title": "Tottenham v Aston Villa",
+        "sub": "Big Prem Games",
+        "marker": "",
+        "start": "2026-09-19",
+        "end": "2026-09-19"
+      },
+      {
+        "date": "2026-09-19",
+        "cat": "other",
+        "title": "UFC 331",
+        "sub": "Other",
+        "marker": "",
+        "start": "2026-09-19",
+        "end": "2026-09-19"
       },
       {
         "date": "2026-09-20",
         "cat": "fixture",
         "title": "Bournemouth v Liverpool",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-20",
-        "cat": "fixture",
-        "title": "Fulham v Man Utd",
-        "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-09-20",
-        "cat": "fixture",
-        "title": "Leeds Utd v Crystal Palace",
-        "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-20"
       },
       {
         "date": "2026-09-20",
         "cat": "fixture",
         "title": "Celtic v Rangers",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-20"
+      },
+      {
+        "date": "2026-09-20",
+        "cat": "fixture",
+        "title": "Fulham v Man Utd",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-20"
+      },
+      {
+        "date": "2026-09-20",
+        "cat": "fixture",
+        "title": "Leeds Utd v Crystal Palace",
+        "sub": "Football fixture",
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-20"
       },
       {
         "date": "2026-09-20",
         "cat": "fixture",
         "title": "Marseille v PSG",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-20"
       },
       {
-        "date": "2026-09-21",
-        "cat": "cricket",
-        "title": "Eng v Sri Lanka T20",
-        "sub": "Cricket",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-21",
-        "cat": "darts",
-        "title": "WS Darts Finals",
-        "sub": "Darts",
-        "marker": "WEEK"
+        "date": "2026-09-20",
+        "cat": "racing",
+        "title": "Listowel, Newmarket & Curragh",
+        "sub": "Tier 3",
+        "marker": "",
+        "start": "2026-09-20",
+        "end": "2026-09-26"
       },
       {
         "date": "2026-09-21",
         "cat": "football",
         "title": "International Break",
         "sub": "Football · Premier League",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-21",
+        "end": "2026-09-27"
       },
       {
-        "date": "2026-09-21",
+        "date": "2026-09-22",
+        "cat": "cricket",
+        "title": "Eng v Sri Lanka T20",
+        "sub": "Cricket",
+        "marker": "",
+        "start": "2026-09-22",
+        "end": "2026-09-27"
+      },
+      {
+        "date": "2026-09-22",
         "cat": "golf",
         "title": "Presidents Cup",
         "sub": "Golf",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-21",
-        "cat": "racing",
-        "title": "Listowel, Newmarket & Curragh",
-        "sub": "Tier 3",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-21",
-        "cat": "tennis",
-        "title": "Laver Cup",
-        "sub": "Sports · Tennis",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-22",
+        "end": "2026-09-27"
       },
       {
         "date": "2026-09-24",
         "cat": "fixture",
         "title": "Kosovo v Ireland",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-24",
+        "end": "2026-09-24"
       },
       {
         "date": "2026-09-25",
         "cat": "fixture",
         "title": "Italy v Belgium",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-25",
+        "end": "2026-09-25"
+      },
+      {
+        "date": "2026-09-25",
+        "cat": "tennis",
+        "title": "Laver Cup",
+        "sub": "Sports · Tennis",
+        "marker": "",
+        "start": "2026-09-25",
+        "end": "2026-09-27"
       },
       {
         "date": "2026-09-27",
         "cat": "fixture",
         "title": "Israel v Ireland",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-27",
+        "end": "2026-09-27"
       },
       {
         "date": "2026-09-28",
         "cat": "darts",
         "title": "World Grand Prix",
         "sub": "Darts",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-28",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-09-28",
         "cat": "fixture",
         "title": "Belgium v France",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-09-28",
+        "end": "2026-09-28"
       },
       {
         "date": "2026-09-28",
         "cat": "football",
         "title": "International Break",
         "sub": "Football · Premier League",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-28",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-09-28",
         "cat": "golf",
         "title": "Bank of Utah Championship",
         "sub": "Golf",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-09-28",
-        "cat": "racing",
-        "title": "Arc Weekend",
-        "sub": "Tier 2",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-09-28",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-10-01",
         "cat": "fixture",
         "title": "Wales v Norway",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-01",
+        "end": "2026-10-01"
       },
       {
         "date": "2026-10-02",
         "cat": "fixture",
         "title": "France v Italy",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-02",
+        "end": "2026-10-02"
       },
       {
         "date": "2026-10-03",
         "cat": "fixture",
         "title": "North Macedonia v Scotland",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-03",
+        "end": "2026-10-03"
+      },
+      {
+        "date": "2026-10-03",
+        "cat": "racing",
+        "title": "Arc Weekend",
+        "sub": "Tier 2",
+        "marker": "",
+        "start": "2026-10-03",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-10-04",
         "cat": "fixture",
         "title": "Ireland v Isreal",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-04",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-10-04",
         "cat": "fixture",
         "title": "Ireland v Kosovo",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-04",
+        "end": "2026-10-04"
       },
       {
         "date": "2026-10-05",
         "cat": "fixture",
         "title": "France v Belgium",
         "sub": "Football fixture",
-        "marker": ""
-      },
-      {
-        "date": "2026-10-05",
-        "cat": "football",
-        "title": "Liverpool v Man City",
-        "sub": "Big Prem Games",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-05",
-        "cat": "football",
-        "title": "Tottenham v Man Utd",
-        "sub": "Big Prem Games",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-05",
-        "cat": "golf",
-        "title": "Baycurrent Classic",
-        "sub": "Golf",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-05",
-        "cat": "racing",
-        "title": "Newmarket",
-        "sub": "Tier 2",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-05",
-        "cat": "racing",
-        "title": "Chepstow",
-        "sub": "Tier 3",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-05",
+        "end": "2026-10-05"
       },
       {
         "date": "2026-10-05",
         "cat": "sbk",
         "title": "BIG WEEK",
         "sub": "SBK EVENTS",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-05",
+        "end": "2026-10-11"
       },
       {
         "date": "2026-10-05",
         "cat": "tennis",
         "title": "ATP Shanghai",
         "sub": "Sports · Tennis",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-05",
+        "end": "2026-10-18"
+      },
+      {
+        "date": "2026-10-08",
+        "cat": "golf",
+        "title": "Baycurrent Classic",
+        "sub": "Golf",
+        "marker": "",
+        "start": "2026-10-08",
+        "end": "2026-10-11"
       },
       {
         "date": "2026-10-09",
         "cat": "fixture",
         "title": "Liverpool vs Man City BIG Super Boost",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-09",
+        "end": "2026-10-09"
+      },
+      {
+        "date": "2026-10-09",
+        "cat": "racing",
+        "title": "Newmarket",
+        "sub": "Tier 2",
+        "marker": "",
+        "start": "2026-10-09",
+        "end": "2026-10-10"
       },
       {
         "date": "2026-10-10",
         "cat": "fixture",
         "title": "Man Utd v Spurs",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-10",
+        "end": "2026-10-10"
+      },
+      {
+        "date": "2026-10-10",
+        "cat": "football",
+        "title": "Tottenham v Man Utd",
+        "sub": "Big Prem Games",
+        "marker": "",
+        "start": "2026-10-10",
+        "end": "2026-10-10"
+      },
+      {
+        "date": "2026-10-10",
+        "cat": "racing",
+        "title": "Chepstow",
+        "sub": "Tier 3",
+        "marker": "",
+        "start": "2026-10-10",
+        "end": "2026-10-10"
       },
       {
         "date": "2026-10-11",
         "cat": "fixture",
         "title": "Hull v Everton",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-11",
+        "end": "2026-10-11"
+      },
+      {
+        "date": "2026-10-11",
+        "cat": "football",
+        "title": "Liverpool v Man City",
+        "sub": "Big Prem Games",
+        "marker": "",
+        "start": "2026-10-11",
+        "end": "2026-10-11"
       },
       {
         "date": "2026-10-12",
         "cat": "fixture",
         "title": "Coventry v Newcastle",
         "sub": "Football fixture",
-        "marker": ""
+        "marker": "",
+        "start": "2026-10-12",
+        "end": "2026-10-12"
       },
       {
-        "date": "2026-10-12",
-        "cat": "football",
-        "title": "Leeds v Man Utd",
-        "sub": "Big Prem Games",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-12",
+        "date": "2026-10-17",
         "cat": "football",
         "title": "Everton v Chelsea",
         "sub": "Big Prem Games",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-17",
+        "end": "2026-10-17"
       },
       {
-        "date": "2026-10-12",
-        "cat": "football",
-        "title": "UCL/UEL/UECL League Phase",
-        "sub": "UEFA",
-        "marker": "WEEK"
-      },
-      {
-        "date": "2026-10-12",
+        "date": "2026-10-17",
         "cat": "racing",
         "title": "Ascot",
         "sub": "Tier 2",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-17",
+        "end": "2026-10-17"
       },
       {
-        "date": "2026-10-12",
+        "date": "2026-10-17",
         "cat": "racing",
         "title": "Limerick",
         "sub": "Tier 3",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-17",
+        "end": "2026-10-18"
       },
       {
-        "date": "2026-10-12",
+        "date": "2026-10-18",
+        "cat": "football",
+        "title": "Leeds v Man Utd",
+        "sub": "Big Prem Games",
+        "marker": "",
+        "start": "2026-10-18",
+        "end": "2026-10-18"
+      },
+      {
+        "date": "2026-10-18",
         "cat": "snooker",
         "title": "Northern Ireland Open",
         "sub": "Snooker",
-        "marker": "WEEK"
+        "marker": "",
+        "start": "2026-10-18",
+        "end": "2026-10-25"
       },
       {
-        "date": "2026-10-12",
-        "cat": "tennis",
-        "title": "ATP Shanghai",
-        "sub": "Sports · Tennis",
-        "marker": "WEEK"
+        "date": "2026-10-20",
+        "cat": "football",
+        "title": "UCL/UEL/UECL League Phase",
+        "sub": "UEFA",
+        "marker": "",
+        "start": "2026-10-20",
+        "end": "2026-10-22"
       }
     ]
   },

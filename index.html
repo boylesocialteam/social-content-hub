@@ -154,6 +154,13 @@
   .cal-fix.eng b{color:var(--blue-d);}
   .cal-ev{display:flex;align-items:center;gap:5px;background:var(--line-2);border-left:3px solid #64748b;border-radius:6px;padding:3px 6px;}
   .cal-ev .cal-ev-t{font-size:.62rem;font-weight:700;color:#2b3a49;line-height:1.25;flex:1;overflow-wrap:anywhere;}
+  /* multi-day runs: squared-off in the middle, rounded at the ends */
+  .cal-ev.run{border-radius:0;opacity:.92;}
+  .cal-ev.run .cal-ev-t{font-weight:600;}
+  .cal-ev.run-start{border-top-left-radius:6px;border-top-right-radius:6px;}
+  .cal-ev.run-start .cal-ev-t{font-weight:700;}
+  .cal-ev.run-end{border-bottom-left-radius:6px;border-bottom-right-radius:6px;}
+  .cal-ev.run:not(.run-start) .cal-ev-t{opacity:.72;}
   .cal-ev .cal-ev-mk{font-size:.5rem;font-weight:800;text-transform:uppercase;letter-spacing:.3px;padding:1px 4px;border-radius:4px;flex:none;}
   .cat-buz{border-left-color:#9333ea;} .cat-talent{border-left-color:#ea580c;} .cat-fan{border-left-color:#0891b2;} .cat-launch{border-left-color:#059669;}
   /* SBK plan categories */
@@ -641,7 +648,26 @@ function renderCampaign(){
     .map(k=>`<span class="lg"><i style="background:${CATCOL[k][1]}"></i>${CATCOL[k][0]}</span>`).join('');
   const q=state.q;
   const fixByDate={}; (c.fixtures||[]).forEach(f=>fixByDate[f.date]=f);
-  const evByDate={}; (c.events||[]).forEach(e=>(evByDate[e.date]=evByDate[e.date]||[]).push(e));
+  // Events may span several days. `start`/`end` (or legacy `date`) define the run;
+  // the event is repeated on every day it is actually taking place.
+  const evByDate={};
+  (c.events||[]).forEach(e=>{
+    const s=e.start||e.date, en=e.end||e.start||e.date;
+    if(!s) return;
+    // NB: format from local parts, never toISOString() — under BST that shifts the day back one.
+    const iso=x=>`${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`;
+    const d=new Date(s+'T00:00:00'), last=new Date(en+'T00:00:00');
+    let guard=0;
+    while(d<=last && guard++<400){
+      const ds=iso(d);
+      const multi=s!==en;
+      (evByDate[ds]=evByDate[ds]||[]).push(Object.assign({},e,{
+        date:ds, multi,
+        first:ds===s, last:ds===en
+      }));
+      d.setDate(d.getDate()+1);
+    }
+  });
   const dow=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d=>`<div class="cal-dow">${d}</div>`).join('');
   const html=(c.months||[]).map(mk=>{
     const [yy,mm]=mk.split('-').map(Number);
@@ -655,7 +681,12 @@ function renderCampaign(){
       const fixMatch=fx&&(!q||match(fx,q));
       if(q) evs=evs.filter(e=>match(e,q));
       const fixHtml=fixMatch?`<div class="cal-fix ${fx.eng?'eng':''}" title="${esc(fx.home+' v '+fx.away+(fx.time?' · '+fx.time:'')+(fx.time2?' / '+fx.time2:''))}"><b>${esc(fx.homeAbbr)} v ${esc(fx.awayAbbr)}</b>${fx.time?`<span>${esc(fx.time)}</span>`:''}</div>`:'';
-      const evHtml=evs.map(e=>`<div class="cal-ev cat-${e.cat}" title="${esc(e.title+' — '+e.sub)}"><span class="cal-ev-t">${esc(evLabel(e))}</span><span class="cal-ev-mk mk-${(e.marker||'').toLowerCase()}">${esc((e.marker||'').replace('RECORD','REC'))}</span></div>`).join('');
+      const evHtml=evs.map(e=>{
+        const runCls=e.multi?`run ${e.first?'run-start':''} ${e.last?'run-end':''}`:'';
+        const range=e.multi?` (${e.start} → ${e.end})`:'';
+        const mk=e.multi?'':(e.marker||'');
+        return `<div class="cal-ev cat-${e.cat} ${runCls}" title="${esc(e.title+' — '+e.sub+range)}"><span class="cal-ev-t">${esc(evLabel(e))}</span>${mk?`<span class="cal-ev-mk mk-${mk.toLowerCase()}">${esc(mk.replace('RECORD','REC'))}</span>`:''}</div>`;
+      }).join('');
       const dim=q&&!fixHtml&&!evHtml;
       cells+=`<div class="cal-cell ${fx&&fx.eng?'has-eng':''} ${dim?'dim':''}"><div class="cal-num">${day}</div>${fixHtml}${evHtml}</div>`;
     }
@@ -690,7 +721,7 @@ function renderPromos(){
       const all=weekItems.filter(p=>p.sport===sp);
       const items=all.filter(p=>match(p,q));
       if(!items.length) return '';
-      const ready=items.filter(p=>p.status==='Ready').length;
+      const ready=items.filter(p=>!!p.image).length;   // artwork actually on the card
       const types=[...new Set(items.map(p=>p.type))].slice(0,4);
       const img=(D.sportImg||{})[sp]||'';
       return `<button class="sport-tile" data-sport="${esc(sp)}">
