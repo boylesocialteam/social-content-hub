@@ -790,6 +790,15 @@ window.SCH_DATA = {
           ]
         }
       ]
+    },
+    {
+      "label": "14–20 Sep 2026",
+      "commencing": "2026-09-14",
+      "theme": "Gaming line-up in — promotions & schedule to follow",
+      "updated": "9 Sep 2026",
+      "priorities": [],
+      "schedule": [],
+      "plan": []
     }
   ],
   "links": [
@@ -1487,6 +1496,10 @@ window.SCH_DATA = {
           "status": "Ready"
         }
       ]
+    },
+    {
+      "label": "14–20 Sep 2026",
+      "items": []
     }
   ],
   "gamingWeeks": [
@@ -1505,7 +1518,7 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/games/super-fire-rail-express/?btag=52901",
           "twitter_link": "https://games.boylesports.com/games/super-fire-rail-express/?btag=52962",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Rosita Ciofi",
           "image": "https://air-prod.imgix.net/bcfa8e36-9fd0-41e3-b559-1ef288fea245/thumbnail.jpg"
         },
@@ -1517,29 +1530,29 @@ window.SCH_DATA = {
           "meta": "✨✨Game of the Week at BOYLE Casino! ✨✨",
           "twitter": "✨ Game of the Week at BOYLE Casino!",
           "instagram": "✨ Game of the Week at BOYLE Casino! ✨\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b2cb50728/b/b6526edb-a456-4db8-8c2b-96d0fbb00cd7",
+          "design": "https://app.air.inc/a/b54023208/b/b6526edb-a456-4db8-8c2b-96d0fbb00cd7",
           "facebook_link": "https://games.boylesports.com/games/big-bass-blast/?btag=52901",
           "twitter_link": "https://games.boylesports.com/games/big-bass-blast/?btag=52962",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Rosita Ciofi",
           "image": "https://air-prod.imgix.net/9f1951bb-cf59-4670-aab7-6e8a33efaaec/thumbnail.jpg"
         },
         {
           "section": "Gaming",
-          "name": "Bass Cash X Up King Millions",
+          "name": "Gold Cash FreeSpins 2",
           "type": "New Game Release",
           "date": "9 Sep 2026",
           "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
           "twitter": "🤩 New Game Release at BOYLE Casino!",
           "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
-          "design": "https://app.air.inc/a/b82d4fa5e/b/e1b2051f-0bf4-420b-9cf6-d8719623271d",
-          "facebook_link": "https://games.boylesports.com/games/Bass-cash-x-up-kings-millions/?btag=52901",
-          "twitter_link": "https://games.boylesports.com/games/Bass-cash-x-up-kings-millions/?btag=52962",
+          "design": "https://app.air.inc/a/bd3995de5/b/f59aa2da-98c2-4236-a3f7-3175ea6970fe",
+          "facebook_link": "https://games.boylesports.com/games/gold-cash-freespins-2/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/gold-cash-freespins-2/?btag=52962",
           "files": "",
-          "status": "Work in progress",
-          "lead": "",
-          "image": "https://air-prod.imgix.net/07a4ff55-9c09-4973-a391-2986727d1ca2/thumbnail.jpg"
+          "status": "Scheduled",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/7aa5a805-6513-43a0-a045-8613f6cecea6/thumbnail.jpg"
         },
         {
           "section": "Live Casino",
@@ -1553,7 +1566,7 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/live-blackjack/?btag=55400",
           "twitter_link": "https://games.boylesports.com/live-blackjack/?btag=55401",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Aida Bas Real"
         },
         {
@@ -1568,8 +1581,8 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/promotions-and-offers/ready-steady-spin-leaderboard/?btag=56251",
           "twitter_link": "https://games.boylesports.com/promotions-and-offers/ready-steady-spin-leaderboard/?btag=56252",
           "files": "",
-          "status": "Work in progress",
-          "lead": ""
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi"
         },
         {
           "section": "Live Casino",
@@ -1583,7 +1596,7 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/games/disco-balls-live/?btag=55400",
           "twitter_link": "https://games.boylesports.com/games/disco-balls-live/?btag=55401",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Aida Bas Real"
         },
         {
@@ -1598,9 +1611,157 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/games/triple-power-cash-strike/?btag=52901",
           "twitter_link": "https://games.boylesports.com/games/triple-power-cash-strike/?btag=52962",
           "files": "",
-          "status": "Work in progress",
-          "lead": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
           "image": "https://air-prod.imgix.net/2892d970-473a-4833-97a6-39c0856ccfbc/thumbnail.jpg"
+        }
+      ],
+      "updated": "9 Sep 2026"
+    },
+    {
+      "label": "14–20 Sep 2026",
+      "updated": "9 Sep 2026",
+      "items": [
+        {
+          "section": "Gaming",
+          "name": "Lucky Rush",
+          "type": "Promotional Post",
+          "date": "14 Sep 2026",
+          "meta": "🎯🎯Lucky Rush!Take part in our weekly promotion with a 100K prize pool at BOYLE Casino 🎯🎯",
+          "twitter": "🎯 Lucky Rush!Take part in our weekly promotion with a 100K prize pool at BOYLE Casino",
+          "instagram": "🎯 Lucky Rush!Take part in our weekly promotion with a 100K prize pool at BOYLE Casino 🎯\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://boylesports.sharepoint.com/sites/DesignTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDesignTeam%2FShared%20Documents%2F00%5FBack%5FYourself%2F03%5FDigital%2F03%5FGAMING%2F11%5FNetwork%20Promotion%2FGlobal%20Lucky%20Rush%202026%2FPROOF%2FGlobal%20Lucky%20Rewards%20MassMarket%5FBanners%2Dassets%2FSocial&viewid=1c74581b%2D83eb%2D4158%2D96bc%2Dcbe5821bd850&OR=EXCEL%2DWEB%2EBODY%2ENT&CT=1788792183452",
+          "facebook_link": "https://games.boylesports.com/promotions-and-offers/global-lucky-rush/?btag=55301",
+          "twitter_link": "https://games.boylesports.com/promotions-and-offers/global-lucky-rush/?btag=55302",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi"
+        },
+        {
+          "section": "Live Casino",
+          "name": "Live Casino Decommission Video",
+          "type": "Special",
+          "date": "14 Sep 2026",
+          "meta": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! 👉 Play here",
+          "twitter": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! Play here",
+          "instagram": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! 👉 Play here\n\n📲 Click the link in our bio to learn more.",
+          "design": "",
+          "facebook_link": "https://games.boylesports.com/live-casino/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/live-casino/?btag=55401",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Aida Bas Real"
+        },
+        {
+          "section": "Gaming",
+          "name": "Castle Smash",
+          "type": "New Game Release",
+          "date": "15 Sep 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/ba937c429/b/0b4c3a52-fada-4ccd-90c4-d547a1d1e1c0",
+          "facebook_link": "https://games.boylesports.com/games/castle-smash/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/castle-smash/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/9205fb2b-fd7c-4945-8932-17a0b8dcbccc/thumbnail.jpg"
+        },
+        {
+          "section": "Live Casino",
+          "name": "Lounge Roulette Live",
+          "type": "New Game Release",
+          "date": "15 Sep 2026",
+          "meta": "🆕🆕 New Game Release at Boyle Live Casino! 🆕🆕  LOUNGE ROULETTE LIVE",
+          "twitter": "🆕 New Game Release at Boyle Live Casino! LOUNGE ROULETTE LIVE",
+          "instagram": "🆕 New Game Release at Boyle Live Casino! 🆕  LOUNGE ROULETTE LIVE\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b3f10943f/b/289b5b61-d593-40bb-a85c-fcb7eba7ecd3",
+          "facebook_link": "https://games.boylesports.com/games/lounge-roulette-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/lounge-roulette-live/?btag=55401",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Aida Bas Real",
+          "image": "https://air-prod.imgix.net/e67ba237-f633-4f4c-ac2a-d489d089225a/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Devil's draw",
+          "type": "Trending Slot",
+          "date": "16 Sep 2026",
+          "meta": "🚀🚀Check out this month's Trending slot at BOYLE Casino!!👀",
+          "twitter": "🚀 Check out this month's Trending slot at BOYLE Casino!!",
+          "instagram": "🚀 Check out this month's Trending slot at BOYLE Casino!!👀\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/bcc88d4df/b/f41bd248-8390-4a6e-b286-ee4140e6de9a",
+          "facebook_link": "https://games.boylesports.com/games/the-devils-draw/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/the-devils-draw/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/41119f7b-210d-4f6c-97bb-55474b29456a/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Chicago Gold 2",
+          "type": "Exclusive",
+          "date": "17 Sep 2026",
+          "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥",
+          "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
+          "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
+          "design": "",
+          "facebook_link": "https://games.boylesports.com/games/chicago-gold-2/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/chicago-gold-2/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi"
+        },
+        {
+          "section": "Gaming",
+          "name": "Fishin Frenzy Reely Big Catch Jackpot King",
+          "type": "Gotw",
+          "date": "18 Sep 2026",
+          "meta": "✨✨Game of the Week at BOYLE Casino! ✨✨",
+          "twitter": "✨ Game of the Week at BOYLE Casino!",
+          "instagram": "✨ Game of the Week at BOYLE Casino! ✨\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/bce99c68d/b/4788abf6-2bcc-4a1a-ac8b-e5d242d293bd",
+          "facebook_link": "https://games.boylesports.com/games/fishin-frenzy-reely-big-catch-jackpot-king/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/fishin-frenzy-reely-big-catch-jackpot-king/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/a32ca546-a42e-404c-a2af-37e11aff337c/thumbnail.jpg"
+        },
+        {
+          "section": "Live Casino",
+          "name": "All Bets Blackjack Live",
+          "type": "Highlighted game",
+          "date": "19 Sep 2026",
+          "meta": "✨✨BOYLE Live Casino presents ALL BETS BLACKJACK LIVE✨ ✨",
+          "twitter": "✨ BOYLE Live Casino presents ALL BETS BLACKJACK LIVE",
+          "instagram": "✨ BOYLE Live Casino presents ALL BETS BLACKJACK LIVE✨\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/bcc72e999/b/664dc9ff-e7f8-43cc-925d-52036ef4033f",
+          "facebook_link": "https://games.boylesports.com/games/all-bets-blackjack-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/all-bets-blackjack-live/?btag=55401",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Aida Bas Real",
+          "image": "https://air-prod.imgix.net/91fafd2d-cb6c-4be7-900f-0c658b0e8b25/thumbnail.jpg"
+        },
+        {
+          "section": "Live Casino",
+          "name": "Wild West Outlaws!",
+          "type": "Potpourri",
+          "date": "20 Sep 2026",
+          "meta": "🤠🤠Saddle Up and Head on Down to the Wild West with these live games and more at Boyle Live Casino!🤠🤠",
+          "twitter": "🤠 Saddle Up and Head on Down to the Wild West with these live games and more at Boyle Live Casino!",
+          "instagram": "🤠 Saddle Up and Head on Down to the Wild West with these live games and more at Boyle Live Casino!🤠\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/be95cb976/b/cbbbeae0-d6c6-4536-8aaa-2cfacc35194a",
+          "facebook_link": "https://games.boylesports.com/live-casino/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/live-casino/?btag=55401",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Aida Bas Real",
+          "image": "https://air-prod.imgix.net/0a3e7e4e-2577-40d5-9505-dedaafd43139/thumbnail.jpg"
         }
       ]
     }
