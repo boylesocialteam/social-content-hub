@@ -711,8 +711,10 @@ function renderPromos(){
     $('#promo-list').innerHTML=`<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><div>No promotions added for ${esc((weeks[state.week]||{}).label||'this week')} yet.<br>Send next week's promo pack and I'll fill it in.</div></div>`;
     return;
   }
-  const sports=(D.sportOrder||[...new Set(weekItems.map(p=>p.sport))])
-    .filter(sp=>weekItems.some(p=>p.sport===sp));
+  const sportRank=D.sportOrder||[];
+  const sports=sportRank.filter(sp=>weekItems.some(p=>p.sport===sp))
+    // any sport in the week that sportOrder doesn't list still gets a tile, rather than vanishing
+    .concat([...new Set(weekItems.map(p=>p.sport))].filter(sp=>!sportRank.includes(sp)));
 
   // ---------- sport hub ----------
   if(!state.sport){

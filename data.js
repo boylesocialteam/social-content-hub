@@ -794,11 +794,617 @@ window.SCH_DATA = {
     {
       "label": "14–20 Sep 2026",
       "commencing": "2026-09-14",
-      "theme": "Gaming line-up in — promotions & schedule to follow",
-      "updated": "9 Sep 2026",
-      "priorities": [],
+      "theme": "Ayr Gold Cup Festival · Liverpool v Spurs · Accas",
+      "updated": "11 Sep 2026",
+      "priorities": [
+        {
+          "title": "Ayr Gold Cup Festival",
+          "note": "Bet & Get · Money Back · BOG · Boost / Places",
+          "level": "high"
+        },
+        {
+          "title": "Liverpool v Spurs",
+          "note": "50% BBB",
+          "level": "med"
+        },
+        {
+          "title": "Accas",
+          "note": "Bet & Get",
+          "level": "med"
+        },
+        {
+          "title": "BMW PGA Championship",
+          "note": "Boost / Places",
+          "level": "med"
+        },
+        {
+          "title": "WS Darts Final",
+          "note": "Bet & Get",
+          "level": "med"
+        }
+      ],
       "schedule": [],
-      "plan": []
+      "plan": [
+        {
+          "day": "Monday",
+          "date": "Mon 14 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Inter Milan v Udinese",
+              "sport": "Football",
+              "ko": "19:45",
+              "comp": "Serie A",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Inter Milan v Udinese",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Leeds v Newcastle",
+              "sport": "Football",
+              "ko": "20:00",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "Super Boost",
+                  "name": "Super Boost: Leeds v Newcastle",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "high"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Leeds v Newcastle Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Eng v Sri Lanka T20",
+              "sport": "Cricket",
+              "ko": "",
+              "comp": "",
+              "promos": [
+                {
+                  "type": "PPB",
+                  "name": "Premium Price Boost: Eng v Sri Lanka T20",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": []
+        },
+        {
+          "day": "Tuesday",
+          "date": "Tue 15 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Elche v Real Madrid",
+              "sport": "Football",
+              "ko": "20:30",
+              "comp": "La Liga",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Elche v Real Madrid",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Liverpool v Spurs",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EFL Cup",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Liverpool v Spurs",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Liverpool v Spurs Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Ipswich v Arsenal",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EFL Cup",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Ipswich v Arsenal",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": []
+        },
+        {
+          "day": "Wednesday",
+          "date": "Wed 16 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Man Utd v Brighton",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EFL Cup",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Man Utd v Brighton",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Man Utd v Brighton Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Sunderland v AZ Alkmaar",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EL",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Sunderland v AZ Alkmaar",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 10 Get 10 on Accas",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Accas"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "date": "Thu 17 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Celtic v Ferencvaros",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EL",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Celtic v Ferencvaros",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Crystal Palace v Lech Poznan",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Confere",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Crystal Palace v Lech Poznan",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Real Sociedad v Bournemouth",
+              "sport": "Football",
+              "ko": "",
+              "comp": "EL",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Real Sociedad v Bournemouth",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Man City v Norwich",
+              "sport": "Football",
+              "ko": "",
+              "comp": "",
+              "promos": [
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Man City v Norwich Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Boost / Places",
+              "name": "BMW PGA Championship - Outright Extra Places",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "BMW PGA Championship"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: BMW PGA (Rd 1)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "BMW PGA Championship"
+            },
+            {
+              "type": "PPB",
+              "name": "Outright Premium Price Boost: WS Darts Final",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Darts",
+              "event": "WS Darts Final"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Bet & Get on Bet Builder: WS Darts Final",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Darts",
+              "event": "WS Darts Final"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Ayr Gold Cup Day 1",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            },
+            {
+              "type": "Money Back",
+              "name": "MB 2nd to SP Fav: Ayr Gold Cup",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            },
+            {
+              "type": "BOG",
+              "name": "Best Odds Guaranteed: Ayr Gold Cup",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            },
+            {
+              "type": "Boost / Places",
+              "name": "Extra Places: Ayr Gold Cup",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "date": "Fri 18 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Bayern Munich v Union Berlin",
+              "sport": "Football",
+              "ko": "19:30",
+              "comp": "Bundesliga",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Bayern Munich v Union Berlin",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Brentford v Chelsea",
+              "sport": "Football",
+              "ko": "20:00",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "Super Boost",
+                  "name": "Super Boost: Brentford v Chelsea",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "high"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Brentford v Chelsea Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: BMW PGA (Rd 2)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "BMW PGA Championship"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Ayr Gold Cup Day 2",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "date": "Sat 19 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Spurs v Villa",
+              "sport": "Football",
+              "ko": "12:30",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "Super Boost",
+                  "name": "Super Boost: Spurs v Villa",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "high"
+                }
+              ]
+            },
+            {
+              "match": "Nottingham Forest v Coventry",
+              "sport": "Football",
+              "ko": "17:30",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Nottingham Forest v Coventry",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Forest v Coventry Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Sevilla v Barcelona",
+              "sport": "Football",
+              "ko": "20:00",
+              "comp": "La Liga",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Sevilla v Barcelona",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 5 Get 5 on Accas",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Accas"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: BMW PGA (Rd 3)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "BMW PGA Championship"
+            },
+            {
+              "type": "Money Back",
+              "name": "MBAL: Ayr Gold Cup Day 3 (All Geos)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            },
+            {
+              "type": "Boost / Places",
+              "name": "6 Places: Ayr Silver & Gold Cup",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Ayr Gold Cup Festival"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "Sun 20 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Celtic v Rangers",
+              "sport": "Football",
+              "ko": "12:00",
+              "comp": "SPFL",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Celtic v Rangers",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Bournemouth v Liverpool",
+              "sport": "Football",
+              "ko": "14:00",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "Super Boost",
+                  "name": "Super Boost: Bournemouth v Liverpool",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "high"
+                }
+              ]
+            },
+            {
+              "match": "Leeds Utd v Crystal Palace",
+              "sport": "Football",
+              "ko": "14:00",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Leeds Utd v Crystal Palace",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Fulham v Man Utd",
+              "sport": "Football",
+              "ko": "16:30",
+              "comp": "PL",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Fulham v Man Utd",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Fulham v Man Utd Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Marseille v PSG",
+              "sport": "Football",
+              "ko": "19:45",
+              "comp": "Ligue 1",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Marseille v PSG",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 5 Get 5 on Squad Builder or Bet Builder",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Squad Builder / Bet Builder"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: BMW PGA (Final Rd)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "BMW PGA Championship"
+            }
+          ]
+        }
+      ]
     }
   ],
   "links": [
@@ -1499,7 +2105,456 @@ window.SCH_DATA = {
     },
     {
       "label": "14–20 Sep 2026",
-      "items": []
+      "items": [
+        {
+          "day": "Monday",
+          "match": "Inter Milan v Udinese",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Inter Milan v Udinese",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Inter Milan take on Udinese.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Inter Milan take on Udinese.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/italy-serie-a/inter-milan-v-udinese",
+          "air": "https://app.air.inc/b/inter-milan-v-udinese-0a301a43-a7ed-4f0c-b00b-859c33692cc4",
+          "boylesports": "https://www.boylesports.com/sports/football/event/italy-serie-a/inter-milan-v-udinese",
+          "image": "https://air-prod.imgix.net/3cab81fc-cbc0-42e7-b899-aee827509783.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Tuesday",
+          "match": "Liverpool v Spurs",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Liverpool v Spurs",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Liverpool face Spurs.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Liverpool face Spurs.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-cup/liverpool-v-tottenham",
+          "air": "https://app.air.inc/b/sbk-443a17ee-a779-4ec2-8f42-7287186bd654",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-cup/liverpool-v-tottenham",
+          "image": "https://air-prod.imgix.net/af341e03-ba9f-484f-9fa7-01a876bdea83.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Tuesday",
+          "match": "Ipswich v Arsenal",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Ipswich v Arsenal",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Ipswich meet Arsenal.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Ipswich meet Arsenal.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-cup/ipswich-v-arsenal",
+          "air": "https://app.air.inc/b/liverpool-v-tottenham-952a4e83-be0a-4f8f-905d-731d3c65b775",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-cup/ipswich-v-arsenal",
+          "image": "https://air-prod.imgix.net/9837115f-09b8-46e0-ba5f-8b18155c92bd.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Tuesday",
+          "match": "Elche v Real Madrid",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Elche v Real Madrid",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Elche go head-to-head with Real Madrid.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Elche go head-to-head with Real Madrid.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/spain-la-liga/elche-v-real-madrid",
+          "air": "https://app.air.inc/b/ipswich-v-arsenal-64418101-6011-411e-bbb7-f83288405f84",
+          "boylesports": "https://www.boylesports.com/sports/football/event/spain-la-liga/elche-v-real-madrid",
+          "image": "https://air-prod.imgix.net/08856bb3-fb0d-4322-abd7-7b8df3e5e691.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Wednesday",
+          "match": "Man Utd v Brighton",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Man Utd v Brighton",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Man Utd lock horns with Brighton.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Man Utd lock horns with Brighton.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-cup/manchester-united-v-brighton",
+          "air": "https://app.air.inc/b/matchday-challenge-6b82a70e-d9f9-4183-b0c8-8cc3c15b18fe",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-cup/manchester-united-v-brighton",
+          "image": "https://air-prod.imgix.net/00d822b1-936a-4e43-a77d-9ed52fd6a3ae.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Wednesday",
+          "match": "Sunderland v AZ Alkmaar",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Sunderland v AZ Alkmaar",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Sunderland do battle with AZ Alkmaar.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Sunderland do battle with AZ Alkmaar.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/uefa-europa-league/sunderland-v-az-alkmaar",
+          "air": "https://app.air.inc/b/man-utd-v-brighton-0718f4fc-9c96-43b3-8b84-eb46000c6f8e",
+          "boylesports": "https://www.boylesports.com/sports/football/event/uefa-europa-league/sunderland-v-az-alkmaar",
+          "image": "https://air-prod.imgix.net/bbaa88b6-d936-412a-b0b4-443d4faf52b4.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Wednesday",
+          "match": "Accas",
+          "competition": "Football",
+          "promo": "Bet 10 Get 10 on Accas",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€10 Free Bet when you bet £/€10 on Accas.\n\nTap below to opt in.",
+          "facebook": "Get a £/€10 Free Bet when you bet £/€10 on Accas.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/sunderland-v-az-alkmaar-a37cbeed-333d-42be-88aa-42d07dab7e45",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Bet Get",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Thursday",
+          "match": "Celtic v Ferencvaros",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Celtic v Ferencvaros",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Celtic face Ferencvaros.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Celtic face Ferencvaros.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/uefa-europa-league/celtic-v-ferencvaros",
+          "air": "https://app.air.inc/b/matchday-challenge-6b82a70e-d9f9-4183-b0c8-8cc3c15b18fe",
+          "boylesports": "https://www.boylesports.com/sports/football/event/uefa-europa-league/celtic-v-ferencvaros",
+          "image": "https://air-prod.imgix.net/b55a18c4-fee0-4808-a1d4-ba0ac4fdb96f.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Crystal Palace v Lech Poznan",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Crystal Palace v Lech Poznan",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Crystal Palace meet Lech Poznan.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Crystal Palace meet Lech Poznan.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/celtic-v-ferencvaros-65202d25-bd22-4c90-ad2f-67d4ea461cb1",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/0b568d43-7044-45dc-b409-7b339196f76a.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Real Sociedad v Bournemouth",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Real Sociedad v Bournemouth",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Real Sociedad go head-to-head with Bournemouth.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Real Sociedad go head-to-head with Bournemouth.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/uefa-europa-league/real-sociedad-v-bournemouth",
+          "air": "https://app.air.inc/b/crystal-palace-v-lech-poznan-113106b3-f85a-4bca-92ed-417ce6107a6b",
+          "boylesports": "https://www.boylesports.com/sports/football/event/uefa-europa-league/real-sociedad-v-bournemouth",
+          "image": "https://air-prod.imgix.net/a1013e28-da8a-495f-8bc0-9fbe403f31a3.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "BMW PGA Championship",
+          "competition": "Golf",
+          "promo": "BMW PGA Championship - Outright Extra Places",
+          "type": "Extra Places",
+          "twitter": "We're paying EXTRA PLACES on the BMW PGA Championship.\n\nTap below to view the full market.",
+          "facebook": "🏌️ We're paying EXTRA PLACES on the BMW PGA Championship.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
+          "air": "",
+          "boylesports": "https://www.boylesports.com/sports/golf",
+          "image": "https://air-prod.imgix.net/e12bfcf6-22a6-4fd5-837c-ac3cb8a591e1.jpg",
+          "note": "Golf event board: 01_Sep_BMW PGA Championship",
+          "sport": "Golf",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "WS Darts Final",
+          "competition": "Darts",
+          "promo": "Bet & Get on Bet Builder: WS Darts Final",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a Bet Builder at the WS Darts Final.\n\nTap below to opt in.",
+          "facebook": "🎯 Claim your Free Bet when you bet on a Bet Builder at the WS Darts Final.\n\n📲 Opt in — https://www.boylesports.com/sports/darts",
+          "air": "https://app.air.inc/b/world-series-darts-finals-52844c8a-8e74-4d04-9572-2992dec24258",
+          "boylesports": "https://www.boylesports.com/sports/darts",
+          "image": "https://air-prod.imgix.net/4d596454-f07e-4406-a7f4-ec918ab332ff.jpg",
+          "note": "World Series Darts Finals Air board (created 8 Sep)",
+          "sport": "Darts",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Ayr Gold Cup Day 1",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Ayr Gold Cup Festival.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Ayr Gold Cup Festival.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/713988c6-a8b0-4012-8714-c96020749112.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "MB 2nd to SP Fav: Ayr Gold Cup",
+          "type": "Money Back",
+          "twitter": "Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the Ayr Gold Cup Festival!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the Ayr Gold Cup Festival!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/f9674283-cb3e-4883-b6e4-612426e4e711.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "Best Odds Guaranteed: Ayr Gold Cup",
+          "type": "BOG",
+          "twitter": "Whoever you are backing, make the most of your bets with Best Odds Guaranteed!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Whoever you are backing, make the most of your bets with Best Odds Guaranteed!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/ayr-gold-cup-festival-51d8e4a7-2e7d-4fff-96b6-fe837cb95d52",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/bc74bd5f-06c0-448c-8055-7eeaad31c5ee.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "Extra Places: Ayr Gold Cup",
+          "type": "Extra Places",
+          "twitter": "We're paying EXTRA PLACES at Ayr Gold Cup Festival.\n\nTap below to view the full racecard.",
+          "facebook": "🏇 We're paying EXTRA PLACES at Ayr Gold Cup Festival.\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/ayr-gold-cup-festival-51d8e4a7-2e7d-4fff-96b6-fe837cb95d52",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/ef8cf363-0bf4-4c62-b25e-07ef7dc60fb3.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "Bayern Munich v Union Berlin",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Bayern Munich v Union Berlin",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Bayern Munich lock horns with Union Berlin.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Bayern Munich lock horns with Union Berlin.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/germany-bundesliga/bayern-munich-v-union-berlin",
+          "air": "https://app.air.inc/b/ayr-gold-cup-festival-51d8e4a7-2e7d-4fff-96b6-fe837cb95d52",
+          "boylesports": "https://www.boylesports.com/sports/football/event/germany-bundesliga/bayern-munich-v-union-berlin",
+          "image": "https://air-prod.imgix.net/5cd4871b-6f2b-4117-b55c-d5cfa1511329.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Ayr Gold Cup Day 2",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Ayr Gold Cup Festival.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Ayr Gold Cup Festival.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/matchday-challenge-6b82a70e-d9f9-4183-b0c8-8cc3c15b18fe",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/713988c6-a8b0-4012-8714-c96020749112.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Nottingham Forest v Coventry",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Nottingham Forest v Coventry",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Nottingham Forest take on Coventry.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Nottingham Forest take on Coventry.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-premier-league/nottingham-forest-v-coventry",
+          "air": "https://app.air.inc/b/ayr-gold-cup-festival-51d8e4a7-2e7d-4fff-96b6-fe837cb95d52",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-premier-league/nottingham-forest-v-coventry",
+          "image": "https://air-prod.imgix.net/7210faa5-bea4-41dc-a535-ce8d2663dbc4.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Sevilla v Barcelona",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Sevilla v Barcelona",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Sevilla face Barcelona.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Sevilla face Barcelona.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/spain-la-liga/sevilla-v-barcelona",
+          "air": "https://app.air.inc/b/super-boost-a7c599ab-54e1-4c49-9068-d3b21bbc14ca",
+          "boylesports": "https://www.boylesports.com/sports/football/event/spain-la-liga/sevilla-v-barcelona",
+          "image": "https://air-prod.imgix.net/e55a72af-6c4f-4129-a7a4-938a8920c5cb.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Accas",
+          "competition": "Football",
+          "promo": "Bet 5 Get 5 on Accas",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€5 on Accas.\n\nTap below to opt in.",
+          "facebook": "Get a £/€5 Free Bet when you bet £/€5 on Accas.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/nottingham-forest-v-coventry-b837647a-0b11-4f99-88a6-0b861b3ab629",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Bet Get",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Saturday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "MBAL: Ayr Gold Cup Day 3 (All Geos)",
+          "type": "Money Back",
+          "twitter": "Get your money back as a Free Bet if your horse loses at the Ayr Gold Cup Festival!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Get your money back as a Free Bet if your horse loses at the Ayr Gold Cup Festival!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/matchday-challenge-6b82a70e-d9f9-4183-b0c8-8cc3c15b18fe",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/742ad577-98d3-4095-ae50-f24a9c264648.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Ayr Gold Cup Festival",
+          "competition": "Horse Racing",
+          "promo": "6 Places: Ayr Silver & Gold Cup",
+          "type": "Extra Places",
+          "twitter": "We're paying 6 PLACES at Ayr Gold Cup Festival.\n\nTap below to view the full racecard.",
+          "facebook": "🏇 We're paying 6 PLACES at Ayr Gold Cup Festival.\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/01-sep-bmw-pga-championship-41a6da82-07e6-47a7-88b1-cafc2cf8644b",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/723650d1-7480-4906-b08c-8d13c84ee3be.jpg",
+          "note": "Racing > Events T1 > Ayr Gold Cup Festival (full suite created 10 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Fulham v Man Utd",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Fulham v Man Utd",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Fulham do battle with Man Utd.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Fulham do battle with Man Utd.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-premier-league/fulham-v-manchester-united",
+          "air": "https://app.air.inc/b/ayr-gold-cup-festival-51d8e4a7-2e7d-4fff-96b6-fe837cb95d52",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-premier-league/fulham-v-manchester-united",
+          "image": "https://air-prod.imgix.net/5e7e337d-33b8-47b2-9a0b-06a8a07e6fd3.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Leeds Utd v Crystal Palace",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Leeds Utd v Crystal Palace",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Leeds Utd take on Crystal Palace.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Leeds Utd take on Crystal Palace.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-premier-league/leeds-v-crystal-palace",
+          "air": "https://app.air.inc/b/super-boost-a7c599ab-54e1-4c49-9068-d3b21bbc14ca",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-premier-league/leeds-v-crystal-palace",
+          "image": "https://air-prod.imgix.net/633948bc-9e22-4ec6-a5f6-40976278de57.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Celtic v Rangers",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Celtic v Rangers",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Celtic face Rangers.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Celtic face Rangers.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/scotland-premiership/celtic-v-rangers",
+          "air": "https://app.air.inc/b/fulham-v-man-utd-f07e5fdf-d456-4418-a825-a669eb6bf487",
+          "boylesports": "https://www.boylesports.com/sports/football/event/scotland-premiership/celtic-v-rangers",
+          "image": "https://air-prod.imgix.net/f8fb2d87-e93d-4602-be92-c36169bcfab6.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Marseille v PSG",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Marseille v PSG",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Marseille meet PSG.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Marseille meet PSG.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/france-ligue-1/marseille-v-paris-saint-germain",
+          "air": "https://app.air.inc/b/leeds-utd-v-crystal-palace-7f3f7408-f170-4b0f-a004-980d4a1937f3",
+          "boylesports": "https://www.boylesports.com/sports/football/event/france-ligue-1/marseille-v-paris-saint-germain",
+          "image": "https://air-prod.imgix.net/f3ff00c8-db79-4feb-958b-2a9828f1c9a4.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost); asset now created",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Squad Builder / Bet Builder",
+          "competition": "Football",
+          "promo": "Bet 5 Get 5 on Squad Builder or Bet Builder",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€5 on a Squad Builder or Bet Builder.\n\nTap below to opt in.",
+          "facebook": "Get a £/€5 Free Bet when you bet £/€5 on a Squad Builder or Bet Builder.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/celtic-v-rangers-0fa15870-3d00-4f38-919e-6ed73f4b2d3d",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Squad Builder",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        }
+      ]
     }
   ],
   "gamingWeeks": [
@@ -1581,7 +2636,7 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/promotions-and-offers/ready-steady-spin-leaderboard/?btag=56251",
           "twitter_link": "https://games.boylesports.com/promotions-and-offers/ready-steady-spin-leaderboard/?btag=56252",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Rosita Ciofi"
         },
         {
@@ -1611,16 +2666,16 @@ window.SCH_DATA = {
           "facebook_link": "https://games.boylesports.com/games/triple-power-cash-strike/?btag=52901",
           "twitter_link": "https://games.boylesports.com/games/triple-power-cash-strike/?btag=52962",
           "files": "",
-          "status": "Ready to Schedule",
+          "status": "Scheduled",
           "lead": "Rosita Ciofi",
           "image": "https://air-prod.imgix.net/2892d970-473a-4833-97a6-39c0856ccfbc/thumbnail.jpg"
         }
       ],
-      "updated": "9 Sep 2026"
+      "updated": "11 Sep 2026"
     },
     {
       "label": "14–20 Sep 2026",
-      "updated": "9 Sep 2026",
+      "updated": "11 Sep 2026",
       "items": [
         {
           "section": "Gaming",
@@ -2866,12 +3921,14 @@ window.SCH_DATA = {
     "Tennis": "https://air-prod.imgix.net/ddae189d-158e-410d-9a2f-27c2e6dca21a.jpg",
     "Snooker": "https://air-prod.imgix.net/5f788ad6-ce8d-4e74-b5ad-912f5603ac25.jpg",
     "Cricket": "https://air-prod.imgix.net/550dd379-a765-449b-a7cf-0b0804d39bc4.jpg",
-    "Boxing": "https://air-prod.imgix.net/db535a8e-c96b-452a-8455-f770d300a301.jpg"
+    "Boxing": "https://air-prod.imgix.net/db535a8e-c96b-452a-8455-f770d300a301.jpg",
+    "Darts": "https://air-prod.imgix.net/cedf7486-0ed0-49c6-b8be-e7105cc35d6a.jpg"
   },
   "sportOrder": [
     "Football",
     "Horse Racing",
     "Golf",
+    "Darts",
     "US Sports",
     "Greyhounds",
     "Tennis",
