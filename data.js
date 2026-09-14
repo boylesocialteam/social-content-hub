@@ -1108,7 +1108,8 @@ window.SCH_DATA = {
           "twitter_link": "https://games.boylesports.com/promotions-and-offers/global-lucky-rush/?btag=55302",
           "files": "",
           "status": "Scheduled",
-          "lead": "Rosita Ciofi"
+          "lead": "Rosita Ciofi",
+          "image": ""
         },
         {
           "section": "Live Casino",
@@ -1118,12 +1119,13 @@ window.SCH_DATA = {
           "meta": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! 👉 Play here",
           "twitter": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! Play here",
           "instagram": "🎲 New look. More Live Casino favourites! Discover Boyle Live Casino! 👉 Play here\n\n📲 Click the link in our bio to learn more.",
-          "design": "",
+          "design": "https://app.air.inc/a/b3203a03d/b/cc3c73a8-06de-421d-8b5e-c855a01fc111",
           "facebook_link": "https://games.boylesports.com/live-casino/?btag=55400",
           "twitter_link": "https://games.boylesports.com/live-casino/?btag=55401",
           "files": "",
           "status": "Scheduled",
-          "lead": "Aida Bas Real"
+          "lead": "Aida Bas Real",
+          "image": "https://air-prod.imgix.net/abf1ef95-1120-4fb3-8744-202c3b2f4701/thumbnail.jpg"
         },
         {
           "section": "Gaming",
@@ -1181,12 +1183,13 @@ window.SCH_DATA = {
           "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥",
           "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
           "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
-          "design": "",
+          "design": "https://app.air.inc/a/bdcafc41d/b/d6194438-aa86-4020-ada9-041f9896fa5c",
           "facebook_link": "https://games.boylesports.com/games/chicago-gold-2/?btag=52901",
           "twitter_link": "https://games.boylesports.com/games/chicago-gold-2/?btag=52962",
           "files": "",
           "status": "Ready to Schedule",
-          "lead": "Rosita Ciofi"
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/64acb1ba-a6ab-4355-bf2e-f6b3ffe16982/thumbnail.jpg"
         },
         {
           "section": "Gaming",
