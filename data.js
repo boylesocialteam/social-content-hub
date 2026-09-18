@@ -615,6 +615,536 @@ window.SCH_DATA = {
           ]
         }
       ]
+    },
+    {
+      "label": "21–27 Sep 2026",
+      "commencing": "2026-09-21",
+      "theme": "Newmarket Cambridgeshire · Packers v Falcons · Bears v Eagles",
+      "updated": "18 Sep 2026",
+      "priorities": [
+        {
+          "title": "Newmarket Cambridgeshire",
+          "note": "Bet & Get · Money Back · BOG · Boost / Places",
+          "level": "high"
+        },
+        {
+          "title": "Packers v Falcons",
+          "note": "50% BBB",
+          "level": "high"
+        },
+        {
+          "title": "Bears v Eagles",
+          "note": "50% BBB",
+          "level": "high"
+        },
+        {
+          "title": "Kosovo v Ireland",
+          "note": "50% BBB",
+          "level": "med"
+        },
+        {
+          "title": "Accas",
+          "note": "Bet & Get",
+          "level": "med"
+        }
+      ],
+      "schedule": [],
+      "plan": [
+        {
+          "day": "Monday",
+          "date": "Mon 21 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Eng v Sri Lanka T20",
+              "sport": "Cricket",
+              "ko": "",
+              "comp": "",
+              "promos": [
+                {
+                  "type": "PPB",
+                  "name": "Premium Price Boost: Eng v Sri Lanka T20",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": []
+        },
+        {
+          "day": "Tuesday",
+          "date": "Tue 22 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Wigan v Blackpool",
+              "sport": "Football",
+              "ko": "",
+              "comp": "L1",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Wigan v Blackpool",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Salford City v Sheffield Wed",
+              "sport": "Football",
+              "ko": "",
+              "comp": "L2",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Salford City v Sheffield Wed",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": []
+        },
+        {
+          "day": "Thursday",
+          "date": "Thu 24 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Portugal v Wales",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Portugal v Wales",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Netherlands v Germany",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Netherlands v Germany",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Kosovo v Ireland",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Kosovo v Ireland",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Kosovo v Ireland Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Packers v Falcons",
+              "sport": "US Sports",
+              "ko": "",
+              "comp": "NFL",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Packers v Falcons",
+                  "status": "Awaiting",
+                  "onpage": true,
+                  "prio": "med"
+                }
+              ]
+            },
+            {
+              "match": "Bears v Eagles",
+              "sport": "US Sports",
+              "ko": "",
+              "comp": "NFL",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Bears v Eagles",
+                  "status": "Awaiting",
+                  "onpage": true,
+                  "prio": "med"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 10 Get 5 on Accas",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Accas"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Listowel (All Geos)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Listowel Harvest Festival"
+            },
+            {
+              "type": "Boost / Places",
+              "name": "Presidents Cup - Outright Extra Places",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "Presidents Cup"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: Presidents Cup (Rd 1)",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "Presidents Cup"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Newmarket Cambridgeshire Day 1",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            },
+            {
+              "type": "Money Back",
+              "name": "MB 2nd to SP Fav: Newmarket Cambridgeshire",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            },
+            {
+              "type": "BOG",
+              "name": "Best Odds Guaranteed: Newmarket Cambridgeshire",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            },
+            {
+              "type": "Boost / Places",
+              "name": "Extra Places: Newmarket Cambridgeshire",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "date": "Fri 25 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Georgia v Northern Ireland",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Georgia v Northern Ireland",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Italy v Belgium",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Italy v Belgium",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Italy v Belgium Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Listowel (All Geos)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Listowel Harvest Festival"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Multi Bet & Get: Newmarket Cambridgeshire Day 2",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: Presidents Cup (Rd 2)",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "Presidents Cup"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Bet & Get: URC Opening Round",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Rugby",
+              "event": "URC Start"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "date": "Sat 26 Sep 2026",
+          "fixtures": [
+            {
+              "match": "England v Spain",
+              "sport": "Football",
+              "ko": "19:45",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "Super Boost",
+                  "name": "Super Boost: England v Spain",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "high"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: England v Spain Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            },
+            {
+              "match": "Slovenia v Scotland",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Slovenia v Scotland",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Crawley v Barnet",
+              "sport": "Football",
+              "ko": "",
+              "comp": "L2",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Crawley v Barnet",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Oldham v Salford City",
+              "sport": "Football",
+              "ko": "",
+              "comp": "L2",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Oldham v Salford City",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 10 Get 5 on Squad Builder",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Squad Builder"
+            },
+            {
+              "type": "Money Back",
+              "name": "MBAL: Newmarket Cambridgeshire Day 3 (All Geos)",
+              "status": "Ready",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Horse Racing",
+              "event": "Newmarket Cambridgeshire"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: Presidents Cup (Rd 3)",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "Presidents Cup"
+            },
+            {
+              "type": "PPB",
+              "name": "Premium Price Boost: URC",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Rugby",
+              "event": "URC Start"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "Sun 27 Sep 2026",
+          "fixtures": [
+            {
+              "match": "Denmark v Wales",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "25% BBB",
+                  "name": "25% Bet Builder Boost: Denmark v Wales",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "low"
+                }
+              ]
+            },
+            {
+              "match": "Israel v Ireland",
+              "sport": "Football",
+              "ko": "",
+              "comp": "UEFA Nations",
+              "promos": [
+                {
+                  "type": "50% BBB",
+                  "name": "50% Bet Builder Boost: Israel v Ireland",
+                  "status": "Ready",
+                  "onpage": true,
+                  "prio": "med"
+                },
+                {
+                  "type": "Free To Play",
+                  "name": "Free To Play: Israel v Ireland Matchday Challenge",
+                  "status": "Awaiting",
+                  "onpage": false,
+                  "prio": "other"
+                }
+              ]
+            }
+          ],
+          "strip": [
+            {
+              "type": "Bet & Get",
+              "name": "Bet 10 Get 5 on Accas",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Football",
+              "event": "Accas"
+            },
+            {
+              "type": "Price Boost",
+              "name": "Daily Round Price Boost: Presidents Cup (Final Rd)",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "Golf",
+              "event": "Presidents Cup"
+            },
+            {
+              "type": "Bet & Get",
+              "name": "Acca Bet & Get (Bet 10 Get 5): NFL Week 3",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "US Sports",
+              "event": "NFL Week 3"
+            },
+            {
+              "type": "Price Boost",
+              "name": "9pm Price Boost: NFL Week 3",
+              "status": "Awaiting",
+              "onpage": false,
+              "prio": "other",
+              "sport": "US Sports",
+              "event": "NFL Week 3"
+            }
+          ]
+        }
+      ]
     }
   ],
   "links": [
@@ -1088,6 +1618,459 @@ window.SCH_DATA = {
           "status": "Awaiting"
         }
       ]
+    },
+    {
+      "label": "21–27 Sep 2026",
+      "items": [
+        {
+          "day": "Tuesday",
+          "match": "Wigan v Blackpool",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Wigan v Blackpool",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Wigan take on Blackpool.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Wigan take on Blackpool.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-1/wigan-v-blackpool",
+          "air": "https://app.air.inc/b/wigan-v-blackpool-0fcc19f2-f3f2-4d5f-b1eb-659c91947d57",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-1/wigan-v-blackpool",
+          "image": "https://air-prod.imgix.net/c1eb0604-8675-4296-9253-96e65d085027.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Tuesday",
+          "match": "Salford City v Sheffield Wed",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Salford City v Sheffield Wed",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Salford City face Sheffield Wed.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Salford City face Sheffield Wed.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-2/salford-city-v-sheffield-wed",
+          "air": "https://app.air.inc/b/salford-city-v-sheffield-wednesday-b8106fb1-1e6a-4ef7-a181-a13af33c456f",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-2/salford-city-v-sheffield-wed",
+          "image": "https://air-prod.imgix.net/2a372992-fe7d-40ff-869c-16784a52640e.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Portugal v Wales",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Portugal v Wales",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Portugal meet Wales.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Portugal meet Wales.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/portugal-v-wales-ecc32a1c-6be7-47d2-9992-9bcb0ad128be",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/1bb57ac0-47fc-4fd0-9390-9a8b6ad4951a.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Netherlands v Germany",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Netherlands v Germany",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Netherlands go head-to-head with Germany.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Netherlands go head-to-head with Germany.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/netherlands-v-germany-35e39517-c564-4a0a-b482-5bc3d34e123e",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/94fa8839-1dd8-4b3d-afa7-d37b1d43639d.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Kosovo v Ireland",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Kosovo v Ireland",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Kosovo lock horns with Ireland.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Kosovo lock horns with Ireland.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/kosovo-v-rep-of-ireland-1313ab72-e08a-43d7-8e37-b7a65b4111e6",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/9e7b41ae-2123-4fa8-939b-b6a5e3d5b0bd.jpg",
+          "note": "Match-specific 50% BBB Air board (SBK > BB Boost > 50% > September > 15_Sep); corrected from 25% per confirmation",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Accas",
+          "competition": "Football",
+          "promo": "Bet 10 Get 5 on Accas",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on Accas.\n\nTap below to opt in.",
+          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on Accas.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/bet-get-1caf916c-974f-49de-9e01-e19f179e4c25",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Bet Get",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Thursday",
+          "match": "Listowel Harvest Festival",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Listowel (All Geos)",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Listowel Harvest Festival.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Listowel Harvest Festival.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/a/be6ee7a86/b/d7d4290c-8de4-4cc3-b975-a2e859d4b7a8",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/75a35512-ea02-451e-9ae1-47fd41ae8183.jpg",
+          "note": "Meeting is IRE/NI but Thu & Fri Multi B&G are ALL GEOS",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Presidents Cup",
+          "competition": "Golf",
+          "promo": "Presidents Cup - Outright Extra Places",
+          "type": "Extra Places",
+          "twitter": "We're paying EXTRA PLACES on the Presidents Cup.\n\nTap below to view the full market.",
+          "facebook": "🏌️ We're paying EXTRA PLACES on the Presidents Cup.\n\n📲 Full market — https://www.boylesports.com/sports/golf",
+          "air": "https://app.air.inc/b/extra-places-63dbdd8b-be94-43ac-8a90-cdaba723b4c6",
+          "boylesports": "https://www.boylesports.com/sports/golf",
+          "image": "",
+          "note": "Tier 2; 24-27 Sep",
+          "sport": "Golf",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Thursday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Newmarket Cambridgeshire Day 1",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Newmarket Cambridgeshire.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Newmarket Cambridgeshire.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/5e7c1d2b-2d45-498d-a976-db361db9a833.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "MB 2nd to SP Fav: Newmarket Cambridgeshire",
+          "type": "Money Back",
+          "twitter": "Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the Newmarket Cambridgeshire!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Get your money back as a Free Bet if your horse finishes 2nd to the SP favourite at the Newmarket Cambridgeshire!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/49f84bd0-3566-4d17-ab06-b277bb0c7857.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "Best Odds Guaranteed: Newmarket Cambridgeshire",
+          "type": "BOG",
+          "twitter": "Whoever you are backing, make the most of your bets with Best Odds Guaranteed!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Whoever you are backing, make the most of your bets with Best Odds Guaranteed!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/bc74bd5f-06c0-448c-8055-7eeaad31c5ee.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "Extra Places: Newmarket Cambridgeshire",
+          "type": "Extra Places",
+          "twitter": "We're paying EXTRA PLACES at Newmarket Cambridgeshire.\n\nTap below to view the full racecard.",
+          "facebook": "🏇 We're paying EXTRA PLACES at Newmarket Cambridgeshire.\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/e46f5ff2-498c-46ae-a298-b350540f7273.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Thursday",
+          "match": "Packers v Falcons",
+          "competition": "US Sports",
+          "promo": "50% Bet Builder Boost: Packers v Falcons",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Packers take on Falcons.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Packers take on Falcons.\n\n📲 Full market — https://www.boylesports.com/sports/american-football/event/usa-nfl/green-bay-packers-v-atlanta-falcons",
+          "air": "https://app.air.inc/b/50-f2af83e8-7a46-4578-a5b6-f566be86f922",
+          "boylesports": "https://www.boylesports.com/sports/american-football/event/usa-nfl/green-bay-packers-v-atlanta-falcons",
+          "image": "",
+          "note": "NFL Wk3; KO time unpublished - TBC",
+          "sport": "US Sports",
+          "onpage": true,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Thursday",
+          "match": "Bears v Eagles",
+          "competition": "US Sports",
+          "promo": "50% Bet Builder Boost: Bears v Eagles",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Bears face Eagles.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Bears face Eagles.\n\n📲 Full market — https://www.boylesports.com/sports/american-football/event/usa-nfl/chicago-bears-v-philadelphia-eagles",
+          "air": "https://app.air.inc/b/50-f2af83e8-7a46-4578-a5b6-f566be86f922",
+          "boylesports": "https://www.boylesports.com/sports/american-football/event/usa-nfl/chicago-bears-v-philadelphia-eagles",
+          "image": "",
+          "note": "NFL Wk3; KO time unpublished - TBC",
+          "sport": "US Sports",
+          "onpage": true,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Friday",
+          "match": "Georgia v Northern Ireland",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Georgia v Northern Ireland",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Georgia meet Northern Ireland.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Georgia meet Northern Ireland.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/georgia-v-northern-ireland-6c66324b-b1c0-4679-9f5a-4b7bd654d548",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/df402367-438d-442b-8f4f-4cedb984755a.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "Italy v Belgium",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Italy v Belgium",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Italy go head-to-head with Belgium.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Italy go head-to-head with Belgium.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/italy-v-belgium-8cc0872d-7aaa-42f8-aa07-fbc31d81e245",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/872e2611-be4b-484d-8710-db4a0dcc182e.jpg",
+          "note": "Match-specific 50% BBB Air board (SBK > BB Boost > 50% > September > 15_Sep); corrected from 25% per confirmation",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "Listowel Harvest Festival",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Listowel (All Geos)",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Listowel Harvest Festival.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Listowel Harvest Festival.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/a/be6ee7a86/b/d7d4290c-8de4-4cc3-b975-a2e859d4b7a8",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/75a35512-ea02-451e-9ae1-47fd41ae8183.jpg",
+          "note": "Meeting is IRE/NI but Fri Multi B&G is ALL GEOS",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "Multi Bet & Get: Newmarket Cambridgeshire Day 2",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a multiple at the Newmarket Cambridgeshire.\n\nTap below to opt in.",
+          "facebook": "🏇 Claim your Free Bet when you bet on a multiple at the Newmarket Cambridgeshire.\n\n📲 Opt in — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/5e7c1d2b-2d45-498d-a976-db361db9a833.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Friday",
+          "match": "URC Start",
+          "competition": "Rugby",
+          "promo": "Bet & Get: URC Opening Round",
+          "type": "Bet & Get",
+          "twitter": "Claim your Free Bet when you bet on a Bet Builder at the URC Start.\n\nTap below to opt in.",
+          "facebook": "Claim your Free Bet when you bet on a Bet Builder at the URC Start.\n\n📲 Opt in — ",
+          "air": "https://app.air.inc/b/sbk-bbf7799e-b2d4-4f1e-9d73-63e6ca17a8a1",
+          "boylesports": "",
+          "image": "",
+          "note": "Tier 3; URC season start",
+          "sport": "Rugby",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Saturday",
+          "match": "Slovenia v Scotland",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Slovenia v Scotland",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Slovenia face Scotland.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Slovenia face Scotland.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/slovenia-v-scotland-bcfbac7e-b5fe-45e1-a0d4-9d664661c0f8",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/ae338678-95a8-4641-a854-8db6ec40c04c.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Crawley v Barnet",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Crawley v Barnet",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Crawley meet Barnet.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Crawley meet Barnet.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-2/crawley-v-barnet",
+          "air": "https://app.air.inc/b/crawley-v-barnet-f969c5c3-1183-4128-a5ce-df1e9afe59d1",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-2/crawley-v-barnet",
+          "image": "https://air-prod.imgix.net/7ae18a4a-8cfb-404e-8c3a-03ca6b112e24.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Oldham v Salford City",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Oldham v Salford City",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Oldham go head-to-head with Salford City.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Oldham go head-to-head with Salford City.\n\n📲 Full market — https://www.boylesports.com/sports/football/event/england-league-2/oldham-v-salford-city",
+          "air": "https://app.air.inc/b/oldham-v-salford-city-2c4fbe11-f9f7-4caf-815c-781356122db4",
+          "boylesports": "https://www.boylesports.com/sports/football/event/england-league-2/oldham-v-salford-city",
+          "image": "https://air-prod.imgix.net/bc2bb865-0916-4b35-a6bd-a0535fd7c169.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Saturday",
+          "match": "Squad Builder",
+          "competition": "Football",
+          "promo": "Bet 10 Get 5 on Squad Builder",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on a Squad Builder.\n\nTap below to opt in.",
+          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on a Squad Builder.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/squad-builder-4f86419c-0699-45b8-af53-951a996ab927",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Squad Builder",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Saturday",
+          "match": "Newmarket Cambridgeshire",
+          "competition": "Horse Racing",
+          "promo": "MBAL: Newmarket Cambridgeshire Day 3 (All Geos)",
+          "type": "Money Back",
+          "twitter": "Get your money back as a Free Bet if your horse loses at the Newmarket Cambridgeshire!\n\nTap below to view the full racecard.",
+          "facebook": "🏇 Get your money back as a Free Bet if your horse loses at the Newmarket Cambridgeshire!\n\n📲 Full racecard — https://www.boylesports.com/sports/horse-racing",
+          "air": "https://app.air.inc/b/newmarket-cambridgeshire-meeting-80e92479-50e3-4944-8595-c26507e84916",
+          "boylesports": "https://www.boylesports.com/sports/horse-racing",
+          "image": "https://air-prod.imgix.net/4da81736-9cec-496c-a44d-30e4b87a6a76.jpg",
+          "note": "Racing > Events T1 > Newmarket - Cambridgeshire Meeting (created 18 Sep)",
+          "sport": "Horse Racing",
+          "onpage": false,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Denmark v Wales",
+          "competition": "Football",
+          "promo": "25% Bet Builder Boost: Denmark v Wales",
+          "type": "25% BBB",
+          "twitter": "🚀 Win 25% more with Bet Builder Boost as Denmark take on Wales.\n\nTap below to view the full market.",
+          "facebook": "Win 25% more with Bet Builder Boost as Denmark take on Wales.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/denmark-v-wales-5d285cb4-a6d1-42a7-80d9-ba0485bf2b47",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/46a00913-0ecf-4ad4-9312-1d72c83281b3.jpg",
+          "note": "Match-specific Air board (SBK > BB Boost)",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Israel v Ireland",
+          "competition": "Football",
+          "promo": "50% Bet Builder Boost: Israel v Ireland",
+          "type": "50% BBB",
+          "twitter": "🚀 Win 50% more with Bet Builder Boost as Israel face Ireland.\n\nTap below to view the full market.",
+          "facebook": "Win 50% more with Bet Builder Boost as Israel face Ireland.\n\n📲 Full market — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/israel-v-rep-of-ireland-e45719e4-19f9-474c-9255-6f398318f924",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "https://air-prod.imgix.net/896982e0-ef4c-4e0b-9baf-70cbb43a4b9c.jpg",
+          "note": "Match-specific 50% BBB Air board (SBK > BB Boost > 50% > September > 15_Sep); corrected from 25% per confirmation",
+          "sport": "Football",
+          "onpage": true,
+          "status": "Ready"
+        },
+        {
+          "day": "Sunday",
+          "match": "Accas",
+          "competition": "Football",
+          "promo": "Bet 10 Get 5 on Accas",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on Accas.\n\nTap below to opt in.",
+          "facebook": "Get a £/€5 Free Bet when you bet £/€10 on Accas.\n\n📲 Opt in — https://www.boylesports.com/promotions/online/football",
+          "air": "https://app.air.inc/b/bet-get-1caf916c-974f-49de-9e01-e19f179e4c25",
+          "boylesports": "https://www.boylesports.com/promotions/online/football",
+          "image": "",
+          "note": "SBK > Bet Get",
+          "sport": "Football",
+          "onpage": false,
+          "status": "Awaiting"
+        },
+        {
+          "day": "Sunday",
+          "match": "NFL Week 3",
+          "competition": "US Sports",
+          "promo": "Acca Bet & Get (Bet 10 Get 5): NFL Week 3",
+          "type": "Bet & Get",
+          "twitter": "Get a £/€5 Free Bet when you bet £/€10 on Accas at the NFL Week 3.\n\nTap below to opt in.",
+          "facebook": "🏈 Get a £/€5 Free Bet when you bet £/€10 on Accas at the NFL Week 3.\n\n📲 Opt in — https://www.boylesports.com/sports/american-football/competition/usa-nfl",
+          "air": "https://app.air.inc/b/sbk-31d5ae59-3277-4b49-9cf3-2543a55a59ab",
+          "boylesports": "https://www.boylesports.com/sports/american-football/competition/usa-nfl",
+          "image": "",
+          "note": "NFL Wk3 acca B&G",
+          "sport": "US Sports",
+          "onpage": false,
+          "status": "Awaiting"
+        }
+      ]
     }
   ],
   "gamingWeeks": [
@@ -1238,6 +2221,155 @@ window.SCH_DATA = {
           "status": "Ready to Schedule",
           "lead": "Aida Bas Real",
           "image": "https://air-prod.imgix.net/0a3e7e4e-2577-40d5-9505-dedaafd43139/thumbnail.jpg"
+        }
+      ]
+    },
+    {
+      "label": "21–27 Sep 2026",
+      "updated": "18 Sep 2026",
+      "items": [
+        {
+          "section": "Gaming",
+          "name": "Mythic Beasts Kraken Coins",
+          "type": "Exclusive",
+          "date": "21 Sep 2026",
+          "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥",
+          "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
+          "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b18252ab2/b/7a6cb386-96c0-44f8-9622-0035ce47b80a",
+          "facebook_link": "https://games.boylesports.com/games/mythic-beasts-kraken-coins/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/mythic-beasts-kraken-coins/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/abc0de4b-3398-4d83-8046-597bd22162b1/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Vikings Go To Hollywood Wild Fight Rushing Wilds",
+          "type": "New Game Release",
+          "date": "22 Sep 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/ba166ca54/b/bef9b518-a46c-4c17-b2c9-80a3574835ad",
+          "facebook_link": "https://games.boylesports.com/games/vikings-go-to-hollywood-wild-fight-rushing-wilds/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/vikings-go-to-hollywood-wild-fight-rushing-wilds/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/b51201d7-58ea-4529-b203-aaa39a443a8a/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Big Bass Trophy Catch",
+          "type": "Gotm",
+          "date": "23 Sep 2026",
+          "meta": "✨✨Game of the Month at BOYLE Casino! ✨✨",
+          "twitter": "✨ Game of the Month at BOYLE Casino!",
+          "instagram": "✨ Game of the Month at BOYLE Casino! ✨\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b09ec3511/b/d6380842-5030-4d58-92f9-34ab3599284e",
+          "facebook_link": "https://games.boylesports.com/games/big-bass-trophy-catch/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/big-bass-trophy-catch/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/3fc45b33-b4bb-46ac-b233-93f691f130b4/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Fire Dudes Cashways",
+          "type": "Exclusive",
+          "date": "23 Sep 2026",
+          "meta": "🔥🔥EXCLUSIVE Game at BOYLE Casino! 🔥🔥",
+          "twitter": "🔥 EXCLUSIVE Game at BOYLE Casino!",
+          "instagram": "🔥 EXCLUSIVE Game at BOYLE Casino! 🔥\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/be3216831/b/3f52218e-5e05-4ab3-97ad-fba8577cec5a",
+          "facebook_link": "https://games.boylesports.com/games/fire-dudes-cashways/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/fire-dudes-cashways/?btag=52962",
+          "files": "",
+          "status": "Issue",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/0392b594-d6fa-45bc-979e-665c878ebc05/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Reel it In Emily",
+          "type": "Promotional Post",
+          "date": "24 Sep 2026",
+          "meta": "🎣🎣 REEL IT IN! £/€100K Giveaway + GUARANTEED Daily Derby Prizes & instant rewards 👉 only at BOYLE Casino!",
+          "twitter": "🎣 REEL IT IN! £/€100K Giveaway + GUARANTEED Daily Derby Prizes & instant rewards only at BOYLE Casino!",
+          "instagram": "🎣 REEL IT IN! £/€100K Giveaway + GUARANTEED Daily Derby Prizes & instant rewards 👉 only at BOYLE Casino!\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b768eef8f/b/a2a93ca1-ba0b-4269-97cc-9408073a83f6",
+          "facebook_link": "https://games.boylesports.com/promotions-and-offers/reel-it-in/?btag=56288",
+          "twitter_link": "https://games.boylesports.com/promotions-and-offers/reel-it-in/?btag=56289",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/c666e177-df72-454c-8f93-f9bda45d9ac4.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Ragnarok 99 Royale",
+          "type": "New Game Release",
+          "date": "24 Sep 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b53c1fcaa/b/a5207b59-e098-4949-a9de-7ec16f89ede8",
+          "facebook_link": "https://games.boylesports.com/games/ragnarok-99-royale/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/ragnarok-99-royale/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/cd112d3e-bfbc-45f5-9aca-f105fa722df3/thumbnail.jpg"
+        },
+        {
+          "section": "Gaming",
+          "name": "Ra the King 99 Royale",
+          "type": "New Game Release",
+          "date": "25 Sep 2026",
+          "meta": "🤩🤩New Game Release at BOYLE Casino! 🤩🤩",
+          "twitter": "🤩 New Game Release at BOYLE Casino!",
+          "instagram": "🤩 New Game Release at BOYLE Casino! 🤩\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b077e0ec5/b/0da749ba-7245-4c3e-9638-43f4e3346313",
+          "facebook_link": "https://games.boylesports.com/games/ra-the-king-99-royale/?btag=52901",
+          "twitter_link": "https://games.boylesports.com/games/ra-the-king-99-royale/?btag=52962",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Rosita Ciofi",
+          "image": "https://air-prod.imgix.net/23b53351-6b30-4a92-b490-404000a168b9/thumbnail.jpg"
+        },
+        {
+          "section": "Live Casino",
+          "name": "Crystal Roulette Live",
+          "type": "Highlighted game",
+          "date": "26 Sep 2026",
+          "meta": "✨✨BOYLE Live Casino presents CRYSTAL ROULETTE LIVE ✨ ✨",
+          "twitter": "✨ BOYLE Live Casino presents CRYSTAL ROULETTE LIVE",
+          "instagram": "✨ BOYLE Live Casino presents CRYSTAL ROULETTE LIVE ✨\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b855a6d24",
+          "facebook_link": "https://games.boylesports.com/games/crystal-roulette-live/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/games/crystal-roulette-live/?btag=55401",
+          "files": "",
+          "status": "Ready to Schedule",
+          "lead": "Aida Bas Real"
+        },
+        {
+          "section": "Live Casino",
+          "name": "Saturday Night fever!",
+          "type": "Potpourri",
+          "date": "27 Sep 2026",
+          "meta": "",
+          "twitter": "",
+          "instagram": "\n\n📲 Click the link in our bio to learn more.",
+          "design": "https://app.air.inc/a/b5d7a47b2/b/27862727-7d0f-4e9c-95b5-b577296e1f1a",
+          "facebook_link": "https://games.boylesports.com/live-game-shows/?btag=55400",
+          "twitter_link": "https://games.boylesports.com/live-game-shows/?btag=55401",
+          "files": "",
+          "status": "Work in progress",
+          "lead": "",
+          "image": "https://air-prod.imgix.net/a1603983-5080-4a10-8f8a-1b289bb2c1f1/thumbnail.jpg"
         }
       ]
     }
@@ -2343,7 +3475,8 @@ window.SCH_DATA = {
     "Snooker": "https://air-prod.imgix.net/5f788ad6-ce8d-4e74-b5ad-912f5603ac25.jpg",
     "Cricket": "https://air-prod.imgix.net/550dd379-a765-449b-a7cf-0b0804d39bc4.jpg",
     "Boxing": "https://air-prod.imgix.net/db535a8e-c96b-452a-8455-f770d300a301.jpg",
-    "Darts": "https://air-prod.imgix.net/cedf7486-0ed0-49c6-b8be-e7105cc35d6a.jpg"
+    "Darts": "https://air-prod.imgix.net/cedf7486-0ed0-49c6-b8be-e7105cc35d6a.jpg",
+    "Rugby": "https://air-prod.imgix.net/831ba2f5-fbd5-4860-a7e4-18784605dfb1.jpg"
   },
   "sportOrder": [
     "Football",
@@ -2351,6 +3484,7 @@ window.SCH_DATA = {
     "Golf",
     "Darts",
     "US Sports",
+    "Rugby",
     "Greyhounds",
     "Tennis",
     "Snooker",
